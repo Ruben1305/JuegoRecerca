@@ -1,0 +1,97 @@
+[gd_scene load_steps=19 format=3 uid="uid://clexgc2pfvjjp"]
+
+[ext_resource type="PackedScene" uid="uid://de2mj0c2ksyyu" path="res://Player/Jugador.tscn" id="1_1nfwe"]
+[ext_resource type="Script" uid="uid://42mbha06df4b" path="res://Player/jugador.gd" id="2_7xjjv"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7xjjv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q58wf"]
+size = Vector3(7.145508, 1, 8.208618)
+
+[sub_resource type="BoxMesh" id="BoxMesh_btiwq"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7xjjv"]
+animation = &"BreathingIdle0"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_q58wf"]
+animation = &"FallingToLanding0"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_btiwq"]
+animation = &"JumpingUp0"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_hk8uy"]
+animation = &"Running0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_o26b3"]
+xfade_time = 0.2
+advance_mode = 2
+advance_expression = "valocity.length() > .2"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ef1ln"]
+xfade_time = 0.2
+advance_mode = 2
+advance_expression = "valocity.length() <= .2"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_h2nuw"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_tbl0u"]
+states/BreathingIdle0/node = SubResource("AnimationNodeAnimation_7xjjv")
+states/BreathingIdle0/position = Vector2(362, 100)
+states/FallingToLanding0/node = SubResource("AnimationNodeAnimation_q58wf")
+states/FallingToLanding0/position = Vector2(555, 182)
+states/JumpingUp0/node = SubResource("AnimationNodeAnimation_btiwq")
+states/JumpingUp0/position = Vector2(755, 100)
+states/Running0/node = SubResource("AnimationNodeAnimation_hk8uy")
+states/Running0/position = Vector2(555, 100)
+transitions = ["BreathingIdle0", "Running0", SubResource("AnimationNodeStateMachineTransition_o26b3"), "Running0", "BreathingIdle0", SubResource("AnimationNodeStateMachineTransition_ef1ln"), "Start", "BreathingIdle0", SubResource("AnimationNodeStateMachineTransition_h2nuw")]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7xjjv"]
+
+[sub_resource type="Sky" id="Sky_q58wf"]
+sky_material = SubResource("ProceduralSkyMaterial_7xjjv")
+
+[sub_resource type="Environment" id="Environment_7xjjv"]
+background_mode = 2
+sky = SubResource("Sky_q58wf")
+
+[sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_q58wf"]
+
+[sub_resource type="Compositor" id="Compositor_btiwq"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47402084, 0, -0.83471155)
+physics_material_override = SubResource("PhysicsMaterial_7xjjv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5143335, 0)
+shape = SubResource("BoxShape3D_q58wf")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 0, -0.44889545, 0)
+mesh = SubResource("BoxMesh_btiwq")
+
+[node name="Jugador" parent="." instance=ExtResource("1_1nfwe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.024688065, 0)
+script = ExtResource("2_7xjjv")
+
+[node name="CharacterCollisionShape" parent="Jugador" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.69124794, 0)
+
+[node name="AnimationTree" type="AnimationTree" parent="Jugador"]
+root_node = NodePath("../SophiaSkin/AuxScene")
+tree_root = SubResource("AnimationNodeStateMachine_tbl0u")
+advance_expression_base_node = NodePath("..")
+anim_player = NodePath("../SophiaSkin/AuxScene/AnimationPlayer")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7xjjv")
+camera_attributes = SubResource("CameraAttributesPhysical_q58wf")
+compositor = SubResource("Compositor_btiwq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.87051886, 0.492135, 0, -0.492135, -0.87051886, 0, 5.146708, -8.884378)
+
+[editable path="Jugador"]

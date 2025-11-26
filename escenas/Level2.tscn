@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://ded3uaey50aqd"]
+
+[ext_resource type="PackedScene" uid="uid://b2uxgt77kt23e" path="res://Per.tscn" id="2_hgnhy"]
+[ext_resource type="PackedScene" uid="uid://bxg6oejpaitdt" path="res://level/interactable/flag/flag_reached_screen.tscn" id="3_2ryyu"]
+[ext_resource type="PackedScene" uid="uid://cnedxfn2pxh2t" path="res://level/level.tscn" id="4_riqqy"]
+[ext_resource type="PackedScene" uid="uid://bnkfs1uw2wx2x" path="res://escenas/pause_menu.tscn" id="5_88e87"]
+
+[node name="Game" type="Node"]
+process_mode = 1
+
+[node name="FlagReachedScreen" parent="." instance=ExtResource("3_2ryyu")]
+
+[node name="Level" parent="." instance=ExtResource("4_riqqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 31.4)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("5_88e87")]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_hgnhy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5100958, 0.0036194324, -55.019043)

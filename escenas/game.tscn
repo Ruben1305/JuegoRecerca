@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://bvt4747kc5u2t"]
+
+[ext_resource type="Script" uid="uid://b1p1lnectvs25" path="res://Scripts/game.gd" id="1_6kmlf"]
+[ext_resource type="PackedScene" path="res://lesson_reference/player_3d_template.tscn" id="2_sa5h6"]
+[ext_resource type="PackedScene" path="res://escenas/LVL'S/level/interactable/flag/flag_reached_screen.tscn" id="3_3lvuv"]
+[ext_resource type="PackedScene" path="res://escenas/LVL'S/level/level.tscn" id="4_fd5rt"]
+[ext_resource type="PackedScene" uid="uid://bnkfs1uw2wx2x" path="res://escenas/pause_menu.tscn" id="5_6kmlf"]
+
+[node name="Game" type="Node"]
+process_mode = 1
+script = ExtResource("1_6kmlf")
+
+[node name="Player3DTemplate" parent="." instance=ExtResource("2_sa5h6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.43638, 0, -7.8513)
+
+[node name="FlagReachedScreen" parent="." instance=ExtResource("3_3lvuv")]
+
+[node name="Level" parent="." instance=ExtResource("4_fd5rt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 31.4)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("5_6kmlf")]

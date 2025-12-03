@@ -1,0 +1,14 @@
+Camera3D
+SpringArm3D
+Node3D
+CollisionShape3D
+CharacterBody3D
+DirectionalLight3D
+WorldEnvironment
+AnimationTree
+MeshInstance3D
+StaticBody3D
+AnimationPlayer
+Control
+HBoxContainer
+Area3D

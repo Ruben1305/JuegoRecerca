@@ -59,7 +59,7 @@ func _ready() -> void:
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-	elif event.is_action_pressed("left_click"):
+	elif event.is_action_pressed("ClicIzq"):
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 
@@ -80,7 +80,7 @@ func _physics_process(delta: float) -> void:
 	_camera_input_direction = Vector2.ZERO
 
 	# Calculate movement input and align it to the camera's direction.
-	var raw_input := Input.get_vector("move_left", "move_right", "move_up", "move_down", 0.4)
+	var raw_input := Input.get_vector("Izquierda", "Derecha", "Alante", "Atras", 0.4)
 	# Should be projected onto the ground plane.
 	var forward := _camera.global_basis.z
 	var right := _camera.global_basis.x
@@ -107,7 +107,7 @@ func _physics_process(delta: float) -> void:
 
 	# Character animations and visual effects.
 	var ground_speed := Vector2(velocity.x, velocity.z).length()
-	var is_just_jumping := Input.is_action_just_pressed("jump") and is_on_floor()
+	var is_just_jumping := Input.is_action_just_pressed("Saltar") and is_on_floor()
 	if is_just_jumping:
 		velocity.y += jump_impulse
 		_skin.jump()

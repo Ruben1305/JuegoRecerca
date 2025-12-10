@@ -21,4 +21,4 @@ func _on_body_entered(body):
 func _on_body_exited(body):
 	if body.is_in_group("player"):
 		body.get_parent().remove_child(body)
-		get_tree().get_root().add_child(body)  # Lo regresamos a la escena principala
+		get_tree().get_root().add_child(body)  # Lo regresamos a la escena principal

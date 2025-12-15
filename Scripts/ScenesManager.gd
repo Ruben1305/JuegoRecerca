@@ -1,14 +1,10 @@
 extends Node
 
-signal game_paused
+signal game_paused(paused: bool)
 
-func pause_game(pause: bool):
-	get_tree().paused = pause
-	
-	if pause:
-		game_paused.emit()
-	#if pause:
-		#var canvas: CanvasLayer = get_tree().current_scene.get_node("CanvasLayer")
-		#var pause_menu: PauseMenu = canvas.get_node("PauseMenu")
-		
-		#pause_menu.visible = true
+func pause_game(paused: bool) -> void:
+	if get_tree().paused == paused:
+		return
+
+	get_tree().paused = paused
+	game_paused.emit(paused)

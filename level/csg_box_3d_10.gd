@@ -1,38 +1,29 @@
 extends Node3D
 
-@onready var tween := create_tween()
+@export var move_distance := Vector3(0, 0, 10)
+@export var speed := 3.0
 
-var start_pos: Vector3
-var end_pos := Vector3(0, 0, 10)
+var start_pos := Vector3.ZERO
+var forward := true
+var previous_pos := Vector3.ZERO
 
-var previous_pos: Vector3  # Para calcular cuanto se movió la plataforma
+# Velocidad de la plataforma
+var velocity := Vector3.ZERO
 
 func _ready():
-	start_pos = global_transform.origin
-	previous_pos = start_pos
-	mover_plataforma()
+	start_pos = global_position
+	previous_pos = global_position
 
+func _physics_process(delta):
+	var target_pos = start_pos + move_distance if forward else start_pos
+	var direction = (target_pos - global_position).normalized()
+	var distance = (target_pos - global_position).length()
 
-func mover_plataforma():
-	tween.tween_property(self, "global_transform:origin", start_pos + end_pos, 2)\
-		.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	if distance > 0.01:
+		global_position += direction * speed * delta
+	else:
+		forward = not forward
 
-	tween.tween_property(self, "global_transform:origin", start_pos, 2)\
-		.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
-
-	tween.set_loops()
-
-
-func _process(delta):
-	# Actualiza la posición anterior cada frame
-	previous_pos = global_transform.origin
-
-
-func _on_body_entered(body):
-	if body.is_in_group("player"):
-		body.current_platform = self
-
-
-func _on_body_exited(body):
-	if body.is_in_group("player"):
-		body.current_platform = null
+	# Calculamos la velocidad de la plataforma este frame
+	velocity = (global_position - previous_pos) / delta
+	previous_pos = global_position

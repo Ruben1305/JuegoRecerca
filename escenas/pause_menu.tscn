@@ -1,6 +1,5 @@
-[gd_scene load_steps=5 format=3 uid="uid://bnkfs1uw2wx2x"]
+[gd_scene load_steps=4 format=3 uid="uid://bnkfs1uw2wx2x"]
 
-[ext_resource type="Theme" uid="uid://d1d0lkn6w3jxf" path="res://Themes/Inicio.tres" id="1_pjyxd"]
 [ext_resource type="Script" uid="uid://dehpqy4qdoqqg" path="res://Scripts/pause_menu.gd" id="2_r6t5e"]
 [ext_resource type="PackedScene" uid="uid://bx1a7btr3gn48" path="res://escenas/button.tscn" id="3_fi5m8"]
 
@@ -9,14 +8,12 @@ font_size = 31
 
 [node name="PauseMenu" type="Control"]
 process_mode = 2
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_pjyxd")
 script = ExtResource("2_r6t5e")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -26,7 +23,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 0, 0, 1)
+color = Color(0.99607843, 0, 0, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
@@ -44,18 +41,13 @@ size_flags_vertical = 0
 text = "Juego Pausado"
 label_settings = SubResource("LabelSettings_pjyxd")
 
-[node name="Coninuar" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_fi5m8")]
+[node name="continuar" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_fi5m8")]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
 text = "Continuar"
 
-[node name="Salir" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_fi5m8")]
+[node name="salir" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_fi5m8")]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
 text = "Salir"
-script = ExtResource("2_r6t5e")
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Coninuar" to="." method="_on_coninuar_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/continuar" to="." method="_on_continuar_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/salir" to="." method="_on_salir_pressed"]

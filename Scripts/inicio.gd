@@ -11,3 +11,7 @@ func _on_exit_pressed() -> void:
 func _on_start_game_pressed() -> void:
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://escenas/SelectorNivel.tscn")
+
+func _input(event):
+	if event.is_action_pressed("Pausar"):
+		ScenesManager.pause_game(!get_tree().paused)

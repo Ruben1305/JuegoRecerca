@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://cnyx80j0xiht4"]
+[gd_scene load_steps=6 format=3 uid="uid://cnyx80j0xiht4"]
 
 [ext_resource type="PackedScene" uid="uid://bx1a7btr3gn48" path="res://escenas/button.tscn" id="1_aup5q"]
-[ext_resource type="Theme" uid="uid://d1d0lkn6w3jxf" path="res://Themes/Inicio.tres" id="1_g7cfe"]
 [ext_resource type="Script" uid="uid://xxcfygc1blod" path="res://Scripts/inicio.gd" id="2_a2m0w"]
 
 [sub_resource type="Theme" id="Theme_aup5q"]
@@ -20,7 +19,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_g7cfe")
 script = ExtResource("2_a2m0w")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]

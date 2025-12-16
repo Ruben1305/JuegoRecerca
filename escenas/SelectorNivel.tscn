@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bapi61hhmu27a"]
 
-[ext_resource type="Script" uid="uid://dhagyiyo55qe7" path="res://escenas/selector_nivel.gd" id="1_nagik"]
+[ext_resource type="Script" uid="uid://dhagyiyo55qe7" path="res://Scripts/selector_nivel.gd" id="1_nagik"]
 [ext_resource type="PackedScene" uid="uid://bx1a7btr3gn48" path="res://escenas/button.tscn" id="1_ypn5h"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_cpxs3"]

@@ -1,40 +1,29 @@
 extends Control
-class_name PauseMenu
 
-@onready var continuar_button = $VBoxContainer/continuar
-@onready var salir_button = $VBoxContainer/salir
-
-func _ready() -> void:
-	ScenesManager.game_paused.connect(set_pause)
+func _ready():
+	# Ocultamos el menú al inicio
 	visible = false
+	# Permitimos que este nodo siga procesando incluso cuando el juego está pausado
+	process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 
-	# Procesar siempre para que funcione mientras el juego está pausado
-	process_mode = Node.PROCESS_MODE_ALWAYS
-	for child in get_children_recursive_safe(self):
-		if child is CanvasItem:
-			child.process_mode = Node.PROCESS_MODE_ALWAYS
-
-	# Conectar botones
-	if continuar_button:
-		continuar_button.pressed.connect(_on_continuar_pressed)
-	if salir_button:
-		salir_button.pressed.connect(_on_salir_pressed)
-
-func set_pause(paused: bool) -> void:
+func toggle_pause():
+	var paused := !get_tree().paused
+	get_tree().paused = paused
+	
+	# Mostramos/ocultamos este menú (PauseMenu entero)
 	visible = paused
-	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE if paused else Input.MOUSE_MODE_CAPTURED)
+
+	if paused:
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE  # Cursor visible en menú
+	else:
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED  # Cursor capturado en juego
+
+func _unhandled_input(event):
+	if event.is_action_pressed("Pausar"):
+		toggle_pause()
 
 func _on_continuar_pressed() -> void:
-	ScenesManager.pause_game(false)
+	toggle_pause()  # Despausa
 
 func _on_salir_pressed() -> void:
-	ScenesManager.pause_game(false)
 	get_tree().change_scene_to_file("res://escenas/Inicio.tscn")
-
-# Recursiva para setear process_mode a todos los hijos
-func get_children_recursive_safe(node: Node) -> Array:
-	var all_children = []
-	for child in node.get_children():
-		all_children.append(child)
-		all_children += get_children_recursive_safe(child)
-	return all_children

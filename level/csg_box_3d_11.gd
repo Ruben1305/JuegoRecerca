@@ -24,10 +24,6 @@ func _physics_process(delta):
 	else:
 		forward = not forward
 
-func _on_body_exited(body):
-	if body.is_in_group("player"):
-		body.get_parent().remove_child(body)
-		get_tree().get_root().add_child(body)  # Lo regresamos a la escena principal
 	# Calculamos la velocidad de la plataforma este frame
 	velocity = (global_position - previous_pos) / delta
 	previous_pos = global_position

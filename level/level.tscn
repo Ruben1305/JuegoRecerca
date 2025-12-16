@@ -88,21 +88,21 @@ directional_shadow_max_distance = 40.0
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -55.25, -17.7152, -20)
 
 [node name="CSGPolygon3D8" type="CSGPolygon3D" parent="."]
-transform = Transform3D(0.004974141, 0, -0.70342356, 0, 1, 0, 0.91932976, 0, 0.0038059552, -54.31464, -3.4319227, 11.117676)
+transform = Transform3D(0.004974141, 0, -0.70342356, 0, 1, 0, 0.91932976, 0, 0.0038059552, -54.31464, -3.4319227, 15.591938)
 use_collision = true
 polygon = PackedVector2Array(0, 0, 7.8761215, 3.7007165, 7.9078026, -0.098501205)
 depth = 4.0
 material = ExtResource("7_njuj4")
 
 [node name="CSGPolygon3D10" type="CSGPolygon3D" parent="."]
-transform = Transform3D(0.004971823, 0, -0.76399744, 0, 1.0419443, 0, 0.91890144, 0, 0.004133697, -54.31464, 3.6732247, 11.117676)
+transform = Transform3D(0.004971823, 0, -0.76399744, 0, 1.0419443, 0, 0.91890144, 0, 0.004133697, -54.31464, 3.6732247, 15.591938)
 use_collision = true
 polygon = PackedVector2Array(0, 0, 7.8761215, 3.7007165, 7.9078026, -0.098501205)
 depth = 4.0
 material = ExtResource("7_njuj4")
 
 [node name="CSGPolygon3D9" type="CSGPolygon3D" parent="."]
-transform = Transform3D(0.021024443, 0, 0.54245, 0, 0.9854154, 0, -0.89346826, 0, 0.012764538, -62.88725, 0.170573, 18.472498)
+transform = Transform3D(0.021024443, 0, 0.54245, 0, 0.9854154, 0, -0.89346826, 0, 0.012764538, -62.88725, 0.170573, 22.94676)
 use_collision = true
 polygon = PackedVector2Array(-0.29184723, -0.11031537, 7.8761215, 3.7007165, 7.855096, -0.0667066)
 depth = 4.0
@@ -115,31 +115,28 @@ use_collision = true
 size = Vector3(11.7578125, 1.4956055, 10)
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="."]
-transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -58.160587, 1.5317154, 14.860008)
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -58.160587, 1.5317154, 19.33427)
 material_override = ExtResource("7_njuj4")
 use_collision = true
 size = Vector3(7, 11.982422, 11)
 
-[node name="Flag3D2" parent="." instance=ExtResource("8_kebk2")]
-transform = Transform3D(-0.029708007, 0, 0.7628572, 0, 0.5354408, 0, -0.7358215, 0, -0.030799545, -59.441277, -3.2258444, 18.974083)
-
 [node name="Flag3D" parent="." instance=ExtResource("8_kebk2")]
-transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -57.56393, 7.0294123, 14.495327)
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1.8214824, 0, 0.707107, 0, 0.707107, -57.56393, 7.609647, 19.541431)
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="."]
-transform = Transform3D(-0.0011518672, 0, -0.99999934, 0, 1, 0, 0.99999934, 0, -0.0011518672, -58.261528, -0.07103258, 18.956236)
+transform = Transform3D(-0.0011518672, 0, -0.99999934, 0, 1, 0, 0.99999934, 0, -0.0011518672, -58.261528, -0.07103258, 23.430498)
 material_override = ExtResource("7_njuj4")
 use_collision = true
 size = Vector3(1.2988281, 0.64990234, 13.590576)
 
 [node name="CSGBox3D25" type="CSGBox3D" parent="."]
-transform = Transform3D(-0.0011518672, 0, -0.99999934, 0, 1, 0, 0.99999934, 0, -0.0011518672, -57.46218, 7.159502, 18.957155)
+transform = Transform3D(-0.0011518672, 0, -0.99999934, 0, 1, 0, 0.99999934, 0, -0.0011518672, -57.46218, 7.159502, 23.431417)
 material_override = ExtResource("7_njuj4")
 use_collision = true
 size = Vector3(1.2988281, 0.64990234, 12.412048)
 
 [node name="CSGBox3D24" type="CSGBox3D" parent="."]
-transform = Transform3D(-0.0011518672, 0, -0.99999934, 0, 1, 0, 0.99999934, 0, -0.0011518672, -58.06333, 3.5088701, 10.747412)
+transform = Transform3D(-0.0011518672, 0, -0.99999934, 0, 1, 0, 0.99999934, 0, -0.0011518672, -58.06333, 3.5088701, 15.221674)
 material_override = ExtResource("7_njuj4")
 use_collision = true
 size = Vector3(1.2988281, 0.64990234, 13.639526)
@@ -163,7 +160,7 @@ use_collision = true
 size = Vector3(5, 1, 5.2391357)
 
 [node name="CSGBox3D22" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.408974, -3.8063097, 13.92428)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.408974, -3.8063097, 18.398542)
 material_override = ExtResource("7_njuj4")
 use_collision = true
 size = Vector3(18.960327, 1, 20.85492)

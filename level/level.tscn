@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cnedxfn2pxh2t"]
+[gd_scene load_steps=17 format=3 uid="uid://cnedxfn2pxh2t"]
 
 [ext_resource type="Shader" uid="uid://cdlt3ujrpad32" path="res://level/sky_with_stars.tres" id="1_hwp5q"]
 [ext_resource type="Texture2D" uid="uid://ca3jtautvrj1u" path="res://level/moon.png" id="2_kb37w"]
@@ -33,8 +33,8 @@ seamless = true
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_g8ud2"]
 shader = ExtResource("1_hwp5q")
-shader_parameter/top_color = Color(0.288469, 0.182916, 1, 1)
-shader_parameter/bottom_color = Color(1, 0.46805, 0, 1)
+shader_parameter/top_color = Color(1, 0.17254902, 0.17254902, 1)
+shader_parameter/bottom_color = Color(1, 0.87058824, 0.12941177, 1)
 shader_parameter/gradient_curve = SubResource("CurveTexture_moxc7")
 shader_parameter/noise_texture = SubResource("NoiseTexture2D_83fre")
 shader_parameter/moon_texture = ExtResource("2_kb37w")
@@ -72,6 +72,12 @@ fog_height_density = 0.1
 volumetric_fog_density = 0.01
 volumetric_fog_albedo = Color(0.843137, 0.737255, 0.329412, 1)
 volumetric_fog_emission = Color(0.843137, 0.737255, 0.329412, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_44x8d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ivpvi"]
+albedo_color = Color(0.493967, 0.5725212, 0.9542056, 1)
+albedo_texture_force_srgb = true
 
 [node name="Level" type="Node3D"]
 
@@ -146,6 +152,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.03231, 13.108939, -70.669
 material_override = ExtResource("7_njuj4")
 use_collision = true
 size = Vector3(11.916382, 1, 12.426025)
+material = SubResource("StandardMaterial3D_44x8d")
 
 [node name="CSGBox3D13" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.0956, 15, -47.366543)
@@ -217,6 +224,7 @@ transform = Transform3D(3.374147, 0, 0, 0, 1, 0, 0, 0, 1, -57.630917, 15.129381,
 material_override = ExtResource("7_njuj4")
 use_collision = true
 size = Vector3(5, 1, 8)
+material = SubResource("StandardMaterial3D_ivpvi")
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
 material_override = ExtResource("7_njuj4")

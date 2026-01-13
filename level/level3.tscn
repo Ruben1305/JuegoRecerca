@@ -1,11 +1,15 @@
-[gd_scene load_steps=23 format=3 uid="uid://dec0kctnfmsea"]
+[gd_scene load_steps=27 format=3 uid="uid://dec0kctnfmsea"]
 
 [ext_resource type="Shader" uid="uid://cdlt3ujrpad32" path="res://level/sky_with_stars.tres" id="1_iqqf7"]
 [ext_resource type="Texture2D" uid="uid://ca3jtautvrj1u" path="res://level/moon.png" id="2_wasuc"]
 [ext_resource type="PackedScene" uid="uid://bij84ol81kcts" path="res://level/interactable/kill_plane/kill_plane_3d.tscn" id="3_2afyj"]
+[ext_resource type="Script" uid="uid://w4arqfmhmemc" path="res://level/csg_box_3d_1.gd" id="8_iqqf7"]
 [ext_resource type="Material" uid="uid://da188d7yrcfr8" path="res://level/platforms.tres" id="9_tg5ca"]
+[ext_resource type="Script" uid="uid://dhdafpadjpai8" path="res://level/csg_box_3d_17.gd" id="9_wasuc"]
+[ext_resource type="Script" uid="uid://devuumpy66m0w" path="res://level/csg_box_3d_18.gd" id="10_2afyj"]
 [ext_resource type="PackedScene" uid="uid://c6uew1wfpkt16" path="res://level/interactable/flag/flag_3d.tscn" id="10_qtllr"]
 [ext_resource type="PackedScene" uid="uid://3agu7gb3kjif" path="res://level/cactus/cactus_tall_3.tscn" id="11_4ilav"]
+[ext_resource type="Script" uid="uid://dkfb86v4fw3s7" path="res://level/csg_box_3d_19.gd" id="11_cx6j8"]
 [ext_resource type="Script" uid="uid://c5blui4pk2kwy" path="res://level/csg_box_3d_10.gd" id="12_cx6j8"]
 [ext_resource type="ArrayMesh" uid="uid://cxribqsh0k83c" path="res://level/estrella/estrellica.obj" id="12_wasuc"]
 [ext_resource type="Script" uid="uid://bjf6euw2h3wi2" path="res://level/estrellica.gd" id="13_2afyj"]
@@ -194,16 +198,37 @@ material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(8.625092, 1, 10.039673)
 
+[node name="CSGBox3D14" type="CSGBox3D" parent="."]
+transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -30.653269, 7.8154106, -122.21658)
+material_override = ExtResource("9_tg5ca")
+use_collision = true
+size = Vector3(5, 1, 8)
+script = ExtResource("8_iqqf7")
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="."]
+transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -30.653269, 7.8154106, -132.60474)
+material_override = ExtResource("9_tg5ca")
+use_collision = true
+size = Vector3(5, 1, 8)
+script = ExtResource("9_wasuc")
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="."]
+transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -16.641647, 7.8154106, -150.41609)
+material_override = ExtResource("9_tg5ca")
+use_collision = true
+size = Vector3(5, 1, 8)
+script = ExtResource("10_2afyj")
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="."]
+transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -46.481617, 7.8154106, -150.41609)
+material_override = ExtResource("9_tg5ca")
+use_collision = true
+size = Vector3(5, 1, 8)
+script = ExtResource("11_cx6j8")
+
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
 material_override = ExtResource("9_tg5ca")
 use_collision = true
-
-[node name="CSGPolygon3D10" type="CSGPolygon3D" parent="CSGCombiner3D"]
-transform = Transform3D(-0.0029086706, 0, 5.0167527, 0, 1, 0, -0.9920235, 0, -0.014709409, -20.723713, 8.395098, -110.5222)
-use_collision = true
-polygon = PackedVector2Array(0, 0, 3, 2, 3, 0)
-depth = 4.0
-material = ExtResource("9_tg5ca")
 
 [node name="CSGCombiner" type="CSGCombiner3D" parent="."]
 material_override = ExtResource("9_tg5ca")

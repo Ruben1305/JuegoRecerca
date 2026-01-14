@@ -10,5 +10,5 @@ monitorable = false
 script = ExtResource("1_a6gaa")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(18.131516, 0, 0, 0, 1, 0, 0, 0, 14.819622, 0, 0, 0)
+transform = Transform3D(43.99918, 0, 0, 0, 1, 0, 0, 0, 45.352394, 0, 0, 0)
 shape = SubResource("WorldBoundaryShape3D_bfwmc")

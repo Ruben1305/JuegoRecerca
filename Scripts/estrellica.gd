@@ -9,6 +9,8 @@ var time: float = 0.0
 
 func _ready():
 	base_y = global_position.y
+	# Conectamos la señal aquí para evitar errores
+	body_entered.connect(_on_estrellita_body_entered)
 
 func _process(delta):
 	# Rotación
@@ -17,7 +19,7 @@ func _process(delta):
 	time += delta
 	global_position.y = base_y + sin(time * float_speed) * float_amplitude
 
-# Función que dispara al tocar al jugador
+# Se ejecuta cuando el jugador entra en el área
 func _on_estrellita_body_entered(body: Node) -> void:
-	if body.is_in_group("player"):  # el personaje debe estar en el grupo "player"
-		queue_free()  # desaparece la estrella
+	if body.is_in_group("player"):
+		queue_free()             # desaparece la estrella

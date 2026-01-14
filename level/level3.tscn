@@ -3,17 +3,17 @@
 [ext_resource type="Shader" uid="uid://cdlt3ujrpad32" path="res://level/sky_with_stars.tres" id="1_iqqf7"]
 [ext_resource type="Texture2D" uid="uid://ca3jtautvrj1u" path="res://level/moon.png" id="2_wasuc"]
 [ext_resource type="PackedScene" uid="uid://bij84ol81kcts" path="res://level/interactable/kill_plane/kill_plane_3d.tscn" id="3_2afyj"]
-[ext_resource type="Script" uid="uid://w4arqfmhmemc" path="res://level/csg_box_3d_1.gd" id="8_iqqf7"]
+[ext_resource type="Script" uid="uid://w4arqfmhmemc" path="res://Scripts/Platform/PlatformUP.gd" id="8_iqqf7"]
 [ext_resource type="Material" uid="uid://da188d7yrcfr8" path="res://level/platforms.tres" id="9_tg5ca"]
-[ext_resource type="Script" uid="uid://dhdafpadjpai8" path="res://level/csg_box_3d_17.gd" id="9_wasuc"]
-[ext_resource type="Script" uid="uid://devuumpy66m0w" path="res://level/csg_box_3d_18.gd" id="10_2afyj"]
+[ext_resource type="Script" uid="uid://dhdafpadjpai8" path="res://Scripts/Platform/PlatformDown.gd" id="9_wasuc"]
+[ext_resource type="Script" uid="uid://devuumpy66m0w" path="res://Scripts/Platform/PlatformRightVertical.gd" id="10_2afyj"]
 [ext_resource type="PackedScene" uid="uid://c6uew1wfpkt16" path="res://level/interactable/flag/flag_3d.tscn" id="10_qtllr"]
 [ext_resource type="PackedScene" uid="uid://3agu7gb3kjif" path="res://level/cactus/cactus_tall_3.tscn" id="11_4ilav"]
-[ext_resource type="Script" uid="uid://dkfb86v4fw3s7" path="res://level/csg_box_3d_19.gd" id="11_cx6j8"]
-[ext_resource type="Script" uid="uid://c5blui4pk2kwy" path="res://level/csg_box_3d_10.gd" id="12_cx6j8"]
+[ext_resource type="Script" uid="uid://dkfb86v4fw3s7" path="res://Scripts/Platform/PlatformLeftVertical.gd" id="11_cx6j8"]
+[ext_resource type="Script" uid="uid://c5blui4pk2kwy" path="res://Scripts/Platform/PlatformRight.gd" id="12_cx6j8"]
 [ext_resource type="ArrayMesh" uid="uid://cxribqsh0k83c" path="res://level/estrella/estrellica.obj" id="12_wasuc"]
-[ext_resource type="Script" uid="uid://bjf6euw2h3wi2" path="res://level/estrellica.gd" id="13_2afyj"]
-[ext_resource type="Script" uid="uid://1g1tg0hbxobi" path="res://level/csg_box_3d_11.gd" id="13_86tj3"]
+[ext_resource type="Script" uid="uid://bjf6euw2h3wi2" path="res://Scripts/estrellica.gd" id="13_2afyj"]
+[ext_resource type="Script" uid="uid://1g1tg0hbxobi" path="res://Scripts/Platform/PlatformLeft.gd" id="13_86tj3"]
 
 [sub_resource type="Curve" id="Curve_k4wis"]
 _data = [Vector2(0.331719, 0.0391753), 0.0, 0.0, 0, 0, Vector2(0.697336, 1), 0.51276, 0.0, 0, 0]
@@ -41,8 +41,8 @@ seamless = true
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_g8ud2"]
 shader = ExtResource("1_iqqf7")
-shader_parameter/top_color = Color(0.288469, 0.182916, 1, 1)
-shader_parameter/bottom_color = Color(1, 0.46805, 0, 1)
+shader_parameter/top_color = Color(1, 0.17254902, 0.17254902, 1)
+shader_parameter/bottom_color = Color(1, 0.87058824, 0.12941177, 1)
 shader_parameter/gradient_curve = SubResource("CurveTexture_moxc7")
 shader_parameter/noise_texture = SubResource("NoiseTexture2D_83fre")
 shader_parameter/moon_texture = ExtResource("2_wasuc")
@@ -103,7 +103,7 @@ shadow_enabled = true
 directional_shadow_max_distance = 40.0
 
 [node name="KillPlane" parent="." instance=ExtResource("3_2afyj")]
-transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -55.25, -17.7152, -20)
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -55.25, -17.7152, -181.99728)
 
 [node name="Flag3D" parent="." instance=ExtResource("10_qtllr")]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -41.38196, 7.0294123, -114.43757)

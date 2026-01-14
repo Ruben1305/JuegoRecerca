@@ -1,6 +1,6 @@
 extends Node3D
 
-@export var move_distance := Vector3(0, 0, -10)
+@export var move_distance := Vector3(-10, 0, 0)
 @export var speed := 3.0
 
 var start_pos := Vector3.ZERO
@@ -24,10 +24,6 @@ func _physics_process(delta):
 	else:
 		forward = not forward
 
-func _on_body_exited(body):
-	if body.is_in_group("player"):
-		body.get_parent().remove_child(body)
-		get_tree().get_root().add_child(body)  # Lo regresamos a la escena principal
 	# Calculamos la velocidad de la plataforma este frame
 	velocity = (global_position - previous_pos) / delta
 	previous_pos = global_position

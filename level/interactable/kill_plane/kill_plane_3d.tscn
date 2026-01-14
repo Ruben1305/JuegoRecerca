@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bij84ol81kcts"]
 
-[ext_resource type="Script" path="res://level/interactable/kill_plane/kill_plane_3d.gd" id="1_a6gaa"]
+[ext_resource type="Script" uid="uid://bp7o7w7wjk1r3" path="res://level/interactable/kill_plane/kill_plane_3d.gd" id="1_a6gaa"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_bfwmc"]
 
@@ -10,4 +10,5 @@ monitorable = false
 script = ExtResource("1_a6gaa")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(18.131516, 0, 0, 0, 1, 0, 0, 0, 14.819622, 0, 0, 0)
 shape = SubResource("WorldBoundaryShape3D_bfwmc")

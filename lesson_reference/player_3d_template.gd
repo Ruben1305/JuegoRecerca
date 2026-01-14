@@ -26,6 +26,8 @@ var _was_on_floor_last_frame := true
 var _camera_input_direction := Vector2.ZERO
 var _last_input_direction := Vector3.BACK
 var _start_position := Vector3.ZERO
+var max_jumps := 2   # Número de saltos permitidos (2 = doble salto)
+var jumps_left := max_jumps
 
 # ================================
 # --- REFERENCIAS A NODOS ---
@@ -107,10 +109,16 @@ func _physics_process(delta: float) -> void:
 	velocity.y = y_vel + _gravity * delta
 
 	# -------- SALTO --------
-	if is_on_floor() and Input.is_action_just_pressed("Saltar"):
+	if Input.is_action_just_pressed("Saltar") and jumps_left > 0:
 		velocity.y = jump_impulse
+		jumps_left -= 1
 		_skin.jump()
 		_jump_sound.play()
+
+	# Resetear saltos al tocar el suelo
+		if is_on_floor() and jumps_left != max_jumps:
+			jumps_left = max_jumps
+
 
 	# ==================================================
 	# === MOVER AL JUGADOR CON PLATAFORMA MÓVIL (Godot 4) ===

@@ -5,6 +5,7 @@
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_bfwmc"]
 
 [node name="KillPlane3D" type="Area3D"]
+transform = Transform3D(5.5117426, 0, 0, 0, 1, 0, 0, 0, 4.6502914, 0, 0, 0)
 collision_layer = 2
 monitorable = false
 script = ExtResource("1_a6gaa")

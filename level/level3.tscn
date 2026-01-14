@@ -107,6 +107,7 @@ transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 
 
 [node name="Flag3D" parent="." instance=ExtResource("10_qtllr")]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -28.404398, 7.0294123, -172.45506)
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -32.240067, 8.177861, -161.70691)
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="."]
 transform = Transform3D(-0.999986, 0, -0.0053058136, 0, 1, 0, 0.0053058136, 0, -0.999986, -47.05037, 12.827753, -69.32755)
@@ -152,6 +153,12 @@ material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(5, 1, 7.6602783)
 
+[node name="CSGBox3D27" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.603877, 7.9512463, -126.9901)
+material_override = ExtResource("9_tg5ca")
+use_collision = true
+size = Vector3(5, 1, 7.6602783)
+
 [node name="CSGBox3D21" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.76572, 7.9512463, -106.78938)
 material_override = ExtResource("9_tg5ca")
@@ -159,7 +166,7 @@ use_collision = true
 size = Vector3(20.728027, 1, 13.625519)
 
 [node name="CSGBox3D26" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.060627, 7.9512463, -171.14037)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.60829, 7.9512463, -161.92186)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(20.728027, 1, 13.625519)
@@ -174,6 +181,12 @@ size = Vector3(5, 1, 7.6602783)
 
 [node name="CSGBox3D22" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.237026, 7.9512463, -103.771576)
+material_override = ExtResource("9_tg5ca")
+use_collision = true
+size = Vector3(5, 1, 7.6602783)
+
+[node name="CSGBox3D29" type="CSGBox3D" parent="."]
+transform = Transform3D(0.0044156923, 0, 0.9999902, 0, 1, 0, -0.9999902, 0, 0.0044156923, -32.927372, 7.9512463, -195.1037)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(5, 1, 7.6602783)
@@ -219,14 +232,21 @@ size = Vector3(5, 1, 8)
 script = ExtResource("9_wasuc")
 
 [node name="CSGBox3D18" type="CSGBox3D" parent="."]
-transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -16.641647, 7.8154106, -150.41609)
+transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -24.386608, 7.8154106, -145.49475)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(5, 1, 8)
 script = ExtResource("10_2afyj")
 
 [node name="CSGBox3D19" type="CSGBox3D" parent="."]
-transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -46.481617, 7.8154106, -150.41609)
+transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -40.643734, 7.8154106, -144.9791)
+material_override = ExtResource("9_tg5ca")
+use_collision = true
+size = Vector3(5, 1, 8)
+script = ExtResource("11_cx6j8")
+
+[node name="CSGBox3D28" type="CSGBox3D" parent="."]
+transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -32.974094, 7.8154106, -177.78575)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(5, 1, 8)
@@ -259,7 +279,35 @@ shape = SubResource("SphereShape3D_wasuc")
 mesh = ExtResource("12_wasuc")
 surface_material_override/0 = SubResource("StandardMaterial3D_2afyj")
 
+[node name="Estrellica2" type="Area3D" parent="."]
+transform = Transform3D(0.009446123, 0.099059455, -0.009899229, 0.05522573, 0.0030592536, 0.083311245, 0.08283049, -0.013336608, -0.05441731, -15.643141, 9.633943, -127.21833)
+collision_layer = 2
+script = ExtResource("13_2afyj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Estrellica2"]
+shape = SubResource("SphereShape3D_wasuc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Estrellica2"]
+mesh = ExtResource("12_wasuc")
+surface_material_override/0 = SubResource("StandardMaterial3D_2afyj")
+
+[node name="Estrellica3" type="Area3D" parent="."]
+transform = Transform3D(0.08334951, -0.004094553, -0.05510074, 0.055225734, 0.003059253, 0.083311245, -0.0017255428, -0.09986929, 0.0048111174, -32.65295, 9.633943, -195.76488)
+collision_layer = 2
+script = ExtResource("13_2afyj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Estrellica3"]
+shape = SubResource("SphereShape3D_wasuc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Estrellica3"]
+mesh = ExtResource("12_wasuc")
+surface_material_override/0 = SubResource("StandardMaterial3D_2afyj")
+
 [connection signal="body_entered" from="CSGBox3D11/Area3D" to="KillPlane" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="CSGBox3D11/Area3D" to="KillPlane" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Estrellica" to="KillPlane" method="_on_estrellica_body_entered"]
 [connection signal="body_shape_entered" from="Estrellica" to="KillPlane" method="_on_estrellica_body_shape_entered"]
+[connection signal="body_entered" from="Estrellica2" to="KillPlane" method="_on_estrellica_body_entered"]
+[connection signal="body_shape_entered" from="Estrellica2" to="KillPlane" method="_on_estrellica_body_shape_entered"]
+[connection signal="body_entered" from="Estrellica3" to="KillPlane" method="_on_estrellica_body_entered"]
+[connection signal="body_shape_entered" from="Estrellica3" to="KillPlane" method="_on_estrellica_body_shape_entered"]

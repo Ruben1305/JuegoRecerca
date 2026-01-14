@@ -1,6 +1,6 @@
 extends Node3D
 
-@export var move_distance := Vector3(0, 20, 0)
+@export var move_distance := Vector3(0, -10, 0)
 @export var speed := 3.0
 
 var start_pos := Vector3.ZERO

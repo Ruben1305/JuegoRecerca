@@ -26,9 +26,9 @@ var _was_on_floor_last_frame := true
 var _camera_input_direction := Vector2.ZERO
 var _last_input_direction := Vector3.BACK
 var _start_position := Vector3.ZERO
-var max_jumps := 2   # Número de saltos permitidos (2 = doble salto)
-var jumps_left := max_jumps
-
+var max_jumps := 1   # Número de saltos permitidos (1 = doble salto)
+var jumps_left := max_jumps 
+var can_jump := true        # Para evitar rebotes de tecla
 # ================================
 # --- REFERENCIAS A NODOS ---
 # ================================
@@ -49,6 +49,7 @@ func _ready():
 	Events.kill_plane_touched.connect(func():
 		global_position = _start_position
 		velocity = Vector3.ZERO
+		jumps_left = max_jumps # Resetear los saltos
 		_skin.idle()
 		set_physics_process(true)
 	)
@@ -100,24 +101,41 @@ func _physics_process(delta: float) -> void:
 	var target_angle = Vector3.BACK.signed_angle_to(_last_input_direction, Vector3.UP)
 	_skin.global_rotation.y = lerp_angle(_skin.rotation.y, target_angle, rotation_speed * delta)
 
-	# -------- VELOCIDAD Y GRAVEDAD --------
-	var y_vel = velocity.y
-	velocity.y = 0
-	velocity = velocity.move_toward(move_direction * move_speed, acceleration * delta)
-	if move_direction.length() < 0.01 and velocity.length() < stopping_speed:
-		velocity = Vector3.ZERO
-	velocity.y = y_vel + _gravity * delta
+	# -------- VELOCIDAD Y GRAVEDAD CORREGIDA --------
+	if is_on_floor():
+		velocity.y = 0  # Reseteamos al tocar suelo
 
-	# -------- SALTO --------
-	if Input.is_action_just_pressed("Saltar") and jumps_left > 0:
+	# Movimiento horizontal
+	var horizontal_velocity = velocity
+	horizontal_velocity.y = 0
+	horizontal_velocity = horizontal_velocity.move_toward(move_direction * move_speed, acceleration * delta)
+	velocity.x = horizontal_velocity.x
+	velocity.z = horizontal_velocity.z
+
+	# Aplicar gravedad
+	velocity.y += _gravity * delta
+
+
+	# ======== SALTO ========
+	if Input.is_action_just_pressed("Saltar") and can_jump and jumps_left > 0:
 		velocity.y = jump_impulse
 		jumps_left -= 1
-		_skin.jump()
-		_jump_sound.play()
+		can_jump = false
+	if jumps_left == max_jumps - 1:
+		_skin.jump()         # primer salto
+	else:
+		_skin.jump()  # segundo salto
+	_jump_sound.play()
 
-	# Resetear saltos al tocar el suelo
-		if is_on_floor() and jumps_left != max_jumps:
-			jumps_left = max_jumps
+	# Reset de saltos y flag al tocar el suelo
+	if is_on_floor():
+		jumps_left = max_jumps
+		can_jump = true
+
+	# Reset del flag cuando se suelta el botón
+	if not Input.is_action_pressed("Saltar"):
+		can_jump = true
+
 
 
 	# ==================================================

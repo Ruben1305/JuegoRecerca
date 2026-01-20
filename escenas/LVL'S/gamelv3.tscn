@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dec0kctnfmsea" path="res://level/level3.tscn" id="4_fc0e3"]
 [ext_resource type="PackedScene" uid="uid://bxg6oejpaitdt" path="res://level/interactable/flag/flag_reached_screen.tscn" id="19_cpgj4"]
 
-[node name="Game" type="Node"]
+[node name="Gamelv3" type="Node"]
 script = ExtResource("1_1il7v")
 
 [node name="Player3DTemplate" parent="." instance=ExtResource("1_w0p8v")]

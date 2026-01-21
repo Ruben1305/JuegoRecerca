@@ -14,6 +14,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.06658, 13.655779, -68.923
 [node name="FlagReachedScreen" parent="." instance=ExtResource("19_cpgj4")]
 
 [node name="Level" parent="." instance=ExtResource("4_fc0e3")]
-
-[node name="Player3DTemplate" parent="." instance=ExtResource("1_w0p8v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.319263, 13.603717, -70.757065)

@@ -106,4 +106,4 @@ material_override = ExtResource("4_l6p4a")
 use_collision = true
 
 [node name="SophiaSkin" parent="." instance=ExtResource("5_2xmmv")]
-transform = Transform3D(-0.010873147, 0, 0.9999409, 0, 1, 0, -0.9999409, 0, -0.010873147, -57.725697, 3.3887491, 16.790007)
+transform = Transform3D(-0.010873147, 0, 0.9999409, 0, 1, 0, -0.9999409, 0, -0.010873147, -61.4491, 3.3887491, 19.80156)

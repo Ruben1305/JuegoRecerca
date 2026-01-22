@@ -93,7 +93,7 @@ shadow_enabled = true
 directional_shadow_max_distance = 40.0
 
 [node name="KillPlane" parent="." instance=ExtResource("3_8jc51")]
-transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -55.25, -17.7152, -181.99728)
+transform = Transform3D(-3.8281467, 0, 7.407901, 0, 1, 0, -3.8281467, 0, -7.407901, -55.25, -17.7152, -181.99728)
 
 [node name="Flag3D" parent="." instance=ExtResource("4_a53v5")]
 transform = Transform3D(0.36083588, 0, -0.36083588, 0, 1, 0, 0.36083588, 0, 0.36083588, 32.539814, 14.239073, -17.032331)
@@ -217,12 +217,6 @@ transform = Transform3D(-0.0075223166, 0, 0.9999717, 0, 1, 0, -0.9999717, 0, -0.
 material_override = ExtResource("5_ff1k0")
 use_collision = true
 size = Vector3(5, 1, 7.0527954)
-
-[node name="CSGBox3D29" type="CSGBox3D" parent="."]
-transform = Transform3D(0.0044156923, 0, 0.9999902, 0, 1, 0, -0.9999902, 0, 0.0044156923, -32.927372, 7.9512463, -195.1037)
-material_override = ExtResource("5_ff1k0")
-use_collision = true
-size = Vector3(5, 1, 7.6602783)
 
 [node name="CSGBox3D20" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.176888, 13.108939, -69.47646)

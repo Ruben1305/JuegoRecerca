@@ -96,7 +96,7 @@ func _physics_process(delta: float) -> void:
 	move_direction = move_direction.normalized()
 
 	if move_direction.length() > 0.2:
-		_last_input_direction = move_direction
+		_last_input_direction = move_direction.normalized()
 
 	var target_angle = Vector3.BACK.signed_angle_to(_last_input_direction, Vector3.UP)
 	_skin.global_rotation.y = lerp_angle(_skin.rotation.y, target_angle, rotation_speed * delta)

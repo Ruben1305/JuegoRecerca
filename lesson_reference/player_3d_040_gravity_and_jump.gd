@@ -6,6 +6,12 @@ extends CharacterBody3D
 @export var rotation_speed := 12.0
 @export var jump_impulse := 12.0
 
+@export_group("Wall Slide")
+@export var wall_slide_gravity := -6.0
+@export var max_wall_slide_speed := -3.0
+
+var is_wall_sliding := false
+
 @export_group("Camera")
 @export_range(0.0, 1.0) var mouse_sensitivity := 0.25
 @export var tilt_upper_limit := PI / 3.0
@@ -53,7 +59,11 @@ func _physics_process(delta: float) -> void:
 	var y_velocity := velocity.y
 	velocity.y = 0.0
 	velocity = velocity.move_toward(move_direction * move_speed, acceleration * delta)
-	velocity.y = y_velocity + _gravity * delta
+	if is_wall_sliding:
+		velocity.y = y_velocity + wall_slide_gravity * delta
+		velocity.y = max(velocity.y, max_wall_slide_speed)
+	else:
+		velocity.y = y_velocity + _gravity * delta
 
 	var is_starting_jump := Input.is_action_just_pressed("jump") and is_on_floor()
 	if is_starting_jump:
@@ -65,6 +75,19 @@ func _physics_process(delta: float) -> void:
 		_last_movement_direction = move_direction
 	var target_angle := Vector3.BACK.signed_angle_to(_last_movement_direction, Vector3.UP)
 	_skin.global_rotation.y = lerp_angle(_skin.rotation.y, target_angle, rotation_speed * delta)
+
+	is_wall_sliding = false
+
+	if not is_on_floor() and is_on_wall() and velocity.y <= 0:
+		for i in range(get_slide_collision_count()):
+			var col := get_slide_collision(i)
+			var normal := col.get_normal()
+
+			# Ignorar suelo y techo
+			if abs(normal.y) < 0.2:
+				is_wall_sliding = true
+				break
+
 
 	if is_starting_jump:
 		_skin.jump()

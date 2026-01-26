@@ -1,7 +1,3 @@
 # Godot 4+ specific ignores
 .godot/
-.godot/uid_cache.bin
-<<<<<<< HEAD
-=======
-
->>>>>>> a196fd385aee98eb278fb5be1752cfc0a5d677da
+.godot/*

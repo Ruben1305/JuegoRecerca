@@ -16,9 +16,9 @@ var _camera_input_direction := Vector2.ZERO
 
 
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("left_click"):
+	if event.is_action_pressed("ClicIzq"):
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	if event.is_action_pressed("ui_cancel"):
+	if event.is_action_pressed("Pausar"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 
@@ -38,7 +38,7 @@ func _physics_process(delta: float) -> void:
 
 	_camera_input_direction = Vector2.ZERO
 
-	var raw_input := Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	var raw_input := Input.get_vector("Izquierda", "Derecha", "Alante", "Atras")
 	var forward := _camera.global_basis.z
 	var right := _camera.global_basis.x
 	var move_direction := forward * raw_input.y + right * raw_input.x

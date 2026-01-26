@@ -97,3 +97,13 @@ unique_name_in_owner = true
 transform = Transform3D(1, -6.750156e-14, -1.7053026e-13, 0, 1, 0, 0, 0, 1, -4.6185278e-14, -1.0728836e-06, 9.992001)
 current = true
 fov = 50.0
+
+[node name="RayCast3D_Front" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.71470404, 0)
+target_position = Vector3(0, 0, 1)
+collide_with_bodies = false
+
+[node name="RayCast3D_Up" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6963874, 0)
+target_position = Vector3(0, -1.5, 0)
+collide_with_bodies = false

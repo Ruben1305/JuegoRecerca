@@ -25,9 +25,19 @@ var can_jump := true
 var _camera_input_direction := Vector2.ZERO
 var _last_movement_direction := Vector3.BACK
 var is_wall_sliding := false
-var _start_position := Vector3.ZERO   # ← respawn
+var _start_position := Vector3.ZERO
 var was_on_floor := false
 
+# --------------------
+# EDGE GRAB
+# --------------------
+@export_group("Edge Grab")
+@export var ledge_snap_distance := 0.35
+@export var ledge_jump_vertical := 6.0
+
+var is_ledge_grabbing := false
+var ledge_normal := Vector3.ZERO
+var ledge_point := Vector3.ZERO
 
 # --------------------
 # Referencias
@@ -36,8 +46,12 @@ var was_on_floor := false
 @onready var _camera: Camera3D = %Camera3D
 @onready var _skin: SophiaSkin = %SophiaSkin
 
+# Raycasts para edge grab
+@onready var _ray_front: RayCast3D = $RayCast3D_Front
+@onready var _ray_up: RayCast3D = $RayCast3D_Up
+
 # --------------------
-# Ready (RESPAWN)
+# Ready
 # --------------------
 func _ready() -> void:
 	_start_position = global_position
@@ -67,6 +81,7 @@ func _unhandled_input(event: InputEvent) -> void:
 # Physics
 # --------------------
 func _physics_process(delta: float) -> void:
+
 	# --- Cámara ---
 	_camera_pivot.rotation.x = clamp(
 		_camera_pivot.rotation.x + _camera_input_direction.y * delta,
@@ -75,6 +90,16 @@ func _physics_process(delta: float) -> void:
 	)
 	_camera_pivot.rotation.y -= _camera_input_direction.x * delta
 	_camera_input_direction = Vector2.ZERO
+
+	# =========================
+	# EDGE GRAB
+	# =========================
+	if is_ledge_grabbing:
+		if Input.is_action_just_pressed("Saltar"):
+			_release_ledge_jump()
+		return
+
+	_check_for_ledge()
 
 	# --- Input Movimiento ---
 	var raw_input := Input.get_vector("Izquierda", "Derecha", "Atras", "Alante")
@@ -100,71 +125,66 @@ func _physics_process(delta: float) -> void:
 		for i in range(get_slide_collision_count()):
 			var col = get_slide_collision(i)
 			var normal := col.get_normal()
-			# Pared vertical
 			if abs(normal.y) < 0.2:
 				is_wall_sliding = true
 				break
 
-# --- Gravedad ---
+	# --- Gravedad ---
 	if is_wall_sliding:
-		# Gravedad suave
 		velocity.y += wall_slide_gravity * delta
-		# Límite de caída (CLAVE)
 		velocity.y = max(velocity.y, max_wall_slide_speed)
 	else:
 		velocity.y += gravity * delta
 
-
-# --- Salto ---
-# Resetear saltos SOLO al aterrizar
+	# --- Reset saltos ---
 	if is_on_floor() and not was_on_floor:
 		jumps_left = max_jumps
 
-# Saltar
+	# --- Salto normal ---
 	if Input.is_action_just_pressed("Saltar") and jumps_left > 0:
 		velocity.y = jump_impulse
 		jumps_left -= 1
 		_skin.jump()
 
-# Guardar estado del suelo para el próximo frame
 	was_on_floor = is_on_floor()
 
-
-	# --- Movimiento final ---
 	move_and_slide()
 
-# --- Reset de saltos al tocar suelo ---
-	if is_on_floor():
-		jumps_left = max_jumps
-	
 	# --- Animaciones ---
 	if is_wall_sliding:
 		_skin.wall_slide()
 	elif not is_on_floor() and velocity.y < 0:
 		_skin.fall()
-	elif Input.is_action_just_pressed("Saltar") and is_on_floor():
-		_skin.jump()
 	elif is_on_floor():
 		var ground_speed := Vector3(velocity.x, 0, velocity.z).length()
 		if ground_speed > 0.1:
 			_skin.move()
 		else:
 			_skin.idle()
-	# ==================================================
-	# === MOVER AL JUGADOR CON PLATAFORMA MÓVIL (Godot 4) ===
-	# ==================================================
-	var platform: Node3D = null
 
-	if is_on_floor():
-		# Obtenemos la última colisión usada por move_and_slide()
-		var collision = get_last_slide_collision()
-		if collision:
-			var collider = collision.get_collider()
-			# Comprobamos si el collider tiene propiedad "velocity"
-			if collider and "velocity" in collider:
-				platform = collider
+# ------------------------
+# EDGE GRAB FUNCIONES
+# ------------------------
+func _check_for_ledge():
+	if is_on_floor() or is_ledge_grabbing:
+		return
+	# Nueva lógica: permitir agarrarse al caer o al hacer wall slide
+	if velocity.y < 0 or is_wall_sliding:
+		if Input.is_action_pressed("Agarrar"):
+			if _ray_front.is_colliding() and not _ray_up.is_colliding():
+				ledge_normal = _ray_front.get_collision_normal()
+				ledge_point = _ray_front.get_collision_point()
+				_start_ledge_grab()
 
-	# Sumamos solo la velocidad horizontal de la plataforma
-	if platform:
-		global_position.x += platform.velocity.x * delta
-		global_position.z += platform.velocity.z * delta
+func _start_ledge_grab():
+	is_ledge_grabbing = true
+	velocity = Vector3.ZERO
+	jumps_left = max_jumps
+	global_position = ledge_point + ledge_normal * ledge_snap_distance
+	look_at(global_position - ledge_normal, Vector3.UP)
+	_skin.edge_grab()
+
+func _release_ledge_jump():
+	is_ledge_grabbing = false
+	velocity.y = ledge_jump_vertical
+	_skin.fall()

@@ -2,8 +2,8 @@
 
 [ext_resource type="Shader" uid="uid://cdlt3ujrpad32" path="res://level/sky_with_stars.tres" id="1_ioc7i"]
 [ext_resource type="Texture2D" uid="uid://ca3jtautvrj1u" path="res://level/moon.png" id="2_l3vqv"]
-[ext_resource type="PackedScene" uid="uid://bij84ol81kcts" path="res://level/interactable/kill_plane/kill_plane_3d.tscn" id="3_r1e6t"]
 [ext_resource type="Material" uid="uid://da188d7yrcfr8" path="res://level/platforms.tres" id="4_kd3pv"]
+[ext_resource type="Script" uid="uid://bvgsvusbqi5fh" path="res://level/leftmovement2.gd" id="5_ioc7i"]
 [ext_resource type="PackedScene" uid="uid://c6uew1wfpkt16" path="res://level/interactable/flag/flag_3d.tscn" id="5_k3p2u"]
 [ext_resource type="PackedScene" uid="uid://3agu7gb3kjif" path="res://level/cactus/cactus_tall_3.tscn" id="6_ij3b7"]
 
@@ -82,7 +82,7 @@ volumetric_fog_emission = Color(0.843137, 0.737255, 0.329412, 1)
 [node name="Level" type="Node3D"]
 
 [node name="CSGBox3D13" type="CSGBox3D" parent="."]
-transform = Transform3D(-0.0019874123, 3.374147, 0, -3.3741474, -0.0001745661, 0, 0, 0, 0.99999994, -68.307236, 13.149811, -39.437096)
+transform = Transform3D(-0.0019874123, 3.374147, 0, -3.3741474, -0.0001745661, 0, 0, 0, 0.99999994, -68.307236, 16.157024, -49.593212)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 collision_layer = 5
@@ -99,15 +99,18 @@ light_energy = 0.53
 shadow_enabled = true
 directional_shadow_max_distance = 40.0
 
-[node name="KillPlane" parent="." instance=ExtResource("3_r1e6t")]
+[node name="KillPlane" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -55.25, -17.7152, -41.268456)
-
-[node name="CSGPolygon3D8" type="CSGPolygon3D" parent="."]
-transform = Transform3D(0.004974141, 0, -0.70342356, 0, 1, 0, 0.91932976, 0, 0.0038059552, -54.31464, -3.4319227, 15.591938)
-use_collision = true
-polygon = PackedVector2Array(0, 0, 7.8761215, 3.7007165, 7.9078026, -0.098501205)
-depth = 4.0
-material = ExtResource("4_kd3pv")
+script = null
 
 [node name="CSGPolygon3D10" type="CSGPolygon3D" parent="."]
 transform = Transform3D(0.004971823, 0, -0.76399744, 0, 1.0419443, 0, 0.91890144, 0, 0.004133697, -54.31464, 3.6732247, 15.591938)
@@ -122,12 +125,6 @@ use_collision = true
 polygon = PackedVector2Array(-0.29184723, -0.11031537, 7.8761215, 3.7007165, 7.855096, -0.0667066)
 depth = 4.0
 material = ExtResource("4_kd3pv")
-
-[node name="CSGBox3D8" type="CSGBox3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -55.25073, -0.8332491, -23.771795)
-material_override = ExtResource("4_kd3pv")
-use_collision = true
-size = Vector3(11.7578125, 1.4956055, 10.287598)
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="."]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -58.160587, 1.5317154, 19.33427)
@@ -157,7 +154,14 @@ use_collision = true
 size = Vector3(1.2988281, 0.64990234, 13.639526)
 
 [node name="CSGBox3D20" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.03231, 13.108939, -70.66964)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.83854735, -57.03231, 13.108939, -86.920456)
+material_override = ExtResource("4_kd3pv")
+use_collision = true
+size = Vector3(11.916382, 1, 12.426025)
+material = SubResource("StandardMaterial3D_44x8d")
+
+[node name="CSGBox3D26" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.1256336, -57.03231, 18.054466, -69.33092)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 size = Vector3(11.916382, 1, 12.426025)
@@ -170,10 +174,18 @@ use_collision = true
 size = Vector3(18.960327, 1, 20.85492)
 
 [node name="CSGBox3D21" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.403717, 3.929161, -3.9227428)
+transform = Transform3D(1.8109065, 0, 0, 0, 1, 0, 0, 0, 1.3934172, -44.38392, 3.929161, -31.027578)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 size = Vector3(7.011017, 1, 5.2391357)
+script = ExtResource("5_ioc7i")
+
+[node name="CSGBox3D27" type="CSGBox3D" parent="."]
+transform = Transform3D(1.8109065, 0, 0, 0, 1, 0, 0, 0, 1.3934172, -56.08055, 3.929161, -17.280289)
+material_override = ExtResource("4_kd3pv")
+use_collision = true
+size = Vector3(7.011017, 1, 5.2391357)
+script = ExtResource("5_ioc7i")
 
 [node name="CSGBox3D23" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.647655, 3.929161, -3.9227428)
@@ -182,13 +194,6 @@ use_collision = true
 collision_layer = 0
 collision_mask = 0
 size = Vector3(7.011017, 1, 5.2391357)
-
-[node name="CSGBox3D12" type="CSGBox3D" parent="."]
-transform = Transform3D(3.374147, 0, 0, 0, 1, 0, 0, 0, 1, -57.630917, 15.129381, -55.324047)
-material_override = ExtResource("4_kd3pv")
-use_collision = true
-size = Vector3(5, 1, 8)
-material = SubResource("StandardMaterial3D_ivpvi")
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
 material_override = ExtResource("4_kd3pv")
@@ -202,15 +207,8 @@ use_collision = true
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 
-[node name="CSGPolygon3D7" type="CSGPolygon3D" parent="CSGCombiner3D2"]
-transform = Transform3D(-4.3711402e-08, 0, -2.8598046, 0, 1, 0, 1.0000001, 0, -1.2500607e-07, -62.825893, 13.575803, -68.296104)
-use_collision = true
-polygon = PackedVector2Array(0, 0, 3.7806358, 2.105029, 3.8530884, -0.07295513)
-depth = 4.0
-material = ExtResource("4_kd3pv")
-
 [node name="Cactus_Tall_5" parent="." instance=ExtResource("6_ij3b7")]
-transform = Transform3D(1.93396, -0.241928, -2.48772, 0.662063, 2.55211, 0.16876, 2.35812, -0.518119, 1.99287, -61.35471, 13.407144, -75.67829)
+transform = Transform3D(1.93396, -0.241928, -2.48772, 0.662063, 2.55211, 0.16876, 2.35812, -0.518119, 1.99287, -61.35471, 13.407144, -92.415306)
 
 [node name="Cactus_Tall_7" parent="." instance=ExtResource("6_ij3b7")]
-transform = Transform3D(2.4470172, -0.52898943, 1.8728846, 0.66206294, 2.5521097, 0.16875997, -1.820175, 0.21713266, 2.5792606, -61.35471, 13.407144, -75.74559)
+transform = Transform3D(2.4470172, -0.52898943, 1.8728846, 0.66206294, 2.5521097, 0.16875997, -1.820175, 0.21713266, 2.5792606, -61.35471, 13.407144, -92.13986)

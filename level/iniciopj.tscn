@@ -2,7 +2,7 @@
 
 [ext_resource type="Shader" uid="uid://cdlt3ujrpad32" path="res://level/sky_with_stars.tres" id="1_2l62p"]
 [ext_resource type="Texture2D" uid="uid://ca3jtautvrj1u" path="res://level/moon.png" id="2_7dg3j"]
-[ext_resource type="PackedScene" uid="uid://bij84ol81kcts" path="res://level/interactable/kill_plane/kill_plane_3d.tscn" id="3_qqn2y"]
+[ext_resource type="PackedScene" uid="uid://dksuwmynb7vjf" path="res://level/interactable/kill_plane/kill_plane_3d.tscn" id="3_qqn2y"]
 [ext_resource type="Material" uid="uid://da188d7yrcfr8" path="res://level/platforms.tres" id="4_l6p4a"]
 [ext_resource type="PackedScene" uid="uid://prh35jb6tjtd" path="res://player/sophia_skin/sophia_skin.tscn" id="5_2xmmv"]
 

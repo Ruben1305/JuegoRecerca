@@ -90,16 +90,24 @@ func _physics_process(delta: float) -> void:
 	)
 	_camera_pivot.rotation.y -= _camera_input_direction.x * delta
 	_camera_input_direction = Vector2.ZERO
+		# ==================================================
+	# === MOVER AL JUGADOR CON PLATAFORMA MÓVIL (Godot 4) ===
+	# ==================================================
+	var platform: Node3D = null
 
-	# =========================
-	# EDGE GRAB
-	# =========================
-	if is_ledge_grabbing:
-		if Input.is_action_just_pressed("Saltar"):
-			_release_ledge_jump()
-		return
+	if is_on_floor():
+		# Obtenemos la última colisión usada por move_and_slide()
+		var collision = get_last_slide_collision()
+		if collision:
+			var collider = collision.get_collider()
+			# Comprobamos si el collider tiene propiedad "velocity"
+			if collider and "velocity" in collider:
+				platform = collider
 
-	_check_for_ledge()
+	# Sumamos solo la velocidad horizontal de la plataforma
+	if platform:
+		global_position.x += platform.velocity.x * delta
+		global_position.z += platform.velocity.z * delta
 
 	# --- Input Movimiento ---
 	var raw_input := Input.get_vector("Izquierda", "Derecha", "Atras", "Alante")
@@ -145,10 +153,11 @@ func _physics_process(delta: float) -> void:
 		velocity.y = jump_impulse
 		jumps_left -= 1
 		_skin.jump()
-
 	was_on_floor = is_on_floor()
+	
 
 	move_and_slide()
+	
 
 	# --- Animaciones ---
 	if is_wall_sliding:
@@ -165,16 +174,29 @@ func _physics_process(delta: float) -> void:
 # ------------------------
 # EDGE GRAB FUNCIONES
 # ------------------------
+
+	# =========================
+	# EDGE GRAB
+	# =========================
+	if is_ledge_grabbing:
+		if Input.is_action_just_pressed("Saltar"):
+			_release_ledge_jump()
+		return
+
+	_check_for_ledge()
 func _check_for_ledge():
+	print("CHECK LEDGE")
 	if is_on_floor() or is_ledge_grabbing:
 		return
-	# Nueva lógica: permitir agarrarse al caer o al hacer wall slide
-	if velocity.y < 0 or is_wall_sliding:
-		if Input.is_action_pressed("Agarrar"):
-			if _ray_front.is_colliding() and not _ray_up.is_colliding():
-				ledge_normal = _ray_front.get_collision_normal()
-				ledge_point = _ray_front.get_collision_point()
-				_start_ledge_grab()
+
+	_ray_front.force_raycast_update()
+	_ray_up.force_raycast_update()
+
+	if Input.is_action_pressed("Agarrar"):
+		if _ray_front.is_colliding() and not _ray_up.is_colliding():
+			ledge_normal = _ray_front.get_collision_normal()
+			ledge_point = _ray_front.get_collision_point()
+			_start_ledge_grab()
 
 func _start_ledge_grab():
 	is_ledge_grabbing = true
@@ -188,3 +210,6 @@ func _release_ledge_jump():
 	is_ledge_grabbing = false
 	velocity.y = ledge_jump_vertical
 	_skin.fall()
+	print(_ray_front.is_colliding(), _ray_front.get_collider())
+
+	

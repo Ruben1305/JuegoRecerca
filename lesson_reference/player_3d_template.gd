@@ -185,7 +185,6 @@ func _physics_process(delta: float) -> void:
 
 	_check_for_ledge()
 func _check_for_ledge():
-	print("CHECK LEDGE")
 	if is_on_floor() or is_ledge_grabbing:
 		return
 

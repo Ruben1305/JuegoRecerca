@@ -9,7 +9,7 @@
 script = ExtResource("1_077yf")
 
 [node name="Player3DTemplate" parent="." instance=ExtResource("2_32yqx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.06658, 13.655779, -88.98607)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.06658, 30.657312, -88.98607)
 collision_layer = 255
 collision_mask = 255
 

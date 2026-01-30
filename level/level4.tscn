@@ -1,8 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://c3mxyk8o1w73y"]
+[gd_scene format=3 uid="uid://c3mxyk8o1w73y"]
 
 [ext_resource type="Shader" uid="uid://cdlt3ujrpad32" path="res://level/sky_with_stars.tres" id="1_ioc7i"]
 [ext_resource type="Texture2D" uid="uid://ca3jtautvrj1u" path="res://level/moon.png" id="2_l3vqv"]
-[ext_resource type="PackedScene" path="res://level/interactable/kill_plane/kill_plane_3d.tscn" id="3_r1e6t"]
+[ext_resource type="PackedScene" uid="uid://dksuwmynb7vjf" path="res://level/interactable/kill_plane/kill_plane_3d.tscn" id="3_r1e6t"]
 [ext_resource type="Material" uid="uid://da188d7yrcfr8" path="res://level/platforms.tres" id="4_kd3pv"]
 [ext_resource type="PackedScene" uid="uid://c6uew1wfpkt16" path="res://level/interactable/flag/flag_3d.tscn" id="5_k3p2u"]
 [ext_resource type="PackedScene" uid="uid://3agu7gb3kjif" path="res://level/cactus/cactus_tall_3.tscn" id="6_ij3b7"]
@@ -81,12 +81,18 @@ volumetric_fog_emission = Color(0.843137, 0.737255, 0.329412, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_44x8d"]
 
-[node name="Level" type="Node3D"]
+[node name="Level" type="Node3D" unique_id=698218887]
 
-[node name="KillPlane" parent="." instance=ExtResource("3_r1e6t")]
+[node name="KillPlane" parent="." unique_id=317319721 instance=ExtResource("3_r1e6t")]
 transform = Transform3D(1.2805047, 0, -1.2805047, 0, 1, 0, 0.9852951, 0, 0.9852951, -156.13315, -13.786039, -270.87845)
 
-[node name="CSGBox3D13" type="CSGBox3D" parent="."]
+[node name="KillPlane2" parent="." unique_id=816098552 instance=ExtResource("3_r1e6t")]
+transform = Transform3D(-7.9586697, 0, 181.59723, 0, 0.99999994, 0, 1909.6511, 0, 48.948406, -68.21284, 38.47194, -49.748444)
+
+[node name="KillPlane3" parent="." unique_id=1129043801 instance=ExtResource("3_r1e6t")]
+transform = Transform3D(-12.213562, 0, 253.03328, 0, 0.99999994, 0, 2930.5957, 0, 68.20356, -68.21284, 16.541767, -11.611536)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="." unique_id=123044641]
 transform = Transform3D(-0.0019874123, 3.374147, 0, -3.3741474, -0.0001745661, 0, 0, 0, 0.99999994, -68.307236, 33.048622, -49.593212)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
@@ -95,7 +101,7 @@ collision_mask = 5
 size = Vector3(3.175171, 0.57958984, 20.396606)
 material = SubResource("StandardMaterial3D_ivpvi")
 
-[node name="CSGBox3D14" type="CSGBox3D" parent="."]
+[node name="CSGBox3D14" type="CSGBox3D" parent="." unique_id=595247389]
 transform = Transform3D(-0.0019874123, 3.374147, 0, -3.3741474, -0.0001745661, 0, 0, 0, 0.99999994, -65.846664, 22.363445, -13.3266945)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
@@ -104,76 +110,76 @@ collision_mask = 5
 size = Vector3(3.175171, 0.57958984, 20.396606)
 material = SubResource("StandardMaterial3D_ivpvi")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1206514196]
 environment = SubResource("Environment_5pwhg")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2115820246]
 transform = Transform3D(-0.3270158, 0.94173074, -0.07876475, 0.68876356, 0.29457843, 0.66244125, 0.64704365, 0.16237843, -0.7449617, -47.2295, 41.374214, -28.0205)
 light_energy = 0.53
 shadow_enabled = true
 directional_shadow_max_distance = 40.0
 
-[node name="Flag3D" parent="." instance=ExtResource("5_k3p2u")]
+[node name="Flag3D" parent="." unique_id=1001976489 instance=ExtResource("5_k3p2u")]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1.8214824, 0, 0.707107, 0, 0.707107, -53.184925, 13.693848, 43.146675)
 
-[node name="CSGBox3D20" type="CSGBox3D" parent="."]
+[node name="CSGBox3D20" type="CSGBox3D" parent="." unique_id=1564710328]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.83854735, -57.03231, 30.000538, -86.920456)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 size = Vector3(11.916382, 1, 12.426025)
 material = SubResource("StandardMaterial3D_44x8d")
 
-[node name="CSGBox3D26" type="CSGBox3D" parent="."]
+[node name="CSGBox3D26" type="CSGBox3D" parent="." unique_id=1564127497]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.1256336, -57.03231, 34.946064, -69.33092)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 size = Vector3(11.916382, 1, 12.426025)
 material = SubResource("StandardMaterial3D_44x8d")
 
-[node name="CSGBox3D27" type="CSGBox3D" parent="."]
+[node name="CSGBox3D27" type="CSGBox3D" parent="." unique_id=1094460784]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.7280643, -57.03231, 25.522676, -31.680283)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 size = Vector3(11.916382, 1, 12.426025)
 material = SubResource("StandardMaterial3D_44x8d")
 
-[node name="CSGBox3D28" type="CSGBox3D" parent="."]
+[node name="CSGBox3D28" type="CSGBox3D" parent="." unique_id=244864683]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.261, 12.82663, 1.4281163)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 size = Vector3(7.011017, 1, 5.2391357)
 script = ExtResource("6_l3vqv")
 
-[node name="CSGBox3D29" type="CSGBox3D" parent="."]
+[node name="CSGBox3D29" type="CSGBox3D" parent="." unique_id=1867108991]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.29635, 12.82663, 10.808083)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 size = Vector3(7.011017, 1, 5.2391357)
 
-[node name="CSGBox3D31" type="CSGBox3D" parent="."]
+[node name="CSGBox3D31" type="CSGBox3D" parent="." unique_id=742825988]
 transform = Transform3D(1.922617, 0, 0, 0, 1.4672929, 0, 0, 0, 1.7529308, -53.370087, 12.82663, 43.199463)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 size = Vector3(7.011017, 1, 5.2391357)
 
-[node name="CSGBox3D30" type="CSGBox3D" parent="."]
+[node name="CSGBox3D30" type="CSGBox3D" parent="." unique_id=303699921]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.29635, 12.82663, 23.953117)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 size = Vector3(7.011017, 1, 5.2391357)
 script = ExtResource("7_r1e6t")
 
-[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=158530350]
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 
-[node name="CSGCombiner" type="CSGCombiner3D" parent="."]
+[node name="CSGCombiner" type="CSGCombiner3D" parent="." unique_id=428892305]
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 
-[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="."]
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="." unique_id=668918566]
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 
-[node name="Cactus_Tall_7" parent="." instance=ExtResource("6_ij3b7")]
+[node name="Cactus_Tall_7" parent="." unique_id=424194696 instance=ExtResource("6_ij3b7")]
 transform = Transform3D(2.4470172, -0.52898943, 1.8728846, 0.66206294, 2.5521097, 0.16875997, -1.820175, 0.21713266, 2.5792606, -61.35471, 30.29874, -92.13986)

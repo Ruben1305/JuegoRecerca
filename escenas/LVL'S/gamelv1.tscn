@@ -1,16 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://bmw26lm3w02kv"]
+[gd_scene format=3 uid="uid://bmw26lm3w02kv"]
 
 [ext_resource type="Script" uid="uid://b1p1lnectvs25" path="res://game.gd" id="1_2cjaw"]
 [ext_resource type="PackedScene" uid="uid://b1ot6gn6tms6h" path="res://lesson_reference/player_3d_template.tscn" id="2_j5x7o"]
 [ext_resource type="PackedScene" uid="uid://bxg6oejpaitdt" path="res://level/interactable/flag/flag_reached_screen.tscn" id="3_rvgv0"]
 [ext_resource type="PackedScene" uid="uid://dguydi7ssevwn" path="res://level/leve1.tscn" id="4_2cjaw"]
 
-[node name="Gamelv3" type="Node"]
+[node name="Gamelv3" type="Node" unique_id=2132981713]
 script = ExtResource("1_2cjaw")
 
-[node name="Player3DTemplate" parent="." instance=ExtResource("2_j5x7o")]
+[node name="Player3DTemplate" parent="." unique_id=27571889 instance=ExtResource("2_j5x7o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.06658, 13.655779, -68.92376)
 
-[node name="FlagReachedScreen" parent="." instance=ExtResource("3_rvgv0")]
+[node name="FlagReachedScreen" parent="." unique_id=1250105717 instance=ExtResource("3_rvgv0")]
 
-[node name="Level" parent="." instance=ExtResource("4_2cjaw")]
+[node name="Level" parent="." unique_id=1120381971 instance=ExtResource("4_2cjaw")]

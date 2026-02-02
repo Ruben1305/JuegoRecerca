@@ -31,9 +31,7 @@ var was_on_floor := false
 # --------------------
 # EDGE GRAB
 # --------------------
-@export_group("Edge Grab")
-@export var ledge_snap_distance := 0.35
-@export var ledge_jump_vertical := 6.0
+
 
 var is_ledge_grabbing := false
 var ledge_normal := Vector3.ZERO
@@ -45,10 +43,10 @@ var ledge_point := Vector3.ZERO
 @onready var _camera_pivot: Node3D = %CameraPivot
 @onready var _camera: Camera3D = %Camera3D
 @onready var _skin: SophiaSkin = %SophiaSkin
+@export var ledge_snap_distance := 0.35
+@export var ledge_jump_vertical := 6.0
 
-# Raycasts para edge grab
-@onready var _ray_front: RayCast3D = $RayCast3D_Front
-@onready var _ray_up: RayCast3D = $RayCast3D_Up
+
 
 # --------------------
 # Ready
@@ -80,8 +78,8 @@ func _unhandled_input(event: InputEvent) -> void:
 # --------------------
 # Physics
 # --------------------
-func _physics_process(delta: float) -> void:
 
+func _physics_process(delta: float) -> void:
 	# --- Cámara ---
 	_camera_pivot.rotation.x = clamp(
 		_camera_pivot.rotation.x + _camera_input_direction.y * delta,
@@ -144,10 +142,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.y += gravity * delta
 
-	# --- Reset saltos ---
-	if is_on_floor() and not was_on_floor:
+# --- Reset saltos en suelo o wall slide ---
+	if (is_on_floor() or is_wall_sliding) and not was_on_floor:
 		jumps_left = max_jumps
-
 	# --- Salto normal ---
 	if Input.is_action_just_pressed("Saltar") and jumps_left > 0:
 		velocity.y = jump_impulse
@@ -155,9 +152,7 @@ func _physics_process(delta: float) -> void:
 		_skin.jump()
 	was_on_floor = is_on_floor()
 	
-
 	move_and_slide()
-	
 
 	# --- Animaciones ---
 	if is_wall_sliding:
@@ -171,44 +166,6 @@ func _physics_process(delta: float) -> void:
 		else:
 			_skin.idle()
 
-# ------------------------
-# EDGE GRAB FUNCIONES
-# ------------------------
 
-	# =========================
-	# EDGE GRAB
-	# =========================
-	if is_ledge_grabbing:
-		if Input.is_action_just_pressed("Saltar"):
-			_release_ledge_jump()
-		return
-
-	_check_for_ledge()
-func _check_for_ledge():
-	if is_on_floor() or is_ledge_grabbing:
-		return
-
-	_ray_front.force_raycast_update()
-	_ray_up.force_raycast_update()
-
-	if Input.is_action_pressed("Agarrar"):
-		if _ray_front.is_colliding() and not _ray_up.is_colliding():
-			ledge_normal = _ray_front.get_collision_normal()
-			ledge_point = _ray_front.get_collision_point()
-			_start_ledge_grab()
-
-func _start_ledge_grab():
-	is_ledge_grabbing = true
-	velocity = Vector3.ZERO
-	jumps_left = max_jumps
-	global_position = ledge_point + ledge_normal * ledge_snap_distance
-	look_at(global_position - ledge_normal, Vector3.UP)
-	_skin.edge_grab()
-
-func _release_ledge_jump():
-	is_ledge_grabbing = false
-	velocity.y = ledge_jump_vertical
-	_skin.fall()
-	print(_ray_front.is_colliding(), _ray_front.get_collider())
 
 	

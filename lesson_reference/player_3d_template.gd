@@ -165,3 +165,7 @@ func _physics_process(delta: float) -> void:
 			_skin.move()
 		else:
 			_skin.idle()
+
+
+
+	

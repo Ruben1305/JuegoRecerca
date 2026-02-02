@@ -14,3 +14,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.06658, 13.655779, -68.923
 [node name="FlagReachedScreen" parent="." unique_id=1160080738 instance=ExtResource("19_cpgj4")]
 
 [node name="Level" parent="." unique_id=1257721271 instance=ExtResource("4_fc0e3")]
+[node name="Gamelv3" type="Node" unique_id=28880690]
+script = ExtResource("1_1il7v")
+
+[node name="Player3DTemplate" parent="." unique_id=1434251462 instance=ExtResource("1_w0p8v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.06658, 13.655779, -68.92376)
+
+[node name="FlagReachedScreen" parent="." unique_id=207846862 instance=ExtResource("19_cpgj4")]
+
+[node name="Level" parent="." unique_id=587152321 instance=ExtResource("4_fc0e3")]

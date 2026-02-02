@@ -1,18 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://rtoordabtws0"]
+[gd_scene format=3 uid="uid://rtoordabtws0"]
 
 [ext_resource type="Script" uid="uid://b1p1lnectvs25" path="res://game.gd" id="1_077yf"]
 [ext_resource type="PackedScene" uid="uid://b1ot6gn6tms6h" path="res://lesson_reference/player_3d_template.tscn" id="2_32yqx"]
 [ext_resource type="PackedScene" uid="uid://bxg6oejpaitdt" path="res://level/interactable/flag/flag_reached_screen.tscn" id="3_mixpx"]
-[ext_resource type="PackedScene" uid="uid://c3mxyk8o1w73y" path="res://level/level4.tscn" id="4_vxm23"]
+[ext_resource type="PackedScene" uid="uid://bcglha54qi5wq" path="res://level/level4.tscn" id="4_vxm23"]
 
-[node name="Game" type="Node"]
+[node name="Game" type="Node" unique_id=251918201]
 script = ExtResource("1_077yf")
 
-[node name="Player3DTemplate" parent="." instance=ExtResource("2_32yqx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.06658, 30.657312, -88.98607)
+[node name="Player3DTemplate" parent="." unique_id=959703141 instance=ExtResource("2_32yqx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.18246, 13.7680435, -69.331345)
 collision_layer = 255
 collision_mask = 255
 
-[node name="FlagReachedScreen" parent="." instance=ExtResource("3_mixpx")]
+[node name="FlagReachedScreen" parent="." unique_id=2062139718 instance=ExtResource("3_mixpx")]
 
-[node name="Level" parent="." instance=ExtResource("4_vxm23")]
+[node name="Level2" parent="." unique_id=1283134100 instance=ExtResource("4_vxm23")]

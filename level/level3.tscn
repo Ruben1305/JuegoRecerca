@@ -14,6 +14,7 @@
 [ext_resource type="ArrayMesh" uid="uid://cxribqsh0k83c" path="res://level/estrella/estrellica.obj" id="12_wasuc"]
 [ext_resource type="Script" uid="uid://bjf6euw2h3wi2" path="res://Scripts/estrellica.gd" id="13_2afyj"]
 [ext_resource type="Script" uid="uid://1g1tg0hbxobi" path="res://Scripts/Platform/PlatformLeft.gd" id="13_86tj3"]
+[ext_resource type="PackedScene" uid="uid://b0q08sqsxf23a" path="res://Estrella.tscn" id="15_86tj3"]
 
 [sub_resource type="Curve" id="Curve_k4wis"]
 _data = [Vector2(0.331719, 0.0391753), 0.0, 0.0, 0, 0, Vector2(0.697336, 1), 0.51276, 0.0, 0, 0]
@@ -91,6 +92,12 @@ radius = 9.071
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2afyj"]
 albedo_color = Color(1, 1, 0, 1)
 
+[node name="Level2" type="Node3D" unique_id=174161624]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=288651191]
+environment = SubResource("Environment_5pwhg")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1885283393]
 [node name="Level2" type="Node3D" unique_id=1251978678]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2108406835]
@@ -102,6 +109,13 @@ light_energy = 0.53
 shadow_enabled = true
 directional_shadow_max_distance = 40.0
 
+[node name="KillPlane" parent="." unique_id=1757364152 instance=ExtResource("3_2afyj")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -55.25, -17.7152, -181.99728)
+
+[node name="Flag3D" parent="." unique_id=184912386 instance=ExtResource("10_qtllr")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -32.240067, 8.177861, -161.70691)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="." unique_id=132041039]
 [node name="KillPlane" parent="." unique_id=1514495676 instance=ExtResource("3_2afyj")]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -55.25, -17.7152, -181.99728)
 
@@ -115,6 +129,7 @@ use_collision = true
 size = Vector3(5, 1, 8)
 script = ExtResource("12_cx6j8")
 
+[node name="CSGBox3D11" type="CSGBox3D" parent="." unique_id=267528295]
 [node name="CSGBox3D11" type="CSGBox3D" parent="." unique_id=1618269414]
 transform = Transform3D(-0.999986, 0, -0.0053058136, 0, 1, 0, 0.0053058136, 0, -0.999986, -38.945908, 12.827753, -69.32755)
 material_override = ExtResource("9_tg5ca")
@@ -122,6 +137,19 @@ use_collision = true
 size = Vector3(5, 1, 8)
 script = ExtResource("13_86tj3")
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CSGBox3D11" unique_id=817190646]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGBox3D11" unique_id=749456821]
+transform = Transform3D(5.062519, 0, -7.450581e-09, 0, 1, 0, 1.8626451e-09, 0, 8.100236, 0, 0, 0)
+shape = SubResource("BoxShape3D_86tj3")
+
+[node name="Area3D" type="Area3D" parent="CSGBox3D11" unique_id=918987612]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGBox3D11/Area3D" unique_id=178263018]
+transform = Transform3D(5.063, 0, 0, 0, 1, 0, 0, 0, 8.1, 0, 0, 0)
+shape = SubResource("BoxShape3D_opriy")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="." unique_id=1101495357]
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGBox3D11" unique_id=1858237523]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGBox3D11" unique_id=1891120974]
@@ -140,36 +168,42 @@ material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(5, 1, 8)
 
+[node name="CSGBox3D13" type="CSGBox3D" parent="." unique_id=338555295]
 [node name="CSGBox3D13" type="CSGBox3D" parent="." unique_id=684334470]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.550217, 10.471098, -82.763664)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(5, 1, 8)
 
+[node name="CSGBox3D15" type="CSGBox3D" parent="." unique_id=1765651836]
 [node name="CSGBox3D15" type="CSGBox3D" parent="." unique_id=1073414089]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.731064, 7.9512463, -91.21237)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(5, 1, 7.6602783)
 
+[node name="CSGBox3D27" type="CSGBox3D" parent="." unique_id=896511713]
 [node name="CSGBox3D27" type="CSGBox3D" parent="." unique_id=247327415]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.603877, 7.9512463, -126.9901)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(5, 1, 7.6602783)
 
+[node name="CSGBox3D21" type="CSGBox3D" parent="." unique_id=779560184]
 [node name="CSGBox3D21" type="CSGBox3D" parent="." unique_id=1272047997]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.76572, 7.9512463, -106.78938)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(20.728027, 1, 13.625519)
 
+[node name="CSGBox3D26" type="CSGBox3D" parent="." unique_id=2043836307]
 [node name="CSGBox3D26" type="CSGBox3D" parent="." unique_id=876055460]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.60829, 7.9512463, -161.92186)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(20.728027, 1, 13.625519)
 
+[node name="CSGBox3D16" type="CSGBox3D" parent="." unique_id=828681685]
 [node name="CSGBox3D16" type="CSGBox3D" parent="." unique_id=1287039630]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.893475, 7.9512463, -91.21237)
 material_override = ExtResource("9_tg5ca")
@@ -178,24 +212,28 @@ collision_layer = 0
 collision_mask = 0
 size = Vector3(5, 1, 7.6602783)
 
+[node name="CSGBox3D22" type="CSGBox3D" parent="." unique_id=838778929]
 [node name="CSGBox3D22" type="CSGBox3D" parent="." unique_id=1305905673]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.237026, 7.9512463, -103.771576)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(5, 1, 7.6602783)
 
+[node name="CSGBox3D29" type="CSGBox3D" parent="." unique_id=91925321]
 [node name="CSGBox3D29" type="CSGBox3D" parent="." unique_id=1746688530]
 transform = Transform3D(0.0044156923, 0, 0.9999902, 0, 1, 0, -0.9999902, 0, 0.0044156923, -32.927372, 7.9512463, -195.1037)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(5, 1, 7.6602783)
 
+[node name="CSGBox3D23" type="CSGBox3D" parent="." unique_id=1129740910]
 [node name="CSGBox3D23" type="CSGBox3D" parent="." unique_id=492297817]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.014763, 7.9512463, -95.92167)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(5, 1, 7.6602783)
 
+[node name="CSGBox3D24" type="CSGBox3D" parent="." unique_id=938470706]
 [node name="CSGBox3D24" type="CSGBox3D" parent="." unique_id=939715320]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.901787, 7.9512463, -111.598854)
 material_override = ExtResource("9_tg5ca")
@@ -204,18 +242,21 @@ collision_layer = 0
 collision_mask = 0
 size = Vector3(5, 1, 7.6602783)
 
+[node name="CSGBox3D25" type="CSGBox3D" parent="." unique_id=1756459302]
 [node name="CSGBox3D25" type="CSGBox3D" parent="." unique_id=1420256160]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.846664, 7.9512463, -103.40417)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(5, 1, 7.6602783)
 
+[node name="CSGBox3D20" type="CSGBox3D" parent="." unique_id=1579928184]
 [node name="CSGBox3D20" type="CSGBox3D" parent="." unique_id=1163649954]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.176888, 13.108939, -69.47646)
 material_override = ExtResource("9_tg5ca")
 use_collision = true
 size = Vector3(8.625092, 1, 10.039673)
 
+[node name="CSGBox3D14" type="CSGBox3D" parent="." unique_id=1166175782]
 [node name="CSGBox3D14" type="CSGBox3D" parent="." unique_id=204874605]
 transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -30.653269, 7.8154106, -122.21658)
 material_override = ExtResource("9_tg5ca")
@@ -223,6 +264,7 @@ use_collision = true
 size = Vector3(5, 1, 8)
 script = ExtResource("8_iqqf7")
 
+[node name="CSGBox3D17" type="CSGBox3D" parent="." unique_id=951788233]
 [node name="CSGBox3D17" type="CSGBox3D" parent="." unique_id=1859494577]
 transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -30.653269, 7.8154106, -132.60474)
 material_override = ExtResource("9_tg5ca")
@@ -230,6 +272,7 @@ use_collision = true
 size = Vector3(5, 1, 8)
 script = ExtResource("9_wasuc")
 
+[node name="CSGBox3D18" type="CSGBox3D" parent="." unique_id=148922930]
 [node name="CSGBox3D18" type="CSGBox3D" parent="." unique_id=171119263]
 transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -24.386608, 7.8154106, -145.49475)
 material_override = ExtResource("9_tg5ca")
@@ -237,6 +280,7 @@ use_collision = true
 size = Vector3(5, 1, 8)
 script = ExtResource("10_2afyj")
 
+[node name="CSGBox3D19" type="CSGBox3D" parent="." unique_id=1602212284]
 [node name="CSGBox3D19" type="CSGBox3D" parent="." unique_id=1231858670]
 transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -40.643734, 7.8154106, -144.9791)
 material_override = ExtResource("9_tg5ca")
@@ -244,6 +288,7 @@ use_collision = true
 size = Vector3(5, 1, 8)
 script = ExtResource("11_cx6j8")
 
+[node name="CSGBox3D28" type="CSGBox3D" parent="." unique_id=1270796658]
 [node name="CSGBox3D28" type="CSGBox3D" parent="." unique_id=463023836]
 transform = Transform3D(0.9999444, 0, 0.010611478, 0, 1, 0, -0.010611478, 0, 0.9999444, -32.974094, 7.8154106, -177.78575)
 material_override = ExtResource("9_tg5ca")
@@ -251,6 +296,22 @@ use_collision = true
 size = Vector3(5, 1, 8)
 script = ExtResource("11_cx6j8")
 
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=940275551]
+material_override = ExtResource("9_tg5ca")
+use_collision = true
+
+[node name="CSGCombiner" type="CSGCombiner3D" parent="." unique_id=1262695271]
+material_override = ExtResource("9_tg5ca")
+use_collision = true
+
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="." unique_id=768411978]
+material_override = ExtResource("9_tg5ca")
+use_collision = true
+
+[node name="Cactus_Tall_7" parent="." unique_id=495092358 instance=ExtResource("11_4ilav")]
+transform = Transform3D(2.4470172, -0.52898943, 1.8728846, 0.66206294, 2.5521097, 0.16875997, -1.820175, 0.21713266, 2.5792606, -60.36695, 13.83903, -73.6605)
+
+[node name="Estrellica" type="Area3D" parent="." unique_id=18144109]
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1192950704]
 material_override = ExtResource("9_tg5ca")
 use_collision = true
@@ -271,6 +332,14 @@ transform = Transform3D(0.009446123, 0.099059455, -0.009899229, 0.05522573, 0.00
 collision_layer = 2
 script = ExtResource("13_2afyj")
 
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Estrellica" unique_id=1517011442]
+shape = SubResource("SphereShape3D_wasuc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Estrellica" unique_id=1676861972]
+mesh = ExtResource("12_wasuc")
+surface_material_override/0 = SubResource("StandardMaterial3D_2afyj")
+
+[node name="Estrellica3" type="Area3D" parent="." unique_id=347506567]
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Estrellica" unique_id=1270292745]
 shape = SubResource("SphereShape3D_wasuc")
 
@@ -295,6 +364,10 @@ transform = Transform3D(0.08334951, -0.004094553, -0.05510074, 0.055225734, 0.00
 collision_layer = 2
 script = ExtResource("13_2afyj")
 
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Estrellica3" unique_id=183089860]
+shape = SubResource("SphereShape3D_wasuc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Estrellica3" unique_id=1631700448]
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Estrellica3" unique_id=671573039]
 shape = SubResource("SphereShape3D_wasuc")
 
@@ -302,11 +375,12 @@ shape = SubResource("SphereShape3D_wasuc")
 mesh = ExtResource("12_wasuc")
 surface_material_override/0 = SubResource("StandardMaterial3D_2afyj")
 
+[node name="Estrellica2" parent="." unique_id=934569962 instance=ExtResource("15_86tj3")]
+transform = Transform3D(0.009446129, 0.099059455, -0.009899238, 0.05522573, 0.0030592566, 0.08331122, 0.08283049, -0.013336611, -0.054417323, -14.995807, 9.393267, -126.581665)
+
 [connection signal="body_entered" from="CSGBox3D11/Area3D" to="KillPlane" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="CSGBox3D11/Area3D" to="KillPlane" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Estrellica" to="KillPlane" method="_on_estrellica_body_entered"]
 [connection signal="body_shape_entered" from="Estrellica" to="KillPlane" method="_on_estrellica_body_shape_entered"]
-[connection signal="body_entered" from="Estrellica2" to="KillPlane" method="_on_estrellica_body_entered"]
-[connection signal="body_shape_entered" from="Estrellica2" to="KillPlane" method="_on_estrellica_body_shape_entered"]
 [connection signal="body_entered" from="Estrellica3" to="KillPlane" method="_on_estrellica_body_entered"]
 [connection signal="body_shape_entered" from="Estrellica3" to="KillPlane" method="_on_estrellica_body_shape_entered"]

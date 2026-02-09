@@ -98,7 +98,7 @@ directional_shadow_max_distance = 40.0
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -55.25, -17.7152, -181.99728)
 
 [node name="Flag3D" parent="." unique_id=896825308 instance=ExtResource("5_k3p2u")]
-transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -32.240067, 8.177861, -161.70691)
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -27.96901, 8.177861, -167.35846)
 
 [node name="CSGBox3D27" type="CSGBox3D" parent="." unique_id=1405036727]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.367086, 4.099103, -128.86026)
@@ -151,7 +151,13 @@ size = Vector3(5, 1, 7.6602783)
 script = ExtResource("7_cle4c")
 
 [node name="CSGBox3D29" type="CSGBox3D" parent="." unique_id=1320963192]
-transform = Transform3D(0.0044156923, 0, 0.9999902, 0, 1, 0, -0.9999902, 0, 0.0044156923, -32.927372, 7.9512463, -195.1037)
+transform = Transform3D(0.0044156923, 0, 0.9999902, 0, 1, 0, -0.9999902, 0, 0.0044156923, -12.882039, 5.067871, -167.18454)
+material_override = ExtResource("4_kd3pv")
+use_collision = true
+size = Vector3(5, 1, 7.6602783)
+
+[node name="CSGBox3D36" type="CSGBox3D" parent="." unique_id=1312927062]
+transform = Transform3D(-0.99987423, 0, -0.01586439, 0, 1, 0, 0.01586439, 0, -0.99987423, -27.867817, 7.802639, -167.18454)
 material_override = ExtResource("4_kd3pv")
 use_collision = true
 size = Vector3(5, 1, 7.6602783)
@@ -231,15 +237,15 @@ shape = SubResource("SphereShape3D_wasuc")
 mesh = ExtResource("14_pcogq")
 surface_material_override/0 = SubResource("StandardMaterial3D_2afyj")
 
-[node name="Estrellica3" type="Area3D" parent="." unique_id=80356748]
-transform = Transform3D(0.08334951, -0.004094553, -0.05510074, 0.055225734, 0.003059253, 0.083311245, -0.0017255428, -0.09986929, 0.0048111174, -32.65295, 9.633943, -195.76488)
+[node name="Estrellica3" type="Area3D" parent="." unique_id=1118883710]
+transform = Transform3D(0.081795156, 0.017327901, -0.054857034, 0.055225734, 0.003059253, 0.083311245, 0.016114308, -0.09843975, -0.0070671355, -12.7535715, 6.615058, -167.18538)
 collision_layer = 2
 script = ExtResource("13_uwuds")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Estrellica3" unique_id=481882194]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Estrellica3" unique_id=1665412832]
 shape = SubResource("SphereShape3D_wasuc")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Estrellica3" unique_id=2097189680]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Estrellica3" unique_id=2087508877]
 mesh = ExtResource("14_pcogq")
 surface_material_override/0 = SubResource("StandardMaterial3D_2afyj")
 

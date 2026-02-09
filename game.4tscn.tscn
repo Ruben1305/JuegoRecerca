@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dn875jmok1bgo"]
+
+[ext_resource type="Script" uid="uid://b1p1lnectvs25" path="res://game.gd" id="1_1mr4y"]
+[ext_resource type="PackedScene" uid="uid://b1ot6gn6tms6h" path="res://lesson_reference/player_3d_template.tscn" id="2_ux2y1"]
+[ext_resource type="PackedScene" uid="uid://bxg6oejpaitdt" path="res://level/interactable/flag/flag_reached_screen.tscn" id="3_ds1qj"]
+[ext_resource type="PackedScene" uid="uid://bcglha54qi5wq" path="res://level/level4.tscn" id="4_qir5o"]
+
+[node name="Game" type="Node" unique_id=76213750]
+script = ExtResource("1_1mr4y")
+
+[node name="Player3DTemplate" parent="." unique_id=1414736431 instance=ExtResource("2_ux2y1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.319263, 13.553817, -71.081924)
+
+[node name="FlagReachedScreen" parent="." unique_id=792202292 instance=ExtResource("3_ds1qj")]
+
+[node name="Level2" parent="." unique_id=1239796327 instance=ExtResource("4_qir5o")]

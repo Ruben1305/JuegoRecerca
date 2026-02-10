@@ -4,6 +4,8 @@ class_name Main_Menu
 
 func _ready() -> void:
 	get_tree().paused = true
+	DatabaseManager.guardar_progreso(2, 3)
+	print(DatabaseManager)
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()

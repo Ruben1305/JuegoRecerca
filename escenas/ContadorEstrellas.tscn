@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dluh6kp13vsqx"]
+
+[ext_resource type="Texture2D" uid="uid://d3dh3pw3dfkpc" path="res://estrella.png" id="1_67sth"]
+[ext_resource type="FontFile" uid="uid://rfhcjmiaxtx4" path="res://Fuentes/RetroMario-Regular.otf" id="2_aqiqo"]
+[ext_resource type="Script" uid="uid://dbn7018230im5" path="res://ContadorEstrellas.gd" id="3_kexml"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kexml"]
+font = ExtResource("2_aqiqo")
+font_size = 28
+
+[sub_resource type="LabelSettings" id="LabelSettings_smqld"]
+font = ExtResource("2_aqiqo")
+font_size = 28
+
+[node name="ContadorEstrellas" type="CanvasLayer" unique_id=1347886127]
+
+[node name="Estrella" type="TextureRect" parent="." unique_id=2031422739]
+offset_left = 10.0
+offset_top = 8.0
+offset_right = 48.0
+offset_bottom = 49.0
+texture = ExtResource("1_67sth")
+expand_mode = 1
+
+[node name="X" type="Label" parent="." unique_id=1585637761]
+offset_left = 46.0
+offset_top = 17.0
+offset_right = 69.0
+offset_bottom = 46.0
+text = "X"
+label_settings = SubResource("LabelSettings_kexml")
+
+[node name="Contador" type="Label" parent="." unique_id=1489307864]
+offset_left = 73.0
+offset_top = 16.0
+offset_right = 108.0
+offset_bottom = 45.0
+text = "10"
+label_settings = SubResource("LabelSettings_smqld")
+script = ExtResource("3_kexml")

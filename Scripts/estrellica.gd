@@ -4,16 +4,15 @@ extends Area3D
 @export var float_amplitude: float = 0.5
 @export var float_speed: float = 2.0
 
-@onready var sonido: AudioStreamPlayer3D = $AudioStreamPlayer3D
 @onready var collision: CollisionShape3D = $CollisionShape3D
 
 var base_y: float
 var time: float = 0.0
+var recogida := false
 
 func _ready():
 	base_y = global_position.y
 	body_entered.connect(_on_estrellita_body_entered)
-	print(sonido)
 
 func _process(delta):
 	rotation_degrees.y += rotation_speed * delta
@@ -21,18 +20,14 @@ func _process(delta):
 	global_position.y = base_y + sin(time * float_speed) * float_amplitude
 
 func _on_estrellita_body_entered(body: Node) -> void:
-	if not body.is_in_group("player"):
+	if recogida:
 		return
 
-	if sonido:
-		sonido.play()
+	if body.is_in_group("player"):
+		recogida = true
+		Puntuacion.sumar_punto()
 
-	# Oculta y deshabilita colisión para evitar recoger varias veces
-	hide()
-	collision.disabled = true
+		hide()
+		collision.disabled = true
 
-	# Espera a que termine el sonido antes de eliminar el nodo
-	if sonido:
-		await sonido.finished
-
-	queue_free()
+		queue_free()

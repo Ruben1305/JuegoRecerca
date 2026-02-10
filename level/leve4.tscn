@@ -83,7 +83,7 @@ radius = 9.071
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2afyj"]
 albedo_color = Color(1, 1, 0, 1)
 
-[node name="Level2" type="Node3D" unique_id=1239796327]
+[node name="Level4" type="Node3D" unique_id=1239796327]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=98958676]
 environment = SubResource("Environment_5pwhg")

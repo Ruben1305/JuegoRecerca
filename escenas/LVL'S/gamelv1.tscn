@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://b1ot6gn6tms6h" path="res://lesson_reference/player_3d_template.tscn" id="2_j5x7o"]
 [ext_resource type="PackedScene" uid="uid://bxg6oejpaitdt" path="res://level/interactable/flag/flag_reached_screen.tscn" id="3_rvgv0"]
 [ext_resource type="PackedScene" uid="uid://dguydi7ssevwn" path="res://level/leve1.tscn" id="4_2cjaw"]
+[ext_resource type="PackedScene" uid="uid://dluh6kp13vsqx" path="res://escenas/ContadorEstrellas.tscn" id="5_j5x7o"]
+[ext_resource type="PackedScene" uid="uid://dpyts00g4ljql" path="res://escenas/BarraVida.tscn" id="6_rvgv0"]
 
 [node name="Gamelv3" type="Node" unique_id=2132981713]
 script = ExtResource("1_2cjaw")
@@ -14,3 +16,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.06658, 13.655779, -68.923
 [node name="FlagReachedScreen" parent="." unique_id=1250105717 instance=ExtResource("3_rvgv0")]
 
 [node name="Level" parent="." unique_id=1120381971 instance=ExtResource("4_2cjaw")]
+
+[node name="CanvasLayer" parent="." unique_id=1347886127 instance=ExtResource("5_j5x7o")]
+
+[node name="CanvasLayer2" parent="." unique_id=406063415 instance=ExtResource("6_rvgv0")]

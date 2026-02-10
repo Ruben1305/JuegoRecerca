@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dpyts00g4ljql"]
+
+[ext_resource type="Script" uid="uid://ikwp6isguh05" path="res://escenas/Vida.gd" id="1_7mv8v"]
+[ext_resource type="Texture2D" uid="uid://cthhhs082g35k" path="res://corazones.png" id="2_yxcc8"]
+
+[node name="BarraVida" type="CanvasLayer" unique_id=406063415]
+script = ExtResource("1_7mv8v")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1199670165]
+anchors_preset = -1
+anchor_left = 3.45
+anchor_right = 3.45
+offset_left = -4764.0
+offset_top = 16.0
+offset_right = -4722.0
+offset_bottom = 57.0
+grow_horizontal = 0
+texture = ExtResource("2_yxcc8")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=1310277641]
+anchors_preset = -1
+anchor_left = 3.45
+anchor_right = 3.45
+offset_left = -4809.0
+offset_top = 16.0
+offset_right = -4767.0
+offset_bottom = 57.0
+grow_horizontal = 0
+texture = ExtResource("2_yxcc8")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=1060546926]
+anchors_preset = -1
+anchor_left = 3.45
+anchor_right = 3.45
+offset_left = -4854.0
+offset_top = 16.0
+offset_right = -4812.0
+offset_bottom = 57.0
+grow_horizontal = 0
+texture = ExtResource("2_yxcc8")
+expand_mode = 1

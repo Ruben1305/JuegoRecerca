@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bh7b6o8mxvyxe"
+path="res://.godot/imported/mug_empty.obj-6ed901160765d7b9677c901a133323c0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mug_empty.obj-6ed901160765d7b9677c901a133323c0.mesh"]
+
+source_file="res://Characters_Adventurers/KayKit_Adventurers_2.0_FREE/Assets/obj/mug_empty.obj"
+dest_files=["res://.godot/imported/mug_empty.obj-6ed901160765d7b9677c901a133323c0.mesh", "res://.godot/imported/mug_empty.obj-6ed901160765d7b9677c901a133323c0.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

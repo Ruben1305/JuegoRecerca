@@ -10,6 +10,19 @@ var base_y: float
 var time: float = 0.0
 var recogida := false
 
+
+# Contador de estrellas
+var estrellas_actuales := 0
+
+# Señal que se emite al recoger una estrella
+signal estrella_recogida
+
+# Función para sumar un punto
+func sumar_punto():
+	estrellas_actuales += 1
+	emit_signal("estrella_recogida")
+
+
 func _ready():
 	base_y = global_position.y
 	body_entered.connect(_on_estrellita_body_entered)

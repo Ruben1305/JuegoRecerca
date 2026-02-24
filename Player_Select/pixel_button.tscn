@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://xiknp6c5rcg8"]
+
+[ext_resource type="Texture2D" uid="uid://talt07ain2te" path="res://Botton.png" id="1_3m6p1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rpel1"]
+texture = ExtResource("1_3m6p1")
+
+[node name="Button" type="Button" unique_id=615271752]
+offset_left = 1152.0
+offset_top = 408.0
+offset_right = 1280.0
+offset_bottom = 536.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_rpel1")

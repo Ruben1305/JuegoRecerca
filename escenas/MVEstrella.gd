@@ -6,7 +6,7 @@ var tween: Tween
 
 func _ready() -> void:
 	# Mostrar valor inicial
-	contador.text = str(Puntuacion.estrellas_actuales)
+	contador.text =("0")
 
 	# Ajustar pivot para el pop
 	await get_tree().process_frame

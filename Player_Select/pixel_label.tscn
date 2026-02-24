@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cseg4yldbjxwq"]
+
+[ext_resource type="FontFile" uid="uid://rfhcjmiaxtx4" path="res://Fuentes/RetroMario-Regular.otf" id="1_if5st"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_81hx3"]
+font = ExtResource("1_if5st")
+font_size = 32
+
+[node name="Label" type="Label" unique_id=151436502]
+offset_left = 792.0
+offset_top = 336.0
+offset_right = 1142.0
+offset_bottom = 369.0
+text = "Selector de Personajes"
+label_settings = SubResource("LabelSettings_81hx3")

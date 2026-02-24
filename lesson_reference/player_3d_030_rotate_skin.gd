@@ -15,7 +15,7 @@ var _last_movement_direction := Vector3.BACK
 
 @onready var _camera_pivot: Node3D = %CameraPivot
 @onready var _camera: Camera3D = %Camera3D
-@onready var _skin: SophiaSkin = %SophiaSkin
+@onready var _skin: Knight = %Knight
 
 
 func _input(event: InputEvent) -> void:

@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/Knight.glb-d514726ab286efa020a311e83881b416.s
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="Node3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

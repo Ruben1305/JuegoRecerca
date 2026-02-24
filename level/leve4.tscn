@@ -8,8 +8,13 @@
 [ext_resource type="PackedScene" uid="uid://3agu7gb3kjif" path="res://level/cactus/cactus_tall_3.tscn" id="6_ij3b7"]
 [ext_resource type="Script" uid="uid://w4arqfmhmemc" path="res://Scripts/Platform/PlatformUP.gd" id="6_k3p2u"]
 [ext_resource type="Script" uid="uid://1g1tg0hbxobi" path="res://Scripts/Platform/PlatformLeft.gd" id="7_cle4c"]
+[ext_resource type="Texture2D" uid="uid://me0fyx2fxbv" path="res://addons/tiny_treats_pretty_park_set/Assets/Textures/tiny_treats_grass_texture.png" id="8_in1e5"]
+[ext_resource type="ArrayMesh" uid="uid://x7n62bt5rnha" path="res://addons/tiny_treats_pretty_park_set/Assets/obj/bench.obj" id="12_jvm81"]
+[ext_resource type="ArrayMesh" uid="uid://bvpyw7oqb3ec5" path="res://addons/tiny_treats_pretty_park_set/Assets/obj/bush.obj" id="13_3qh5i"]
 [ext_resource type="Script" uid="uid://bjf6euw2h3wi2" path="res://Scripts/estrellica.gd" id="13_uwuds"]
 [ext_resource type="ArrayMesh" uid="uid://cxribqsh0k83c" path="res://level/estrella/estrellica.obj" id="14_pcogq"]
+[ext_resource type="ArrayMesh" uid="uid://cex1tag3eisbr" path="res://addons/tiny_treats_pretty_park_set/Assets/obj/flower_B.obj" id="14_rep6o"]
+[ext_resource type="ArrayMesh" uid="uid://d2jvcj50mlc4m" path="res://addons/tiny_treats_pretty_park_set/Assets/obj/hedge_straight_long.obj" id="15_ku3ub"]
 
 [sub_resource type="Curve" id="Curve_k4wis"]
 _data = [Vector2(0.331719, 0.0391753), 0.0, 0.0, 0, 0, Vector2(0.697336, 1), 0.51276, 0.0, 0, 0]
@@ -76,6 +81,9 @@ fog_height_density = 0.1
 volumetric_fog_density = 0.01
 volumetric_fog_albedo = Color(0.843137, 0.737255, 0.329412, 1)
 volumetric_fog_emission = Color(0.843137, 0.737255, 0.329412, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cchvf"]
+albedo_texture = ExtResource("8_in1e5")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_wasuc"]
 radius = 9.071
@@ -170,7 +178,7 @@ size = Vector3(5, 1, 7.6602783)
 
 [node name="CSGBox3D20" type="CSGBox3D" parent="." unique_id=818234142]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.176888, 13.108939, -69.47646)
-material_override = ExtResource("4_kd3pv")
+material_override = SubResource("StandardMaterial3D_cchvf")
 use_collision = true
 size = Vector3(8.625092, 1, 10.039673)
 
@@ -248,6 +256,22 @@ shape = SubResource("SphereShape3D_wasuc")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Estrellica3" unique_id=2087508877]
 mesh = ExtResource("14_pcogq")
 surface_material_override/0 = SubResource("StandardMaterial3D_2afyj")
+
+[node name="Bench" type="MeshInstance3D" parent="." unique_id=791779784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.307693, 13.608938, -72.52608)
+mesh = ExtResource("12_jvm81")
+
+[node name="Bush" type="MeshInstance3D" parent="." unique_id=2021608673]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.396088, 13.608939, -70.636314)
+mesh = ExtResource("13_3qh5i")
+
+[node name="FlowerB" type="MeshInstance3D" parent="." unique_id=1881215292]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.40205, 13.62894, -70.52471)
+mesh = ExtResource("14_rep6o")
+
+[node name="HedgeStraightLong" type="MeshInstance3D" parent="." unique_id=1857363061]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.732113, 13.614847, -69.518585)
+mesh = ExtResource("15_ku3ub")
 
 [connection signal="body_entered" from="Estrellica" to="KillPlane" method="_on_estrellica_body_entered"]
 [connection signal="body_shape_entered" from="Estrellica" to="KillPlane" method="_on_estrellica_body_shape_entered"]

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dtsgpetf7fk53"
+path="res://.godot/imported/fountain_leaves.obj-fc1750a1b37d87f485b37912f9f85392.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fountain_leaves.obj-fc1750a1b37d87f485b37912f9f85392.mesh"]
+
+source_file="res://Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/fountain_leaves.obj"
+dest_files=["res://.godot/imported/fountain_leaves.obj-fc1750a1b37d87f485b37912f9f85392.mesh", "res://.godot/imported/fountain_leaves.obj-fc1750a1b37d87f485b37912f9f85392.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Skyline Chase"
-run/main_scene="uid://cnyx80j0xiht4"
+run/main_scene="uid://n85dp1xjnjgb"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="uid://ddph5puyawbdi"
 
@@ -40,6 +40,10 @@ window/stretch/mode="canvas_items"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot-sqlite/plugin.cfg")
+
+[filesystem]
+
+import/blender/enabled=false
 
 [input]
 

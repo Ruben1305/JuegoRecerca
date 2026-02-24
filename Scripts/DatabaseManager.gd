@@ -9,35 +9,31 @@ func _ready():
 	db.open_db()
 	crear_tablas()
 
+# --- TABLAS ---
 func crear_tablas():
-	var query := """
+	var progreso := """
 	CREATE TABLE IF NOT EXISTS progreso (
 		id INTEGER PRIMARY KEY AUTOINCREMENT,
 		nivel INTEGER,
-		vidas INTEGER,
-		monedas INTEGER
+		vidas INTEGER
 	);
 	"""
-	db.query(query)
+	db.query(progreso)
 
-func guardar_progreso(nivel:int, vidas:int, monedas:int):
+# --- PROGRESO ---
+func guardar_progreso(nivel:int, vidas:int):
 	db.query("DELETE FROM progreso;")
-
 	db.query_with_bindings(
-		"INSERT INTO progreso (nivel, vidas, monedas) VALUES (?, ?, ?);",
-		[nivel, vidas, monedas]
+		"INSERT INTO progreso (nivel, vidas) VALUES (?, ?);",
+		[nivel, vidas]
 	)
-	
+
 func cargar_progreso() -> Dictionary:
 	db.query("SELECT * FROM progreso LIMIT 1;")
-
 	if db.query_result.is_empty():
 		return {}
-
 	var fila = db.query_result[0]
-
 	return {
 		"nivel": fila["nivel"],
-		"vidas": fila["vidas"],
-		"monedas": fila["monedas"]
+		"vidas": fila["vidas"]
 	}

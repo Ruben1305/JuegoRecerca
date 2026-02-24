@@ -27,6 +27,9 @@ buses/default_bus_layout=""
 
 Events="*res://autoload/events.gd"
 ScenesManager="*res://Scripts/ScenesManager.gd"
+DatabaseManager="*uid://8hd4pjnvpqfg"
+LevelStats="*uid://d07uop6pa3gle"
+Puntuacion="*uid://bu0ee37y1meqb"
 
 [display]
 

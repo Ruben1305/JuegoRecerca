@@ -8,3 +8,4 @@ func _input(event: InputEvent) -> void:
 			get_viewport().mode != Window.MODE_FULLSCREEN else
 			Window.MODE_WINDOWED
 		)
+		

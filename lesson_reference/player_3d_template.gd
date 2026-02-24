@@ -53,7 +53,7 @@ var ledge_point := Vector3.ZERO
 # --------------------
 func _ready() -> void:
 	_start_position = global_position
-
+	add_to_group("player")
 	Events.kill_plane_touched.connect(func():
 		global_position = _start_position
 		velocity = Vector3.ZERO

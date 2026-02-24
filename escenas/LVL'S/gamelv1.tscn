@@ -10,13 +10,13 @@
 [node name="Gamelv3" type="Node" unique_id=2132981713]
 script = ExtResource("1_2cjaw")
 
-[node name="Player3DTemplate" parent="." unique_id=27571889 instance=ExtResource("2_j5x7o")]
+[node name="Player3DTemplate" parent="." unique_id=1866791503 instance=ExtResource("2_j5x7o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.06658, 13.655779, -68.92376)
 
 [node name="FlagReachedScreen" parent="." unique_id=1250105717 instance=ExtResource("3_rvgv0")]
 
 [node name="Level" parent="." unique_id=1120381971 instance=ExtResource("4_2cjaw")]
 
-[node name="CanvasLayer" parent="." unique_id=1347886127 instance=ExtResource("5_j5x7o")]
+[node name="Contador Estrellas" parent="." unique_id=1347886127 instance=ExtResource("5_j5x7o")]
 
-[node name="CanvasLayer2" parent="." unique_id=406063415 instance=ExtResource("6_rvgv0")]
+[node name="Barra Vida" parent="." unique_id=406063415 instance=ExtResource("6_rvgv0")]

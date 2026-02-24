@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://fsve0o1w080o"
+path="res://.godot/imported/dagger.obj-75e5d18566b04d840e7aa77c434296fe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/dagger.obj-75e5d18566b04d840e7aa77c434296fe.mesh"]
+
+source_file="res://Characters_Adventurers/KayKit_Adventurers_2.0_FREE/Assets/obj/dagger.obj"
+dest_files=["res://.godot/imported/dagger.obj-75e5d18566b04d840e7aa77c434296fe.mesh", "res://.godot/imported/dagger.obj-75e5d18566b04d840e7aa77c434296fe.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

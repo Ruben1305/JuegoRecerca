@@ -42,7 +42,7 @@ var ledge_point := Vector3.ZERO
 # --------------------
 @onready var _camera_pivot: Node3D = %CameraPivot
 @onready var _camera: Camera3D = %Camera3D
-@onready var _skin: SophiaSkin = %SophiaSkin
+@onready var _skin: Knight = %Knight
 @export var ledge_snap_distance := 0.35
 @export var ledge_jump_vertical := 6.0
 
@@ -149,7 +149,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("Saltar") and jumps_left > 0:
 		velocity.y = jump_impulse
 		jumps_left -= 1
-		_skin.jump()
+		_skin.jump_start()
 	was_on_floor = is_on_floor()
 	
 	move_and_slide()
@@ -157,10 +157,20 @@ func _physics_process(delta: float) -> void:
 	# --- Animaciones ---
 	if is_wall_sliding:
 		_skin.wall_slide()
-	elif not is_on_floor() and velocity.y < 0:
-		_skin.fall()
-	elif is_on_floor():
+
+	elif not is_on_floor():
+
+		if velocity.y > 0:
+			# Está subiendo
+			_skin.jump_idle()
+		else:
+			# Está cayendo
+			_skin.fall()
+
+	else:
+		# Está en el suelo
 		var ground_speed := Vector3(velocity.x, 0, velocity.z).length()
+
 		if ground_speed > 0.1:
 			_skin.move()
 		else:

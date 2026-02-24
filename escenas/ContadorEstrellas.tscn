@@ -1,8 +1,22 @@
 [gd_scene format=3 uid="uid://dluh6kp13vsqx"]
 
 [ext_resource type="Texture2D" uid="uid://d3dh3pw3dfkpc" path="res://estrella.png" id="1_67sth"]
+[ext_resource type="Script" uid="uid://dypa8ofvffmpu" path="res://escenas/MVEstrella.gd" id="1_cu8h2"]
 [ext_resource type="FontFile" uid="uid://rfhcjmiaxtx4" path="res://Fuentes/RetroMario-Regular.otf" id="2_aqiqo"]
-[ext_resource type="Script" uid="uid://dbn7018230im5" path="res://ContadorEstrellas.gd" id="3_kexml"]
+
+[sub_resource type="GDScript" id="GDScript_bryv2"]
+script/source = "extends TextureRect
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
 
 [sub_resource type="LabelSettings" id="LabelSettings_kexml"]
 font = ExtResource("2_aqiqo")
@@ -12,7 +26,10 @@ font_size = 28
 font = ExtResource("2_aqiqo")
 font_size = 28
 
+[sub_resource type="GDScript" id="GDScript_8bolm"]
+
 [node name="ContadorEstrellas" type="CanvasLayer" unique_id=1347886127]
+script = ExtResource("1_cu8h2")
 
 [node name="Estrella" type="TextureRect" parent="." unique_id=2031422739]
 offset_left = 10.0
@@ -21,6 +38,7 @@ offset_right = 48.0
 offset_bottom = 49.0
 texture = ExtResource("1_67sth")
 expand_mode = 1
+script = SubResource("GDScript_bryv2")
 
 [node name="X" type="Label" parent="." unique_id=1585637761]
 offset_left = 46.0
@@ -37,4 +55,4 @@ offset_right = 108.0
 offset_bottom = 45.0
 text = "10"
 label_settings = SubResource("LabelSettings_smqld")
-script = ExtResource("3_kexml")
+script = SubResource("GDScript_8bolm")

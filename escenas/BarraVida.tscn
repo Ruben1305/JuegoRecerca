@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dpyts00g4ljql"]
 
-[ext_resource type="Script" uid="uid://ikwp6isguh05" path="res://escenas/Vida.gd" id="1_7mv8v"]
+[ext_resource type="Script" uid="uid://ikwp6isguh05" path="res://Scripts/Vida.gd" id="1_7mv8v"]
 [ext_resource type="Texture2D" uid="uid://cthhhs082g35k" path="res://corazones.png" id="2_yxcc8"]
 
 [node name="BarraVida" type="CanvasLayer" unique_id=406063415]

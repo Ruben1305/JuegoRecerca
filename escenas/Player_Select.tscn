@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dh4y54kubcmpq"]
+
+[ext_resource type="PackedScene" uid="uid://br6ia8h7ky01r" path="res://Player_Select/pixel_panel.tscn" id="1_0hjjg"]
+[ext_resource type="PackedScene" uid="uid://cseg4yldbjxwq" path="res://Player_Select/pixel_label.tscn" id="2_bdqg7"]
+[ext_resource type="PackedScene" uid="uid://xiknp6c5rcg8" path="res://Player_Select/pixel_button.tscn" id="3_d1hwi"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1210874088]
+
+[node name="Panel" parent="." unique_id=1028030089 instance=ExtResource("1_0hjjg")]
+
+[node name="Label" parent="." unique_id=151436502 instance=ExtResource("2_bdqg7")]
+
+[node name="Button" parent="." unique_id=615271752 instance=ExtResource("3_d1hwi")]
+offset_left = 1056.0
+offset_top = 448.0
+offset_right = 1120.0
+offset_bottom = 512.0

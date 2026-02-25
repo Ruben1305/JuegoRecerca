@@ -12,8 +12,7 @@ func _ready() -> void:
 	await get_tree().process_frame
 	contador.pivot_offset = contador.size / 2
 
-	# 🔑 Conectar la señal del singleton
-	Puntuacion.estrella_recogida.connect(_on_estrella_recogida)
+
 
 
 func _on_estrella_recogida() -> void:

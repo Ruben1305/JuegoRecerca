@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d66x53d5ir4i"]
+
+[ext_resource type="PackedScene" uid="uid://paeoyuu6falh" path="res://Esqueleto1Enemigo.tscn" id="1_064yq"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7mrhc"]
+radius = 0.3569336
+height = 1.6937866
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=1533694577]
+
+[node name="CharacterCollisionShape" type="CollisionShape3D" parent="." unique_id=1757062975]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8421966, 0)
+shape = SubResource("CapsuleShape3D_7mrhc")
+
+[node name="Skeleton_Mage" parent="." unique_id=1740831596 instance=ExtResource("1_064yq")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)

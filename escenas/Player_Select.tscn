@@ -1,17 +1,62 @@
 [gd_scene format=3 uid="uid://dh4y54kubcmpq"]
 
 [ext_resource type="PackedScene" uid="uid://br6ia8h7ky01r" path="res://Player_Select/pixel_panel.tscn" id="1_0hjjg"]
+[ext_resource type="Script" uid="uid://dq44bn3h2s51x" path="res://escenas/player_select.gd" id="1_d1hwi"]
 [ext_resource type="PackedScene" uid="uid://cseg4yldbjxwq" path="res://Player_Select/pixel_label.tscn" id="2_bdqg7"]
 [ext_resource type="PackedScene" uid="uid://xiknp6c5rcg8" path="res://Player_Select/pixel_button.tscn" id="3_d1hwi"]
+[ext_resource type="FontFile" uid="uid://rfhcjmiaxtx4" path="res://Fuentes/RetroMario-Regular.otf" id="4_h5yl6"]
+[ext_resource type="Texture2D" uid="uid://b5jnuxtc561rn" path="res://Tick.png" id="5_47c7f"]
+[ext_resource type="Texture2D" uid="uid://bnrfswsy500xt" path="res://Player_Select/Knight.png" id="7_wfh1o"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2x3jt"]
+font = ExtResource("4_h5yl6")
+font_size = 50
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h5yl6"]
+texture = ExtResource("5_47c7f")
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=1210874088]
+script = ExtResource("1_d1hwi")
 
 [node name="Panel" parent="." unique_id=1028030089 instance=ExtResource("1_0hjjg")]
+offset_left = 520.0
+offset_top = 144.0
+offset_right = 1434.2856
+offset_bottom = 944.0
 
 [node name="Label" parent="." unique_id=151436502 instance=ExtResource("2_bdqg7")]
+offset_left = 648.0
+offset_top = 272.0
+offset_right = 1328.0
+offset_bottom = 341.0
+label_settings = SubResource("LabelSettings_2x3jt")
+horizontal_alignment = 1
 
-[node name="Button" parent="." unique_id=615271752 instance=ExtResource("3_d1hwi")]
-offset_left = 1056.0
-offset_top = 448.0
-offset_right = 1120.0
-offset_bottom = 512.0
+[node name="Button_Right" parent="." unique_id=615271752 instance=ExtResource("3_d1hwi")]
+offset_left = 1184.0
+offset_top = 496.0
+offset_right = 1288.0
+offset_bottom = 600.0
+
+[node name="Button_Left" parent="." unique_id=1169321888 instance=ExtResource("3_d1hwi")]
+offset_left = 768.0
+offset_top = 592.0
+offset_right = 871.93005
+offset_bottom = 695.93005
+rotation = 3.1415927
+
+[node name="Button_OK" parent="." unique_id=531879835 instance=ExtResource("3_d1hwi")]
+offset_left = 928.0
+offset_top = 720.0
+offset_right = 1032.0
+offset_bottom = 824.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_h5yl6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=318672487]
+position = Vector2(971.6875, 523.9286)
+scale = Vector2(0.55828065, 0.5582806)
+texture = ExtResource("7_wfh1o")
+
+[connection signal="pressed" from="Button_Right" to="." method="_on_button_right_pressed"]
+[connection signal="pressed" from="Button_Left" to="." method="_on_button_left_pressed"]
+[connection signal="pressed" from="Button_OK" to="." method="_on_button_ok_pressed"]

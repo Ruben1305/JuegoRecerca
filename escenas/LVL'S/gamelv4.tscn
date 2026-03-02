@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://b1ot6gn6tms6h" path="res://lesson_reference/player_3d_template.tscn" id="2_32yqx"]
 [ext_resource type="PackedScene" uid="uid://bxg6oejpaitdt" path="res://level/interactable/flag/flag_reached_screen.tscn" id="3_mixpx"]
 [ext_resource type="PackedScene" uid="uid://bcglha54qi5wq" path="res://level/leve4.tscn" id="4_077yf"]
-[ext_resource type="PackedScene" uid="uid://ca4k5ha6xx5ff" path="res://Texturas arboles etc etc/PLUS/fbx/lamp_1.fbx" id="5_mixpx"]
 
 [node name="Game" type="Node" unique_id=1596139849]
 script = ExtResource("1_077yf")
@@ -15,6 +14,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.319263, 13.736077, -71.02
 [node name="FlagReachedScreen" parent="." unique_id=1196583279 instance=ExtResource("3_mixpx")]
 
 [node name="Level4" parent="." unique_id=1239796327 instance=ExtResource("4_077yf")]
-
-[node name="lamp_1" parent="." unique_id=1996801688 instance=ExtResource("5_mixpx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.891026, 13.608938, -66.113205)

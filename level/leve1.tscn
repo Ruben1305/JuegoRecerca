@@ -21,6 +21,8 @@
 [ext_resource type="ArrayMesh" uid="uid://dyv578jll4xmj" path="res://Texturas, Paisaje y Objetos /Otros objetos/obj/bush_1.obj" id="20_833p6"]
 [ext_resource type="ArrayMesh" uid="uid://diuxcl47fvf61" path="res://Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/fountain_water.obj" id="20_a1pmi"]
 [ext_resource type="ArrayMesh" uid="uid://dtsgpetf7fk53" path="res://Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/fountain_leaves.obj" id="21_d6xko"]
+[ext_resource type="PackedScene" uid="uid://d66x53d5ir4i" path="res://character_body_3denemigo.tscn" id="22_a1pmi"]
+[ext_resource type="Script" uid="uid://jfodnxjq2prj" path="res://character_body_3_denemigo.gd" id="23_d6xko"]
 
 [sub_resource type="Curve" id="Curve_k4wis"]
 _data = [Vector2(0.331719, 0.0391753), 0.0, 0.0, 0, 0, Vector2(0.697336, 1), 0.51276, 0.0, 0, 0]
@@ -675,6 +677,10 @@ skeleton = NodePath("../../../..")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D42" unique_id=782886855]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.99999994, 0, 0, 0, 0.9999999, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_a1pmi")
+
+[node name="CharacterBody3D" parent="." unique_id=1533694577 instance=ExtResource("22_a1pmi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.835953, 13.477774, -64.51811)
+script = ExtResource("23_d6xko")
 
 [connection signal="body_entered" from="Estrellica3" to="KillPlane" method="_on_estrellica_body_entered"]
 [connection signal="body_shape_entered" from="Estrellica3" to="KillPlane" method="_on_estrellica_body_shape_entered"]

@@ -270,7 +270,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.40205, 13.62894, -70.5247
 mesh = ExtResource("14_rep6o")
 
 [node name="HedgeStraightLong" type="MeshInstance3D" parent="." unique_id=1857363061]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.732113, 13.614847, -69.518585)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.509975, 13.614847, -65.20715)
 mesh = ExtResource("15_ku3ub")
 
 [connection signal="body_entered" from="Estrellica" to="KillPlane" method="_on_estrellica_body_entered"]

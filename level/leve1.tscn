@@ -22,7 +22,6 @@
 [ext_resource type="ArrayMesh" uid="uid://diuxcl47fvf61" path="res://Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/fountain_water.obj" id="20_a1pmi"]
 [ext_resource type="ArrayMesh" uid="uid://dtsgpetf7fk53" path="res://Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/fountain_leaves.obj" id="21_d6xko"]
 [ext_resource type="PackedScene" uid="uid://d66x53d5ir4i" path="res://character_body_3denemigo.tscn" id="22_a1pmi"]
-[ext_resource type="Script" uid="uid://jfodnxjq2prj" path="res://character_body_3_denemigo.gd" id="23_d6xko"]
 
 [sub_resource type="Curve" id="Curve_k4wis"]
 _data = [Vector2(0.331719, 0.0391753), 0.0, 0.0, 0, 0, Vector2(0.697336, 1), 0.51276, 0.0, 0, 0]
@@ -96,6 +95,8 @@ albedo_texture = ExtResource("6_q4pno")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_833p6"]
 albedo_texture = ExtResource("6_q4pno")
 
+[sub_resource type="NavigationMesh" id="NavigationMesh_a1pmi"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_37hwk"]
 albedo_texture = ExtResource("6_q4pno")
 
@@ -163,6 +164,12 @@ transform = Transform3D(-0.0075223166, 0, 0.9999717, 0, 1, 0, -0.9999717, 0, -0.
 material_override = SubResource("StandardMaterial3D_833p6")
 use_collision = true
 size = Vector3(5, 1, 7.0527954)
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="CSGBox3D33" unique_id=2116831596]
+transform = Transform3D(498.20242, 0, -1.4305115e-06, 0, 1, 0, 2.3841858e-07, 0, 702.8525, 0, 0.5, 0)
+rotation_edit_mode = 1
+navigation_mesh = SubResource("NavigationMesh_a1pmi")
+navigation_layers = 255
 
 [node name="CSGBox3D34" type="CSGBox3D" parent="." unique_id=685318612]
 transform = Transform3D(-0.0075223166, 0, 0.9999717, 0, 1, 0, -0.9999717, 0, -0.0075223166, -23.649635, 12.977758, -38.753014)
@@ -679,8 +686,7 @@ transform = Transform3D(0.9999999, 0, 0, 0, 0.99999994, 0, 0, 0, 0.9999999, 0, 0
 shape = SubResource("ConcavePolygonShape3D_a1pmi")
 
 [node name="CharacterBody3D" parent="." unique_id=1533694577 instance=ExtResource("22_a1pmi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.835953, 13.477774, -64.51811)
-script = ExtResource("23_d6xko")
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -23.713581, 13.477774, -49.181812)
 
 [connection signal="body_entered" from="Estrellica3" to="KillPlane" method="_on_estrellica_body_entered"]
 [connection signal="body_shape_entered" from="Estrellica3" to="KillPlane" method="_on_estrellica_body_shape_entered"]

@@ -1,20 +1,24 @@
 [gd_scene format=3 uid="uid://d66x53d5ir4i"]
 
+[ext_resource type="Script" uid="uid://jfodnxjq2prj" path="res://character_body_3_denemigo.gd" id="1_7mrhc"]
 [ext_resource type="PackedScene" uid="uid://paeoyuu6falh" path="res://Esqueleto1Enemigo.tscn" id="1_064yq"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7mrhc"]
 radius = 0.3569336
-height = 1.6937866
+height = 1.4982605
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_064yq"]
 
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=1533694577]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+script = ExtResource("1_7mrhc")
 
 [node name="CharacterCollisionShape" type="CollisionShape3D" parent="." unique_id=1757062975]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8421966, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7444335, 0)
 shape = SubResource("CapsuleShape3D_7mrhc")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1035182321]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
 
 [node name="Skeleton_Mage" parent="." unique_id=1740831596 instance=ExtResource("1_064yq")]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
@@ -22,5 +26,8 @@ transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 [node name="Area3D" type="Area3D" parent="." unique_id=1295671895]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1985086753]
-transform = Transform3D(20.61457, 0, 0, 0, 1, 0, 0, 0, 20.45107, 0, 0, 0)
+transform = Transform3D(12.764857, 0, 0, 0, 3.0073547, 0, 0, 0, 12.838219, 0, 0, 0)
 shape = SubResource("SphereShape3D_064yq")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=843554562]
+navigation_layers = 255

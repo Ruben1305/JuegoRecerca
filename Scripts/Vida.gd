@@ -8,27 +8,25 @@ var vidas_actuales := 3
 # Array de nodos hijos (los corazones en la barra)
 @onready var vidas := get_children()
 
+# Función general para recibir daño
+func recibir_daño(cantidad: int):
+	vidas_actuales -= cantidad
+	if vidas_actuales <= 0:
+		game_over()
+		
+		
 func _ready() -> void:
 	# Actualiza la visibilidad de los corazones según las vidas actuales
 	actualizar_vidas()
-
 	# Conecta la señal de cuando el jugador toca un "kill plane"
-	Events.kill_plane_touched.connect(_on_kill_plane_touched)
-
+	Events.kill_plane_touched.connect(caer_del_mapa)
 	# Inicia la animación de latido para cada corazón
 	for corazon in vidas:
 		animar_latido(corazon)
 
-
 # Función que se llama cuando el jugador toca un "kill plane"
-func _on_kill_plane_touched() -> void:
-	perder_vida()
-
-
-# Función para restar una vida y animar el corazón perdido
-func perder_vida() -> void:
-	if vidas_actuales <= 0:
-		return # Si ya no quedan vidas, no hacer nada
+func caer_del_mapa() -> void:
+	recibir_daño(0)
 
 	# Obtener el corazón que se va a perder
 	var corazon_perdido := vidas[vidas_actuales - 1]
@@ -46,7 +44,6 @@ func perder_vida() -> void:
 	if vidas_actuales == 0:
 		game_over()
 
-
 # Función para mostrar solo los corazones que representan las vidas actuales
 func actualizar_vidas() -> void:
 	for i in range(vidas.size()):
@@ -59,7 +56,6 @@ func actualizar_vidas() -> void:
 		# Asegurarse que los demás latan a velocidad normal
 		for i in range(vidas_actuales):
 			animar_latido(vidas[i], 0.5)
-
 
 # Cambia a la escena de Game Over
 func game_over() -> void:

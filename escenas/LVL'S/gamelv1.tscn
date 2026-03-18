@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b1p1lnectvs25" path="res://game.gd" id="1_2cjaw"]
 [ext_resource type="PackedScene" uid="uid://b1ot6gn6tms6h" path="res://lesson_reference/player_3d_template.tscn" id="2_j5x7o"]
 [ext_resource type="PackedScene" uid="uid://bxg6oejpaitdt" path="res://level/interactable/flag/flag_reached_screen.tscn" id="3_rvgv0"]
-[ext_resource type="PackedScene" uid="uid://dguydi7ssevwn" path="res://level/leve1.tscn" id="4_2cjaw"]
+[ext_resource type="PackedScene" uid="uid://o1gpxugkyabv" path="res://level/leve1.tscn" id="4_2cjaw"]
 [ext_resource type="PackedScene" uid="uid://dluh6kp13vsqx" path="res://escenas/ContadorEstrellas.tscn" id="5_j5x7o"]
 [ext_resource type="PackedScene" uid="uid://dpyts00g4ljql" path="res://escenas/BarraVida.tscn" id="6_rvgv0"]
 

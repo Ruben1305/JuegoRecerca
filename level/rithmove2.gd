@@ -1,6 +1,10 @@
 extends Node3D
 
+<<<<<<< HEAD:level/rithmove2.gd
 @export var move_distance := Vector3(15, 0, 0)
+=======
+@export var move_distance := Vector3(0, -10, 0)
+>>>>>>> Ruben1305-main:level/csg_box_3d_17.gd
 @export var speed := 3.0
 
 var start_pos := Vector3.ZERO

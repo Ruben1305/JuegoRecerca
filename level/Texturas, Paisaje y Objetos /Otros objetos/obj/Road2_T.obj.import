@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b3g2gn81i1wf3"
+path="res://.godot/imported/Road2_T.obj-b3857ec59f496cebcb61c5bf747f91ed.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Road2_T.obj-b3857ec59f496cebcb61c5bf747f91ed.mesh"]
+
+source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/obj/Road2_T.obj"
+dest_files=["res://.godot/imported/Road2_T.obj-b3857ec59f496cebcb61c5bf747f91ed.mesh", "res://.godot/imported/Road2_T.obj-b3857ec59f496cebcb61c5bf747f91ed.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

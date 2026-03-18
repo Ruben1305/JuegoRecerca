@@ -2,7 +2,7 @@
 
 [ext_resource type="Shader" uid="uid://cdlt3ujrpad32" path="res://level/sky_with_stars.tres" id="1_2l62p"]
 [ext_resource type="Texture2D" uid="uid://ca3jtautvrj1u" path="res://level/moon.png" id="2_7dg3j"]
-[ext_resource type="PackedScene" uid="uid://dksuwmynb7vjf" path="res://level/interactable/kill_plane/kill_plane_3d.tscn" id="3_qqn2y"]
+[ext_resource type="PackedScene" uid="uid://dksuwmynb7vjf" path="res://autoload/kill_plane/kill_plane_3d.tscn" id="3_qqn2y"]
 [ext_resource type="Material" uid="uid://da188d7yrcfr8" path="res://level/platforms.tres" id="4_l6p4a"]
 [ext_resource type="PackedScene" uid="uid://dtb1m6buqj5ir" path="res://Characters_Adventurers/KayKit_Adventurers_2.0_FREE/Characters/gltf/Knight.glb" id="5_2xmmv"]
 [ext_resource type="PackedScene" uid="uid://7d875nlsyepg" path="res://Characters_Adventurers/KayKit_Adventurers_2.0_FREE/Animations/gltf/Rig_Medium/Rig_Medium_General.glb" id="6_7dg3j"]

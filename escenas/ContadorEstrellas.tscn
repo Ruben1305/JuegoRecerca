@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dluh6kp13vsqx"]
 
-[ext_resource type="Script" uid="uid://u683fh4c1vwf" path="res://escenas/Contador_Estrellas.gd" id="1_8bolm"]
-[ext_resource type="Texture2D" uid="uid://d3dh3pw3dfkpc" path="res://estrella.png" id="1_67sth"]
+[ext_resource type="Script" uid="uid://u683fh4c1vwf" path="res://Scripts/Star/Contador_Estrellas.gd" id="1_8bolm"]
+[ext_resource type="Texture2D" uid="uid://d3dh3pw3dfkpc" path="res://escenas/Estrella/estrella.png" id="1_67sth"]
 [ext_resource type="FontFile" uid="uid://rfhcjmiaxtx4" path="res://Fuentes/RetroMario-Regular.otf" id="2_aqiqo"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ovrjp"]

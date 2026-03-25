@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cu2cn2o5is3eh"]
+[gd_scene format=3 uid="uid://cu2cn2o5is3eh"]
 
 [ext_resource type="Shader" uid="uid://cdlt3ujrpad32" path="res://level/sky_with_stars.tres" id="1_hoq17"]
 [ext_resource type="Texture2D" uid="uid://ca3jtautvrj1u" path="res://level/moon.png" id="2_oxdm5"]

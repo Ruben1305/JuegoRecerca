@@ -2,11 +2,12 @@
 
 [ext_resource type="Script" uid="uid://dhagyiyo55qe7" path="res://Scripts/GUI/selector_nivel.gd" id="1_nagik"]
 [ext_resource type="PackedScene" uid="uid://bx1a7btr3gn48" path="res://escenas/GUI/button.tscn" id="1_ypn5h"]
+[ext_resource type="Script" uid="uid://dpyhdcfgmbuja" path="res://escenas/GUI/buttonLvl1.gd" id="3_w824h"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_cpxs3"]
 font_size = 100
 
-[node name="SelectorNivel" type="Control"]
+[node name="SelectorNivel" type="Control" unique_id=1643839672]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -15,7 +16,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_nagik")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=968930096]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,7 +25,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.99607843, 0, 0, 1)
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=249448376]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -32,62 +33,62 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1833922075]
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="Control" type="Control" parent="MarginContainer/VBoxContainer"]
+[node name="Control" type="Control" parent="MarginContainer/VBoxContainer" unique_id=501450667]
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=381983869]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
 text = "Selector de nivel"
 label_settings = SubResource("LabelSettings_cpxs3")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=466052098]
 custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="Lvl1" parent="MarginContainer/HBoxContainer" instance=ExtResource("1_ypn5h")]
+[node name="Lvl1" parent="MarginContainer/HBoxContainer" unique_id=668030484 instance=ExtResource("1_ypn5h")]
+process_mode = 3
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 theme_override_font_sizes/font_size = 70
 text = "1"
+script = ExtResource("3_w824h")
 
-[node name="Lvl2" parent="MarginContainer/HBoxContainer" instance=ExtResource("1_ypn5h")]
+[node name="Lvl2" parent="MarginContainer/HBoxContainer" unique_id=1868976346 instance=ExtResource("1_ypn5h")]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 theme_override_font_sizes/font_size = 70
 text = "2"
+script = null
 
-[node name="Lvl3" parent="MarginContainer/HBoxContainer" instance=ExtResource("1_ypn5h")]
+[node name="Lvl3" parent="MarginContainer/HBoxContainer" unique_id=388324042 instance=ExtResource("1_ypn5h")]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 theme_override_font_sizes/font_size = 70
 text = "3"
+script = null
 
-[node name="Lvl4" parent="MarginContainer/HBoxContainer" instance=ExtResource("1_ypn5h")]
+[node name="Lvl4" parent="MarginContainer/HBoxContainer" unique_id=1223015745 instance=ExtResource("1_ypn5h")]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 theme_override_font_sizes/font_size = 70
 text = "4"
+script = null
 
-[node name="Lvl5" parent="MarginContainer/HBoxContainer" instance=ExtResource("1_ypn5h")]
+[node name="Lvl5" parent="MarginContainer/HBoxContainer" unique_id=477874118 instance=ExtResource("1_ypn5h")]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 theme_override_font_sizes/font_size = 70
 text = "5"
-
-[node name="Lvl6" parent="MarginContainer/HBoxContainer" instance=ExtResource("1_ypn5h")]
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 2
-theme_override_font_sizes/font_size = 70
-text = "6"
+script = null
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Lvl1" to="." method="_on_lvl_1_pressed"]
 [connection signal="toggled" from="MarginContainer/HBoxContainer/Lvl1" to="." method="_on_lvl_1_toggled"]
@@ -95,4 +96,3 @@ text = "6"
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Lvl3" to="." method="_on_lvl_3_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Lvl4" to="." method="_on_lvl_4_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Lvl5" to="." method="_on_lvl_5_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/Lvl6" to="." method="_on_lvl_6_pressed"]

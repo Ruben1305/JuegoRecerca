@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://xxcfygc1blod" path="res://Scripts/GUI/inicio.gd" id="2_a2m0w"]
 
 [sub_resource type="Theme" id="Theme_aup5q"]
+default_base_scale = 1.1
 
 [sub_resource type="FontVariation" id="FontVariation_p4jqn"]
 
@@ -34,22 +35,25 @@ size_flags_vertical = 4
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1559774321]
 layout_mode = 2
-text = "NOMBRE DEL JUEGO"
+text = "Skyline Chest"
 label_settings = SubResource("LabelSettings_g7cfe")
 
 [node name="StartGame" parent="MarginContainer/VBoxContainer" unique_id=454933203 instance=ExtResource("1_aup5q")]
+process_mode = 3
 custom_minimum_size = Vector2(100, 50)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 25
 text = "Jugar"
+script = null
 
-[node name="Exit" parent="MarginContainer/VBoxContainer" unique_id=333917215 instance=ExtResource("1_aup5q")]
-custom_minimum_size = Vector2(100, 50)
+[node name="Salir" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1675003640]
+process_mode = 3
 layout_mode = 2
 size_flags_horizontal = 4
+size_flags_stretch_ratio = 0.0
 theme_override_font_sizes/font_size = 25
 text = "Salir"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/StartGame" to="." method="_on_start_game_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Salir" to="." method="_on_salir_pressed"]

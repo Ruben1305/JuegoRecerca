@@ -4,31 +4,6 @@
 [ext_resource type="AnimationLibrary" uid="uid://bxniabd7rqxeu" path="res://autoload/AnimationMovement.res" id="2_e5mdi"]
 [ext_resource type="AnimationLibrary" uid="uid://dsyyqd7dsv1sa" path="res://autoload/Animation_Items.res" id="3_lurnk"]
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_bdedt"]
-animation = &"Animation_Items/Idle_A"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_c4emb"]
-animation = &"AnimationMovement/Running_B"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_1obrp"]
-xfade_time = 0.2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_6gbio"]
-xfade_time = 0.2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_xikft"]
-xfade_time = 0.1
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_8nryp"]
-states/End/position = Vector2(1306, 20)
-states/Idle/node = SubResource("AnimationNodeAnimation_bdedt")
-states/Idle/position = Vector2(279, 29)
-states/Running/node = SubResource("AnimationNodeAnimation_c4emb")
-states/Running/position = Vector2(810, 29)
-states/Start/position = Vector2(55, 29)
-transitions = ["Idle", "Running", SubResource("AnimationNodeStateMachineTransition_1obrp"), "Running", "Idle", SubResource("AnimationNodeStateMachineTransition_6gbio"), "Start", "Idle", SubResource("AnimationNodeStateMachineTransition_xikft")]
-
 [node name="Skeleton_Mage" unique_id=1740831596 instance=ExtResource("1_moyy8")]
 
 [node name="Skeleton3D" parent="Rig_Medium" parent_id_path=PackedInt32Array(897753239) index="0" unique_id=23674743]
@@ -59,8 +34,3 @@ transform = Transform3D(1, 0, 1.4210854e-14, 0, 0.99999994, 0, -1.4210854e-14, 0
 deterministic = true
 libraries/AnimationMovement = ExtResource("2_e5mdi")
 libraries/Animation_Items = ExtResource("3_lurnk")
-
-[node name="AnimationTree" type="AnimationTree" parent="." index="2" unique_id=1983980235]
-tree_root = SubResource("AnimationNodeStateMachine_8nryp")
-advance_expression_base_node = NodePath("..")
-anim_player = NodePath("../AnimationPlayer")

@@ -17,6 +17,10 @@ extends CharacterBody3D
 @export var tilt_upper_limit := PI / 3.0
 @export var tilt_lower_limit := -PI / 8.0
 
+@export_group("Ataque")
+@export var attack_damage := 1
+@export var attack_cooldown := 0.8
+
 # --------------------
 # Internas
 # --------------------
@@ -27,12 +31,12 @@ var _last_movement_direction := Vector3.BACK
 var is_wall_sliding := false
 var _start_position := Vector3.ZERO
 var was_on_floor := false
+var is_attacking := false
+var can_attack := true
 
 # --------------------
 # EDGE GRAB
 # --------------------
-
-
 var is_ledge_grabbing := false
 var ledge_normal := Vector3.ZERO
 var ledge_point := Vector3.ZERO
@@ -43,10 +47,13 @@ var ledge_point := Vector3.ZERO
 @onready var _camera_pivot: Node3D = %CameraPivot
 @onready var _camera: Camera3D = %Camera3D
 @onready var _skin: Knight = %Knight
+@onready var _anim_player: AnimationPlayer = %Knight/AnimationPlayer
+@onready var _anim_tree: AnimationTree = %Knight/AnimationTree
 @export var ledge_snap_distance := 0.35
 @export var ledge_jump_vertical := 6.0
 
-
+const ANIM_SPAWN  = "Animation_Items/Spawn_Ground"
+const ANIM_ATTACK = "Animation_Items/Throw"
 
 # --------------------
 # Ready
@@ -54,13 +61,48 @@ var ledge_point := Vector3.ZERO
 func _ready() -> void:
 	_start_position = global_position
 	add_to_group("player")
+
+	_do_spawn_animation()
+
 	Events.kill_plane_touched.connect(func():
 		global_position = _start_position
 		velocity = Vector3.ZERO
 		jumps_left = max_jumps
-		_skin.idle()
-		set_physics_process(true)
+		is_attacking = false
+		can_attack = true
+		_do_spawn_animation()
 	)
+
+# --------------------
+# Spawn
+# --------------------
+func _do_spawn_animation() -> void:
+	set_physics_process(false)
+	_anim_tree.active = false
+	_anim_player.play(ANIM_SPAWN)
+	await _anim_player.animation_finished
+	_anim_tree.active = true
+	set_physics_process(true)
+
+# --------------------
+# Ataque
+# --------------------
+func _do_attack() -> void:
+	can_attack = false
+	is_attacking = true
+
+	_anim_tree.active = false
+	_anim_player.play(ANIM_ATTACK)
+	await _anim_player.animation_finished
+	_anim_tree.active = true
+
+	is_attacking = false
+
+	# Daño al enemigo si hay alguno cerca
+	Events.player_attack.emit(attack_damage)
+
+	await get_tree().create_timer(attack_cooldown).timeout
+	can_attack = true
 
 # --------------------
 # Input
@@ -75,10 +117,13 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		_camera_input_direction = event.relative * mouse_sensitivity
 
+	# --- Ataque ---
+	if event.is_action_pressed("Atacar") and can_attack and not is_attacking and is_on_floor():
+		_do_attack()
+
 # --------------------
 # Physics
 # --------------------
-
 func _physics_process(delta: float) -> void:
 	# --- Cámara ---
 	_camera_pivot.rotation.x = clamp(
@@ -88,27 +133,28 @@ func _physics_process(delta: float) -> void:
 	)
 	_camera_pivot.rotation.y -= _camera_input_direction.x * delta
 	_camera_input_direction = Vector2.ZERO
-		# ==================================================
-	# === MOVER AL JUGADOR CON PLATAFORMA MÓVIL (Godot 4) ===
+
+	# ==================================================
+	# === MOVER AL JUGADOR CON PLATAFORMA MÓVIL ===
 	# ==================================================
 	var platform: Node3D = null
 
 	if is_on_floor():
-		# Obtenemos la última colisión usada por move_and_slide()
 		var collision = get_last_slide_collision()
 		if collision:
 			var collider = collision.get_collider()
-			# Comprobamos si el collider tiene propiedad "velocity"
 			if collider and "velocity" in collider:
 				platform = collider
 
-	# Sumamos solo la velocidad horizontal de la plataforma
 	if platform:
 		global_position.x += platform.velocity.x * delta
 		global_position.z += platform.velocity.z * delta
 
-	# --- Input Movimiento ---
-	var raw_input := Input.get_vector("Izquierda", "Derecha", "Atras", "Alante")
+	# --- Input Movimiento (bloqueado si está atacando) ---
+	var raw_input := Vector2.ZERO
+	if not is_attacking:
+		raw_input = Input.get_vector("Izquierda", "Derecha", "Atras", "Alante")
+
 	var forward := -_camera.global_basis.z
 	var right := _camera.global_basis.x
 	var move_direction := (forward * raw_input.y + right * raw_input.x)
@@ -142,40 +188,32 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.y += gravity * delta
 
-# --- Reset saltos en suelo o wall slide ---
+	# --- Reset saltos en suelo o wall slide ---
 	if (is_on_floor() or is_wall_sliding) and not was_on_floor:
 		jumps_left = max_jumps
-	# --- Salto normal ---
-	if Input.is_action_just_pressed("Saltar") and jumps_left > 0:
+
+	# --- Salto normal (bloqueado si está atacando) ---
+	if Input.is_action_just_pressed("Saltar") and jumps_left > 0 and not is_attacking:
 		velocity.y = jump_impulse
 		jumps_left -= 1
 		_skin.jump_start()
+
 	was_on_floor = is_on_floor()
-	
+
 	move_and_slide()
 
-	# --- Animaciones ---
-	if is_wall_sliding:
-		_skin.wall_slide()
-
-	elif not is_on_floor():
-
-		if velocity.y > 0:
-			# Está subiendo
-			_skin.jump_idle()
+	# --- Animaciones (solo si no está atacando, el AnimationTree se encarga) ---
+	if not is_attacking:
+		if is_wall_sliding:
+			_skin.wall_slide()
+		elif not is_on_floor():
+			if velocity.y > 0:
+				_skin.jump_idle()
+			else:
+				_skin.fall()
 		else:
-			# Está cayendo
-			_skin.fall()
-
-	else:
-		# Está en el suelo
-		var ground_speed := Vector3(velocity.x, 0, velocity.z).length()
-
-		if ground_speed > 0.1:
-			_skin.move()
-		else:
-			_skin.idle()
-
-
-
-	
+			var ground_speed := Vector3(velocity.x, 0, velocity.z).length()
+			if ground_speed > 0.1:
+				_skin.move()
+			else:
+				_skin.idle()

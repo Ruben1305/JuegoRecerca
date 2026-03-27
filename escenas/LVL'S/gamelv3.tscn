@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cguos8xlrxb8c"]
+
+[ext_resource type="Script" uid="uid://b1p1lnectvs25" path="res://Scripts/game.gd" id="1_1il7v"]
+[ext_resource type="PackedScene" uid="uid://b1ot6gn6tms6h" path="res://Players/Characters/KnightCharacter.tscn" id="1_w0p8v"]
+[ext_resource type="PackedScene" uid="uid://cplb80irxbycw" path="res://level/leve3.tscn" id="4_0p4p0"]
+[ext_resource type="PackedScene" uid="uid://bxg6oejpaitdt" path="res://level/flag/flag_reached_screen.tscn" id="19_cpgj4"]
+
+[node name="Game" type="Node" unique_id=643107420]
+script = ExtResource("1_1il7v")
+
+[node name="Player3DTemplate" parent="." unique_id=18099479 instance=ExtResource("1_w0p8v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.718697, 15.22656, -69.09775)
+
+[node name="FlagReachedScreen" parent="." unique_id=1082067929 instance=ExtResource("19_cpgj4")]
+
+[node name="Level" parent="." unique_id=2010892895 instance=ExtResource("4_0p4p0")]

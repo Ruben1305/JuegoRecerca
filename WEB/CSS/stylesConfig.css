@@ -1,0 +1,72 @@
+/* ================================================================
+   SKYLINE CHASE — styles.css
+   Paleta extraída del logo:
+     Rojo principal  → #C0392B / #E74C3C
+     Rojo oscuro     → #7B1818
+     Negro profundo  → #0A0A0A
+     Gris oscuro     → #1A1A1A / #222222
+     Gris medio      → #333333
+     Blanco          → #FFFFFF / #F0F0F0
+================================================================ */
+
+/* ────────────────────────────────────────────────────────────────
+   VARIABLES GLOBALES
+   Define los colores una sola vez aquí. Si quieres cambiar un
+   color, solo edita esta sección y se aplica en toda la página.
+──────────────────────────────────────────────────────────────── */
+:root {
+    --rojo:         #C0392B;   /* rojo principal del logo */
+    --rojo-vivo:    #E74C3C;   /* rojo más brillante para hover */
+    --rojo-oscuro:  #7B1818;   /* rojo apagado para fondos */
+    --negro:        #0A0A0A;   /* negro puro del fondo */
+    --gris-oscuro:  #1A1A1A;   /* fondo de tarjetas */
+    --gris-medio:   #2A2A2A;   /* bordes y superficies secundarias */
+    --gris-texto:   #888888;   /* texto secundario (descripciones) */
+    --blanco:       #FFFFFF;   /* texto principal */
+    --blanco-suave: #CCCCCC;   /* texto intermedio */
+  
+    --fuente-titulo: 'Bebas Neue', sans-serif;   /* fuente de impacto */
+    --fuente-cuerpo: 'Barlow', sans-serif;        /* fuente de texto */
+  }
+
+/* ────────────────────────────────────────────────────────────────
+     TARJETAS DE CONTROLES
+     Cuadrícula de 3 columnas que se adapta al ancho de pantalla.
+  ──────────────────────────────────────────────────────────────── */
+  .controls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+  }
+  
+  /* Tarjeta individual de control */
+  .control-card {
+    background: var(--gris-oscuro);
+    border: 1px solid var(--gris-medio);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: border-color 0.25s, background 0.25s;
+  }
+  
+  .control-card:hover {
+    border-color: var(--rojo);                  /* borde rojo al hacer hover */
+    background: rgba(192, 57, 43, 0.07);        /* fondo rojo muy suave */
+  }
+  
+  /* Caja visual de la tecla */
+  .control-key {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(192, 57, 43, 0.15);
+    border: 1px solid rgba(192, 57, 43, 0.45);
+    color: var(--rojo-vivo);
+    font-size: 0.82rem;
+    font-weight: 700;
+    font-family: monospace;       /* fuente de código para las teclas */
+    letter-spacing: 1.5px;
+    border-radius: 6px;
+    padding: 5px 12px;
+    margin-bottom: 0.9rem;
+    text-transform: uppercase;
+  }

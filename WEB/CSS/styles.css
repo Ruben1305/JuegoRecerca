@@ -297,49 +297,6 @@
     margin-bottom: 3rem;
   }
   
-  
-  /* ────────────────────────────────────────────────────────────────
-     TARJETAS DE CONTROLES
-     Cuadrícula de 3 columnas que se adapta al ancho de pantalla.
-  ──────────────────────────────────────────────────────────────── */
-  .controls-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.25rem;
-  }
-  
-  /* Tarjeta individual de control */
-  .control-card {
-    background: var(--gris-oscuro);
-    border: 1px solid var(--gris-medio);
-    border-radius: 10px;
-    padding: 1.5rem;
-    transition: border-color 0.25s, background 0.25s;
-  }
-  
-  .control-card:hover {
-    border-color: var(--rojo);                  /* borde rojo al hacer hover */
-    background: rgba(192, 57, 43, 0.07);        /* fondo rojo muy suave */
-  }
-  
-  /* Caja visual de la tecla */
-  .control-key {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(192, 57, 43, 0.15);
-    border: 1px solid rgba(192, 57, 43, 0.45);
-    color: var(--rojo-vivo);
-    font-size: 0.82rem;
-    font-weight: 700;
-    font-family: monospace;       /* fuente de código para las teclas */
-    letter-spacing: 1.5px;
-    border-radius: 6px;
-    padding: 5px 12px;
-    margin-bottom: 0.9rem;
-    text-transform: uppercase;
-  }
-  
   .control-card h3 {
     font-size: 1rem;
     font-weight: 600;
@@ -353,55 +310,7 @@
   }
   
   
-  /* ────────────────────────────────────────────────────────────────
-     SECCIÓN PROYECTO — TARJETAS
-     Bloque destacado + cuadrícula de 2 columnas
-  ──────────────────────────────────────────────────────────────── */
-  
-  /* Párrafo introductorio del proyecto con borde izquierdo rojo */
-  .about-highlight {
-    border-left: 3px solid var(--rojo);
-    padding: 1.5rem 1.75rem;
-    background: rgba(192, 57, 43, 0.06);
-    border-radius: 0 10px 10px 0;
-    font-size: 1rem;
-    color: var(--blanco-suave);
-    line-height: 1.85;
-    margin-bottom: 2.5rem;
-  }
-  
-  /* Cuadrícula de 2 columnas para las tarjetas del proyecto */
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.25rem;
-  }
-  
-  /* Tarjeta individual de información del proyecto */
-  .about-card {
-    background: var(--gris-oscuro);
-    border: 1px solid var(--gris-medio);
-    border-radius: 10px;
-    padding: 1.75rem;
-    transition: border-color 0.25s;
-  }
-  
-  .about-card:hover {
-    border-color: var(--rojo-oscuro);   /* borde rojo oscuro al hacer hover */
-  }
-  
-  .about-card h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--blanco);
-    margin-bottom: 0.75rem;
-  }
-  
-  .about-card p {
-    font-size: 0.9rem;
-    color: var(--gris-texto);
-    line-height: 1.75;
-  }
+
   
   
   /* ────────────────────────────────────────────────────────────────

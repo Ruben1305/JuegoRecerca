@@ -235,6 +235,7 @@ transform = Transform3D(0.707107, 0, -0.707107, 0, 1.8214824, 0, 0.707107, 0, 0.
 
 [node name="CSGBox3D20" type="CSGBox3D" parent="." unique_id=859236518]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.555275, 13.108939, -71.49923)
+layers = 8
 material_override = SubResource("StandardMaterial3D_f30v1")
 use_collision = true
 size = Vector3(11.916382, 1, 12.426025)
@@ -242,12 +243,14 @@ material = SubResource("StandardMaterial3D_44x8d")
 
 [node name="CSGBox3D21" type="CSGBox3D" parent="." unique_id=247999810]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.34383, 13.105548, -56.30371)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(7.011017, 1, 5.2391357)
 
 [node name="CSGBox3D22" type="CSGBox3D" parent="." unique_id=710878084]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.38311, 13.105548, -38.999897)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 collision_layer = 0
@@ -256,12 +259,14 @@ size = Vector3(7.011017, 1, 5.2391357)
 
 [node name="CSGBox3D26" type="CSGBox3D" parent="." unique_id=718352748]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.071262, 13.105548, 24.950293)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(4.9080887, 1, 3.9608765)
 
 [node name="CSGBox3D27" type="CSGBox3D" parent="." unique_id=406007008]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.151093, 13.105548, 24.950293)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 collision_layer = 0
@@ -270,6 +275,7 @@ size = Vector3(4.9080887, 1, 3.9608765)
 
 [node name="CSGBox3D28" type="CSGBox3D" parent="." unique_id=1919207752]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.071262, 13.105548, 40.94691)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 collision_layer = 0
@@ -278,36 +284,42 @@ size = Vector3(4.9080887, 1, 3.9608765)
 
 [node name="CSGBox3D29" type="CSGBox3D" parent="." unique_id=971295401]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.151093, 13.105548, 40.94691)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(4.9080887, 1, 3.9608765)
 
 [node name="CSGBox3D30" type="CSGBox3D" parent="." unique_id=1158692689]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.211514, 13.105548, 55.901554)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(4.9080887, 1, 3.9608765)
 
 [node name="CSGBox3D37" type="CSGBox3D" parent="." unique_id=1886608765]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.08614, 13.105548, 55.901554)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(4.9080887, 1, 3.9608765)
 
 [node name="CSGBox3D38" type="CSGBox3D" parent="." unique_id=299889794]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.386475, 13.105548, 46.25724)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(4.9080887, 1, 3.9608765)
 
 [node name="CSGBox3D40" type="CSGBox3D" parent="." unique_id=842293436]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -99.828186, 13.105548, 57.50165)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(4.9080887, 1, 3.9608765)
 
 [node name="CSGBox3D39" type="CSGBox3D" parent="." unique_id=290268094]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.386475, 13.105548, 66.50314)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 collision_layer = 0
@@ -315,24 +327,28 @@ size = Vector3(4.9080887, 1, 3.9608765)
 
 [node name="CSGBox3D31" type="CSGBox3D" parent="." unique_id=10096370]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -39.923264, 13.105548, 55.852886)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(4.9080887, 1, 3.9608765)
 
 [node name="CSGBox3D35" type="CSGBox3D" parent="." unique_id=1998648510]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 21.669365, 13.105548, 56.470642)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(7.0868244, 1, 3.9608765)
 
 [node name="CSGBox3D36" type="CSGBox3D" parent="." unique_id=658423529]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 37.80312, 13.105548, 56.470642)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(7.0868244, 1, 3.9608765)
 
 [node name="CSGBox3D32" type="CSGBox3D" parent="." unique_id=1786568068]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -27.343952, 13.105548, 43.24253)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 collision_layer = 0
@@ -340,44 +356,52 @@ size = Vector3(5.5252113, 1, 3.9608765)
 
 [node name="CSGBox3D33" type="CSGBox3D" parent="." unique_id=544390588]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -27.355354, 13.105548, 68.69026)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(5.0546303, 1, 3.9608765)
 
 [node name="CSGBox3D23" type="CSGBox3D" parent="." unique_id=365991081]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.383, 13.106, -38.99987)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(7.011017, 1, 5.2391357)
 
 [node name="CSGBox3D24" type="CSGBox3D" parent="." unique_id=985203804]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.380177, 13.106, -24.403032)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(7.011017, 1, 5.2391357)
 
 [node name="CSGBox3D25" type="CSGBox3D" parent="." unique_id=320863495]
 transform = Transform3D(3.5264864, 0, 0, 0, 1, 0, 0, 0, 4.3846827, -58.380177, 13.106, 1.07164)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(7.011017, 1, 5.2391357)
 
 [node name="CSGBox3D34" type="CSGBox3D" parent="." unique_id=1959286996]
 transform = Transform3D(3.5264864, 0, 0, 0, 1, 0, 0, 0, 4.3846827, -4.183012, 13.106, 56.04889)
+layers = 8
 material_override = SubResource("StandardMaterial3D_o1n17")
 use_collision = true
 size = Vector3(8.37018, 1, 8.229977)
 
 [node name="Cactus_Tall_5" parent="." unique_id=1622651263 instance=ExtResource("3_b7ara")]
 transform = Transform3D(1.93396, -0.241928, -2.48772, 0.662063, 2.55211, 0.16876, 2.35812, -0.518119, 1.99287, -61.35471, 13.407144, -75.67829)
+layers = 8
 
 [node name="Cactus_Tall_7" parent="." unique_id=197643595 instance=ExtResource("3_b7ara")]
 transform = Transform3D(2.4470172, -0.52898943, 1.8728846, 0.66206294, 2.5521097, 0.16875997, -1.820175, 0.21713266, 2.5792606, -61.35471, 13.407144, -75.74559)
+layers = 8
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2144720310]
 
 [node name="Bench" type="MeshInstance3D" parent="StaticBody3D" unique_id=1902841723]
 transform = Transform3D(0.017465618, 0, -1.0167704, 0, 1, 0, 1.4173611, 0, 0.012529282, -53.470524, 13.60894, -75.009415)
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -387,6 +411,7 @@ shape = SubResource("ConcavePolygonShape3D_a7bxw")
 
 [node name="Bench2" type="MeshInstance3D" parent="StaticBody3D" unique_id=903274440]
 transform = Transform3D(0.017465618, 0, -1.0167704, 0, 1, 0, 1.4173611, 0, 0.012529282, -53.470524, 13.60894, -68.08444)
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -398,6 +423,7 @@ shape = SubResource("ConcavePolygonShape3D_f30v1")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.952156, 13.606, -9.706985)
 
 [node name="HedgeCorner" type="MeshInstance3D" parent="StaticBody3D3" unique_id=634586305]
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -409,6 +435,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.273766, 13.606, 38.603615
 
 [node name="HedgeCorner" type="MeshInstance3D" parent="StaticBody3D13" unique_id=1494937945]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.024600983)
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -420,6 +447,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.926379, 13.606, 50.099663
 
 [node name="HedgeCorner" type="MeshInstance3D" parent="StaticBody3D45" unique_id=1781266221]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.024600983)
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -431,6 +459,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.88883, 13.606, 46.627514)
 
 [node name="HedgeCorner" type="MeshInstance3D" parent="StaticBody3D40" unique_id=1350355621]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.024600983)
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -441,6 +470,7 @@ shape = SubResource("ConcavePolygonShape3D_o1n17")
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -46.717564, 13.606, -9.706985)
 
 [node name="HedgeCorner4" type="MeshInstance3D" parent="StaticBody3D21" unique_id=2097601520]
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -452,6 +482,7 @@ transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -3.8
 
 [node name="HedgeCorner4" type="MeshInstance3D" parent="StaticBody3D51" unique_id=2106907947]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.62701416, 0, -2.3841858e-07)
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -464,6 +495,7 @@ transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 9.81
 
 [node name="HedgeCorner4" type="MeshInstance3D" parent="StaticBody3D67" unique_id=864769008]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.62701416, 0, -2.3841858e-07)
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -475,6 +507,7 @@ shape = SubResource("ConcavePolygonShape3D_lkd8r")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -69.952156, 13.606, 11.725103)
 
 [node name="HedgeCorner2" type="MeshInstance3D" parent="StaticBody3D9" unique_id=1161095558]
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -485,6 +518,7 @@ shape = SubResource("ConcavePolygonShape3D_bxhqt")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18.22305, 13.606, 73.2969)
 
 [node name="HedgeCorner2" type="MeshInstance3D" parent="StaticBody3D57" unique_id=119859167]
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -496,6 +530,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.
 
 [node name="HedgeCorner2" type="MeshInstance3D" parent="StaticBody3D48" unique_id=22822581]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 0)
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -507,6 +542,7 @@ shape = SubResource("ConcavePolygonShape3D_bxhqt")
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -46.77241, 13.606, 11.725103)
 
 [node name="HedgeCorner3" type="MeshInstance3D" parent="StaticBody3D15" unique_id=744653266]
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -518,6 +554,7 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.8
 
 [node name="HedgeCorner3" type="MeshInstance3D" parent="StaticBody3D52" unique_id=578249091]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.62701416)
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -530,6 +567,7 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.83
 
 [node name="HedgeCorner3" type="MeshInstance3D" parent="StaticBody3D75" unique_id=1274563716]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.62701416)
+layers = 16
 mesh = ExtResource("8_o1n17")
 skeleton = NodePath("../..")
 
@@ -541,6 +579,7 @@ shape = SubResource("ConcavePolygonShape3D_seuvc")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -69.93681, 13.611908, -5.9992847)
 
 [node name="HedgeStraightLong" type="MeshInstance3D" parent="StaticBody3D4" unique_id=982531749]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -551,6 +590,7 @@ shape = SubResource("ConcavePolygonShape3D_q7h52")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -69.93681, 13.611908, -2.4756444)
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D5" unique_id=370709535]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -561,6 +601,7 @@ shape = SubResource("ConcavePolygonShape3D_qht01")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18.021324, 13.611908, 48.005062)
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D11" unique_id=717483679]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -571,6 +612,7 @@ shape = SubResource("ConcavePolygonShape3D_qht01")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18.021324, 13.611908, 51.785255)
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D35" unique_id=1614700830]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -581,6 +623,7 @@ shape = SubResource("ConcavePolygonShape3D_qht01")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18.021324, 13.611908, 55.60771)
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D36" unique_id=476125399]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -592,6 +635,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D46" unique_id=731811024]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 1.9073486e-06)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -604,6 +648,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.8
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D86" unique_id=64091930]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 1.9073486e-06)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -615,6 +660,7 @@ shape = SubResource("ConcavePolygonShape3D_qht01")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18.021324, 13.611908, 59.606033)
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D37" unique_id=1458961327]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -626,6 +672,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D47" unique_id=57069464]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 0)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -638,6 +685,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.8
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D85" unique_id=377295296]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 0)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -645,14 +693,12 @@ skeleton = NodePath("../..")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_qht01")
 
-[node name="StaticBody3D87" type="StaticBody3D" parent="." unique_id=470773092]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.8123527, 13.611908, 56.769276)
-
 [node name="StaticBody3D76" type="StaticBody3D" parent="." unique_id=1476809707]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.785703, 13.611908, 70.04849)
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D76" unique_id=490072593]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 0)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -665,6 +711,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.78
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D77" unique_id=1903920335]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 0)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -677,6 +724,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.78
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D78" unique_id=1731085737]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 0)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -689,6 +737,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.78
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D81" unique_id=1787226676]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 0)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -701,6 +750,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.78
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D82" unique_id=411631093]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 0)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -713,6 +763,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.78
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D83" unique_id=1568771495]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 0)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -725,6 +776,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.78
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D84" unique_id=2102730582]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62701416, 0, 0)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -736,6 +788,7 @@ shape = SubResource("ConcavePolygonShape3D_qht01")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18.021324, 13.611908, 63.447563)
 
 [node name="HedgeStraightLong2" type="MeshInstance3D" parent="StaticBody3D38" unique_id=1201085690]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -746,6 +799,7 @@ shape = SubResource("ConcavePolygonShape3D_qht01")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -69.93681, 13.611908, 1.2978547)
 
 [node name="HedgeStraightLong3" type="MeshInstance3D" parent="StaticBody3D6" unique_id=2080819504]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -756,6 +810,7 @@ shape = SubResource("ConcavePolygonShape3D_sxsjj")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -69.93681, 13.611908, 5.0600443)
 
 [node name="HedgeStraightLong4" type="MeshInstance3D" parent="StaticBody3D7" unique_id=1986589093]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -766,6 +821,7 @@ shape = SubResource("ConcavePolygonShape3D_0hjxn")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -69.93681, 13.611908, 8.61837)
 
 [node name="HedgeStraightLong5" type="MeshInstance3D" parent="StaticBody3D8" unique_id=1129729440]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -776,6 +832,7 @@ shape = SubResource("ConcavePolygonShape3D_i8vt0")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -46.79898, 13.611908, 8.61837)
 
 [node name="HedgeStraightLong11" type="MeshInstance3D" parent="StaticBody3D16" unique_id=177640158]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -786,6 +843,7 @@ shape = SubResource("ConcavePolygonShape3D_kjmn2")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -46.79898, 13.611908, 4.782318)
 
 [node name="HedgeStraightLong12" type="MeshInstance3D" parent="StaticBody3D17" unique_id=943299408]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -796,6 +854,7 @@ shape = SubResource("ConcavePolygonShape3D_1lrpw")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -46.79898, 13.611908, 1.0471826)
 
 [node name="HedgeStraightLong13" type="MeshInstance3D" parent="StaticBody3D18" unique_id=1030422677]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -806,6 +865,7 @@ shape = SubResource("ConcavePolygonShape3D_casgl")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -46.79898, 13.611908, -2.5683553)
 
 [node name="HedgeStraightLong14" type="MeshInstance3D" parent="StaticBody3D19" unique_id=1617369206]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -816,6 +876,7 @@ shape = SubResource("ConcavePolygonShape3D_lpw1j")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -46.79898, 13.611908, -6.2955465)
 
 [node name="HedgeStraightLong15" type="MeshInstance3D" parent="StaticBody3D20" unique_id=695372713]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -826,6 +887,7 @@ shape = SubResource("ConcavePolygonShape3D_xniuq")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.03343, 13.611909, 11.731405)
 
 [node name="HedgeStraightLong6" type="MeshInstance3D" parent="StaticBody3D10" unique_id=1234736382]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -836,6 +898,7 @@ shape = SubResource("ConcavePolygonShape3D_ullru")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.274944, 13.611909, 11.731405)
 
 [node name="HedgeStraightLong8" type="MeshInstance3D" parent="StaticBody3D12" unique_id=1424008304]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -846,6 +909,7 @@ shape = SubResource("ConcavePolygonShape3D_wb0g1")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.57519, 13.611909, 11.731405)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D14" unique_id=119216532]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -856,6 +920,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.464573, 13.611909, 46.68724)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D39" unique_id=1649588829]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -866,6 +931,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.464573, 13.611909, 38.66295)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D58" unique_id=1837249948]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -876,6 +942,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.640715, 13.611909, 46.68724)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D41" unique_id=951992216]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -886,6 +953,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.640715, 13.611909, 38.67227)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D59" unique_id=522369621]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -896,6 +964,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.7906466, 13.611909, 46.68724)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D42" unique_id=661599181]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -906,6 +975,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9698603, 13.611909, 46.68724)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D62" unique_id=1246139242]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -916,6 +986,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.7906466, 13.611909, 38.729763)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D60" unique_id=2019496029]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -926,6 +997,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.057287, 13.611909, 38.729763)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D61" unique_id=1825648509]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -936,6 +1008,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45137453, 13.611909, 38.729763)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D64" unique_id=928850584]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -946,6 +1019,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1773162, 13.611909, 38.729763)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D65" unique_id=506444639]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -956,6 +1030,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.894029, 13.611909, 38.729763)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D66" unique_id=63053523]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -967,6 +1042,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.7906466, 13.611909, 50.728
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D43" unique_id=1874457364]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.62701416)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -979,6 +1055,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.7906466, 13.611909, 62.708
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D50" unique_id=1499715286]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.62701416)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -991,6 +1068,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.483986, 13.611909, 50.692
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D44" unique_id=1886418984]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.62701416)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1003,6 +1081,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.483986, 13.611909, 62.606
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D49" unique_id=361698134]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.62701416)
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1014,6 +1093,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.42192, 13.611909, 65.821014)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D53" unique_id=1457222665]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1024,6 +1104,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.443689, 13.611909, 73.321236)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D68" unique_id=561892620]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1034,6 +1115,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.645575, 13.611909, 73.321236)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D69" unique_id=610016670]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1044,6 +1126,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8033466, 13.611909, 73.321236)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D70" unique_id=1195329111]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1054,6 +1137,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.204637, 13.611909, 73.321236)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D71" unique_id=1119033157]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1064,6 +1148,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.391284, 13.611909, 73.321236)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D72" unique_id=1360981934]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1074,6 +1159,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2994633, 13.611909, 73.321236)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D73" unique_id=941047551]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1084,6 +1170,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.186635, 13.611909, 73.321236)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D74" unique_id=346453927]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1094,6 +1181,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.694885, 13.611909, 65.821014)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D54" unique_id=1854908066]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1104,6 +1192,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.011095, 13.611909, 65.821014)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D55" unique_id=1798549884]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1114,6 +1203,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.529746, 13.611909, 65.821014)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D56" unique_id=659495523]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1124,6 +1214,7 @@ shape = SubResource("ConcavePolygonShape3D_5gg8m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1067505, 13.611909, 65.821014)
 
 [node name="HedgeStraightLong10" type="MeshInstance3D" parent="StaticBody3D63" unique_id=288567597]
+layers = 16
 mesh = ExtResource("9_bxhqt")
 skeleton = NodePath("../..")
 
@@ -1191,6 +1282,7 @@ transform = Transform3D(-6.6420874e-08, 0, -1, 0, 1, 0, 1.5195324, 0, -4.371139e
 
 [node name="Bench" type="MeshInstance3D" parent="StaticBody3D23" unique_id=1676653070]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 0, 0)
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1203,6 +1295,7 @@ transform = Transform3D(-6.6420874e-08, 0, -1, 0, 1, 0, 1.5195324, 0, -4.371139e
 
 [node name="Bench" type="MeshInstance3D" parent="StaticBody3D24" unique_id=1921284549]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 0, 0)
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1214,6 +1307,7 @@ shape = SubResource("ConcavePolygonShape3D_ft77d")
 transform = Transform3D(1.9503947, 0, 0, 0, 2.889731, 0, 0, 0, 1.7666018, -47.597916, 13.607048, -4.0486283)
 
 [node name="Bush1" type="MeshInstance3D" parent="StaticBody3D25" unique_id=510992607]
+layers = 16
 material_override = SubResource("StandardMaterial3D_i8vt0")
 mesh = ExtResource("13_0hjxn")
 skeleton = NodePath("../..")
@@ -1226,6 +1320,7 @@ transform = Transform3D(-6.6420874e-08, 0, -1, 0, 1, 0, 1.5195324, 0, -4.371139e
 
 [node name="Bench" type="MeshInstance3D" parent="StaticBody3D26" unique_id=1259422925]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 0, 0)
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1238,6 +1333,7 @@ transform = Transform3D(-6.6420874e-08, 0, -1, 0, 1, 0, 1.5195324, 0, -4.371139e
 
 [node name="Bench" type="MeshInstance3D" parent="StaticBody3D27" unique_id=1970923927]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 0, 0)
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1249,6 +1345,7 @@ shape = SubResource("ConcavePolygonShape3D_ft77d")
 transform = Transform3D(1.9503947, 0, 0, 0, 2.889731, 0, 0, 0, 1.7666018, -47.597916, 13.607048, 6.9409404)
 
 [node name="Bush1" type="MeshInstance3D" parent="StaticBody3D28" unique_id=1938839692]
+layers = 16
 material_override = SubResource("StandardMaterial3D_i8vt0")
 mesh = ExtResource("13_0hjxn")
 skeleton = NodePath("../..")
@@ -1261,6 +1358,7 @@ transform = Transform3D(-6.6420874e-08, 0, 1, 0, 1, 0, -1.5195324, 0, -4.371139e
 
 [node name="Bench" type="MeshInstance3D" parent="StaticBody3D29" unique_id=1487260014]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 0, 0)
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1273,6 +1371,7 @@ transform = Transform3D(-6.6420874e-08, 0, 1, 0, 1, 0, -1.5195324, 0, -4.371139e
 
 [node name="Bench" type="MeshInstance3D" parent="StaticBody3D30" unique_id=35471100]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 0, 0)
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1284,6 +1383,7 @@ shape = SubResource("ConcavePolygonShape3D_ft77d")
 transform = Transform3D(-8.525446e-08, 0, 1.7666018, 0, 2.889731, 0, -1.9503947, 0, -7.722062e-08, -69.29755, 13.607048, -5.2121763)
 
 [node name="Bush1" type="MeshInstance3D" parent="StaticBody3D31" unique_id=1074461821]
+layers = 16
 material_override = SubResource("StandardMaterial3D_i8vt0")
 mesh = ExtResource("13_0hjxn")
 skeleton = NodePath("../..")
@@ -1296,6 +1396,7 @@ transform = Transform3D(-6.6420874e-08, 0, 1, 0, 1, 0, -1.5195324, 0, -4.371139e
 
 [node name="Bench" type="MeshInstance3D" parent="StaticBody3D32" unique_id=773165685]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 0, 0)
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1308,6 +1409,7 @@ transform = Transform3D(-6.6420874e-08, 0, 1, 0, 1, 0, -1.5195324, 0, -4.371139e
 
 [node name="Bench" type="MeshInstance3D" parent="StaticBody3D33" unique_id=608339201]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, -7.1054274e-15, 0, 0.99999994, 0, 0, 0)
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1319,6 +1421,7 @@ shape = SubResource("ConcavePolygonShape3D_ft77d")
 transform = Transform3D(-8.525446e-08, 0, 1.7666018, 0, 2.889731, 0, -1.9503947, 0, -7.722062e-08, -69.29755, 13.607048, 5.7773924)
 
 [node name="Bush1" type="MeshInstance3D" parent="StaticBody3D34" unique_id=1349025379]
+layers = 16
 material_override = SubResource("StandardMaterial3D_i8vt0")
 mesh = ExtResource("13_0hjxn")
 skeleton = NodePath("../..")
@@ -1330,6 +1433,7 @@ shape = SubResource("ConcavePolygonShape3D_rqvad")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.43641, 13.606, 55.948204)
 
 [node name="Fountain" type="MeshInstance3D" parent="StaticBody3D88" unique_id=338024920]
+layers = 16
 mesh = ExtResource("14_0hjxn")
 skeleton = NodePath("../..")
 
@@ -1338,11 +1442,13 @@ shape = SubResource("ConcavePolygonShape3D_8ykag")
 
 [node name="FountainWater" type="MeshInstance3D" parent="StaticBody3D88" unique_id=991185110]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.069125175, 0, -0.006881714)
+layers = 16
 mesh = ExtResource("15_i8vt0")
 skeleton = NodePath("../..")
 
 [node name="FountainLeaves" type="MeshInstance3D" parent="StaticBody3D88" unique_id=1525965980]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06555939, 0, 0.030696869)
+layers = 16
 mesh = ExtResource("16_4o1lg")
 skeleton = NodePath("../..")
 
@@ -1350,6 +1456,7 @@ skeleton = NodePath("../..")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.448601, 15.191993, 55.38336)
 
 [node name="Bird" type="MeshInstance3D" parent="StaticBody3D89" unique_id=589806141]
+layers = 16
 mesh = ExtResource("17_w82xw")
 skeleton = NodePath("../..")
 
@@ -1360,6 +1467,7 @@ shape = SubResource("ConcavePolygonShape3D_mdi3c")
 transform = Transform3D(1.426472, 0, 0, 0, 1, 0, 0, 0, 1, -11.451372, 13.606, 51.14966)
 
 [node name="Bench" type="MeshInstance3D" parent="StaticBody3D90" unique_id=946501059]
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1371,6 +1479,7 @@ transform = Transform3D(1.426472, 0, 0, 0, 1, 0, 0, 0, 1, -11.451372, 13.606, 51
 
 [node name="Bench5" type="MeshInstance3D" parent="StaticBody3D91" unique_id=1675190745]
 transform = Transform3D(-4.3711385e-08, 0, 0.70103025, 0, 1, 0, -1.426472, 0, -4.371139e-08, -1.5824776, 0, 4.663746)
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1382,6 +1491,7 @@ shape = SubResource("ConcavePolygonShape3D_5y4jf")
 transform = Transform3D(-1.426472, 0, -8.742278e-08, 0, 1, 0, 1.2470613e-07, 0, -1, -12.852454, 13.606, 60.765083)
 
 [node name="Bench3" type="MeshInstance3D" parent="StaticBody3D92" unique_id=661619021]
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1392,6 +1502,7 @@ shape = SubResource("ConcavePolygonShape3D_0uvaq")
 transform = Transform3D(-1.426472, 0, -8.742278e-08, 0, 1, 0, 1.2470613e-07, 0, -1, -10.206, 13.606, 60.765083)
 
 [node name="Bench4" type="MeshInstance3D" parent="StaticBody3D93" unique_id=658187793]
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1402,6 +1513,7 @@ shape = SubResource("ConcavePolygonShape3D_3y7tv")
 transform = Transform3D(1.426472, 0, 0, 0, 1, 0, 0, 0, 1, -7.370591, 13.606, 51.14966)
 
 [node name="Bench2" type="MeshInstance3D" parent="StaticBody3D94" unique_id=1455873771]
+layers = 16
 mesh = ExtResource("7_a7bxw")
 skeleton = NodePath("../..")
 
@@ -1412,6 +1524,7 @@ shape = SubResource("ConcavePolygonShape3D_nimyl")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.413849, 13.606, 51.432552)
 
 [node name="Trashcan" type="MeshInstance3D" parent="StaticBody3D95" unique_id=573416240]
+layers = 16
 mesh = ExtResource("19_wb0g1")
 skeleton = NodePath("../..")
 
@@ -1422,6 +1535,7 @@ shape = SubResource("ConcavePolygonShape3D_mt8cm")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.404505, 13.805999, 50.700897)
 
 [node name="StreetLantern" type="MeshInstance3D" parent="StaticBody3D96" unique_id=685281320]
+layers = 16
 mesh = ExtResource("10_w82xw")
 skeleton = NodePath("../../StaticBody3D86")
 
@@ -1432,6 +1546,7 @@ shape = SubResource("ConcavePolygonShape3D_r01wl")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.64364, 13.805999, 61.32619)
 
 [node name="StreetLantern2" type="MeshInstance3D" parent="StaticBody3D97" unique_id=875892276]
+layers = 16
 mesh = ExtResource("10_w82xw")
 skeleton = NodePath("../../StaticBody3D86")
 
@@ -1442,6 +1557,7 @@ shape = SubResource("ConcavePolygonShape3D_fvell")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.45387, 13.610311, 61.41739)
 
 [node name="Tree1A" type="MeshInstance3D" parent="StaticBody3D98" unique_id=1010662888]
+layers = 16
 material_override = SubResource("StandardMaterial3D_1lrpw")
 mesh = ExtResource("20_seuvc")
 skeleton = NodePath("../..")
@@ -1453,6 +1569,7 @@ shape = SubResource("ConcavePolygonShape3D_x7g3n")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.446252, 13.610311, 50.565163)
 
 [node name="Tree1A2" type="MeshInstance3D" parent="StaticBody3D99" unique_id=739571087]
+layers = 16
 material_override = SubResource("StandardMaterial3D_1lrpw")
 mesh = ExtResource("20_seuvc")
 skeleton = NodePath("../..")
@@ -1464,6 +1581,7 @@ shape = SubResource("ConcavePolygonShape3D_qh6eu")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.248726, 13.606, 60.831703)
 
 [node name="Trashcan2" type="MeshInstance3D" parent="StaticBody3D100" unique_id=1814885899]
+layers = 16
 mesh = ExtResource("19_wb0g1")
 skeleton = NodePath("../..")
 

@@ -9,7 +9,7 @@
 script = ExtResource("1_1il7v")
 
 [node name="Player3DTemplate" parent="." unique_id=18099479 instance=ExtResource("1_w0p8v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.718697, 15.22656, -69.09775)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.442387, 13.896169, -69.09775)
 
 [node name="FlagReachedScreen" parent="." unique_id=1082067929 instance=ExtResource("19_cpgj4")]
 

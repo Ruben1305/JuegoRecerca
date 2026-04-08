@@ -224,6 +224,43 @@
     line-height: 1.75;
   }
 
+/* Boton */
+
+  .hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 6rem;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+  }
+
+  .hero-btn {
+    display: inline-block;
+    background: var(--rojo);
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background 0.2s, transform 0.2s;
+  }
+  
+  .hero-btn:hover {
+    background: var(--rojo-vivo);    
+    transform: translateY(-3px);
+  }
+
   /* ────────────────────────────────────────────────────────────────
      PIE DE PÁGINA
      Franja final con créditos del proyecto
@@ -236,7 +273,7 @@
     font-size: 0.85rem;
   }
   
-  /* Tu nombre en rojo dentro del footer */
+  /* Nombres */
   .footer-name {
     color: var(--rojo-vivo);
     font-weight: 600;

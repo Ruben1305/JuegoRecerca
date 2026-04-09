@@ -1,99 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="styles" href="styles.css">
-  <title>Skyline Chase</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="styles" href="styles.css" />
+    <title>Skyline Chase</title>
 
-  <!-- ─── Google Fonts ───────────────────────────────────────────
+    <!-- ─── Google Fonts ───────────────────────────────────────────
        Bebas Neue: fuente de título, impacto visual fuerte
        Barlow: fuente de cuerpo, limpia y moderna
   ──────────────────────────────────────────────────────────────── -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- ─── Hoja de estilos externa ────────────────────────────────-->
-  <link rel="stylesheet" href="CSS/styles.css" />
-
-</head>
-<body>
-
-  <!-- ════════════════════════════════════════════════════════════
+    <!-- ─── Hoja de estilos externa ────────────────────────────────-->
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <!-- ════════════════════════════════════════════════════════════
        BARRA DE NAVEGACIÓN
        Menú fijo en la parte superior con enlaces a cada sección
   ════════════════════════════════════════════════════════════════ -->
-  <nav class="navbar">
-    <div class="nav-logo">SKYLINE<span>CHASE</span></div>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="HTML/controles.html">Controles</a></li>
-      <li><a href="HTML/proyecto.html">Proyecto</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar">
+      <div class="nav-logo">SKYLINE<span>CHASE</span></div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="HTML/controles.html">Controles</a></li>
+          <li><a href="HTML/proyecto.html">Proyecto</a></li>
+        </ul>
+        <a
+          href="https://github.com/Ruben1305/JuegoRecerca/blob/main/release.zip"
+          download="SkylineChest.zip"
+          class="btn-download"
+        >
+          Descargalo aquí
+        </a>
+      </div>
+    </nav>
 
-
-  <!-- ════════════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════════════
        SECCIÓN HERO (INICIO)
        Pantalla de bienvenida con título, descripción y badges
   ════════════════════════════════════════════════════════════════ -->
-  <section id="inicio" class="hero">
+    <section id="inicio" class="hero">
+      <!-- Fondo decorativo: capas de color y partículas de estrellas -->
+      <div class="hero-bg"></div>
+      <div class="hero-particles"></div>
 
-    <!-- Fondo decorativo: capas de color y partículas de estrellas -->
-    <div class="hero-bg"></div>
-    <div class="hero-particles"></div>
+      <!-- Contenido central del hero -->
+      <div class="hero-content">
+        <!-- Etiqueta pequeña de categoría -->
+        <div class="hero-tag">Proyecto de Recerca · 2025</div>
 
-    <!-- Contenido central del hero -->
-    <div class="hero-content">
+        <!-- Título principal con la fuente de impacto -->
+        <h1 class="hero-title">
+          SKYLINE<br />
+          <span class="title-accent">CHASE</span>
+        </h1>
 
-      <!-- Etiqueta pequeña de categoría -->
-      <div class="hero-tag">Proyecto de Recerca · 2025</div>
+        <!-- Descripción breve del juego -->
+        <p class="hero-desc">
+          Un juego 3D de plataformas diseñado en el motor grafico de godot, con
+          una serie de coleccionables opcionales, el objetivo es llegar a la
+          meta evita a los enemigos o acaba con ellos.
+        </p>
 
-      <!-- Título principal con la fuente de impacto -->
-      <h1 class="hero-title">
-        SKYLINE<br/>
-        <span class="title-accent">CHASE</span>
-      </h1>
+        <!-- Botón de llamada a la acción -->
+        <a href="https://ruben1305.github.io/skylinechest-web/" class="hero-btn"
+          >Jugar</a
+        >
 
-      <!-- Descripción breve del juego -->
-      <p class="hero-desc">
-        Un juego 3D de plataformas diseñado en el motor grafico de godot,
-        con una serie de coleccionables opcionales, el objetivo es llegar a la meta
-        evita a los enemigos o acaba con ellos.
-      </p>
-
-      <!-- Botón de llamada a la acción -->
-      <a href="https://ruben1305.github.io/skylinechest-web/" class="hero-btn">Jugar</a>
-
-      <!-- Badges de características del juego -->
-      <div class="hero-badges">
-        <div class="badge">🎮 Juego 3D</div>
-        <div class="badge">⭐ Coleccionables</div>
-        <div class="badge">👾 Enemigos</div>
-        <div class="badge">🏔️ Plataformas</div>
+        <!-- Badges de características del juego -->
+        <div class="hero-badges">
+          <div class="badge">🎮 Juego 3D</div>
+          <div class="badge">⭐ Coleccionables</div>
+          <div class="badge">👾 Enemigos</div>
+          <div class="badge">🏔️ Plataformas</div>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════════════
        LÍNEA DIVISORIA DECORATIVA
        Separa visualmente las secciones con un degradado rojo
   ════════════════════════════════════════════════════════════════ -->
-  <div class="divider"></div>
+    <div class="divider"></div>
 
-
-  <!-- ════════════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════════════
        PIE DE PÁGINA
        Créditos del proyecto
   ════════════════════════════════════════════════════════════════ -->
-  <footer>
-    <p>
-      Skyline Chase &mdash; Proyecto de Recerca &mdash;
-      Desarrollado por <span class="footer-name">Didac Rubio y Rubén Alcantarilla</span>
-    </p>
-  </footer>
-
-</body>
+    <footer>
+      <p>
+        Skyline Chase &mdash; Proyecto de Recerca &mdash; Desarrollado por
+        <span class="footer-name">Didac Rubio y Rubén Alcantarilla</span>
+      </p>
+    </footer>
+  </body>
 </html>

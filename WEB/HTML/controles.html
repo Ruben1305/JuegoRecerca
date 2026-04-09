@@ -1,134 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="styles" href="styles.css">
-  <title>Skyline Chase</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyline Chase</title>
 
-  <!-- ─── Google Fonts ───────────────────────────────────────────
+    <!-- ─── Google Fonts ───────────────────────────────────────────
        Bebas Neue: fuente de título, impacto visual fuerte
        Barlow: fuente de cuerpo, limpia y moderna
   ──────────────────────────────────────────────────────────────── -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- ─── Hoja de estilos externa ────────────────────────────────-->
-  <link rel="stylesheet" href="../CSS/stylesConfig.css"/>
+    <!-- ─── Hoja de estilos externa ────────────────────────────────
+       IMPORTANTE: rel="stylesheet" (no "styles") para que funcione
+  ──────────────────────────────────────────────────────────────── -->
+    <link rel="stylesheet" href="../CSS/stylesConfig.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- ════════════════════════════════════════════════════════════
        BARRA DE NAVEGACIÓN
        Menú fijo en la parte superior con enlaces a cada sección
   ════════════════════════════════════════════════════════════════ -->
-  <nav class="navbar">
-    <div class="nav-logo">SKYLINE<span>CHASE</span></div>
-    <ul class="nav-links">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="controles.html">Controles</a></li>
-      <li><a href="proyecto.html">Proyecto</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar">
+      <div class="nav-logo">SKYLINE<span>CHASE</span></div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="controles.html">Controles</a></li>
+          <li><a href="proyecto.html">Proyecto</a></li>
+        </ul>
+        <a
+          href="https://github.com/Ruben1305/JuegoRecerca/blob/main/release.zip"
+          download="SkylineChest.zip"
+          class="btn-download"
+        >
+          Descargalo aquí
+        </a>
+      </div>
+    </nav>
 
-  <div class="divider"></div>
+    <div class="divider"></div>
 
-<!-- ════════════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════════════
        SECCIÓN CONTROLES
        Tarjetas con cada tecla / acción del juego
   ════════════════════════════════════════════════════════════════ -->
-  <section id="controles" class="section">
-
-    <!-- Encabezado de la sección -->
-    <p class="section-tag">Controles</p>
-    <h2 class="section-title">Cómo se juega</h2>
-    <p class="section-lead">
-      Skyline Chase es fácil de aprender. Muévete por las plataformas,
-      esquiva los enemigos o acaba con ellos y, si quieres, recoge las estrellas que
-      encuentres por el camino.
-    </p>
-
-    <!-- Cuadrícula de tarjetas de controles -->
-    <div class="controls-grid">
-
-      <!-- Cada .control-card contiene: tecla visual + nombre + descripción -->
-
-      <div class="control-card">
-        <div class="control-key">W A S D</div>
-        <h3>Movimiento</h3>
-        <p>Desplázate por las plataformas en todas las direcciones.</p>
-      </div>
-
-      <div class="control-card">
-        <div class="control-key">ESPACIO</div>
-        <h3>Saltar</h3>
-        <p>Salta para subir plataformas y esquivar obstáculos.</p>
-      </div>
-
-      <div class="control-card">
-        <div class="control-key">RATÓN</div>
-        <h3>Cámara</h3>
-        <p>Mueve el ratón para controlar la dirección de la cámara.</p>
-      </div>
-
-      <div class="control-card">
-        <div class="control-key">CLICK IZQ</div>
-        <h3>Atacar</h3>
-        <p>Ataca para acabar con los enemigos durante los niveles.</p>
-      </div>
-
-      <div class="control-card">
-        <div class="control-key">ESC</div>
-        <h3>Pausa</h3>
-        <p>Pausa la partida y accede al menú de opciones.</p>
-      </div>
-
-      <div class="control-card">
-        <div class="control-key">⭐</div>
-        <h3>Coleccionables</h3>
-        <p>Las estrellas son opcionales. ¡Recógelas si las encuentras!</p>
-      </div>
-
-    </div>
-  </section>
-
-<div class="divider"></div>
-
-  <section id="Jugabilidad" class="section">
-
-    <p class="section-tag">Jugabilidad</p>
-    <div class="control-play">
-      <h2 class="section-title">Cómo se juega</h2>
+    <section id="controles" class="section">
+      <p class="section-tag">Controles</p>
+      <h2 class="section-title">Lo básico</h2>
       <p class="section-lead">
-        Skyline Chase es fácil de aprender. Muévete por las plataformas,
-        esquiva los enemigos o acaba con ellos y, si quieres, recoge las estrellas que
+        Skyline Chase es fácil de aprender. Muévete por las plataformas, esquiva
+        los enemigos o acaba con ellos y, si quieres, recoge las estrellas que
         encuentres por el camino.
       </p>
-    
-    
-    
 
-  </section>
+      <!-- Cuadrícula de tarjetas de controles -->
+      <div class="controls-grid">
+        <div class="control-card">
+          <div class="control-key">W A S D</div>
+          <h3>Movimiento</h3>
+          <p>Desplázate por las plataformas en todas las direcciones.</p>
+        </div>
 
+        <div class="control-card">
+          <div class="control-key">ESPACIO</div>
+          <h3>Saltar</h3>
+          <p>Salta para subir plataformas y esquivar obstáculos.</p>
+        </div>
 
+        <div class="control-card">
+          <div class="control-key">RATÓN</div>
+          <h3>Cámara</h3>
+          <p>Mueve el ratón para controlar la dirección de la cámara.</p>
+        </div>
 
+        <div class="control-card">
+          <div class="control-key">CLICK IZQ</div>
+          <h3>Atacar</h3>
+          <p>Ataca para acabar con los enemigos durante los niveles.</p>
+        </div>
 
-  </div>
+        <div class="control-card">
+          <div class="control-key">ESC</div>
+          <h3>Pausa</h3>
+          <p>Pausa la partida y accede al menú de opciones.</p>
+        </div>
+      </div>
+    </section>
 
-  <div class="divider"></div>
+    <div class="divider"></div>
+
+    <!-- ════════════════════════════════════════════════════════════
+       SECCIÓN JUGABILIDAD
+       Explicación general de cómo funciona el juego
+  ════════════════════════════════════════════════════════════════ -->
+    <section id="Jugabilidad" class="section">
+      <p class="section-tag">Jugabilidad</p>
+      <h2 class="section-title">Cómo se juega</h2>
+      <p class="section-lead">
+        El objetivo principal es llegar a la meta. A lo largo de los diferentes
+        niveles se implementarán nuevas mecánicas. Hay coleccionables ⭐ que
+        puedes recoger, no olvides que las caídas de las plataformas no son lo
+        único que pueden acabar contigo: evita o acaba con los enemigos de los
+        diferentes niveles. Tienes tres oportunidades para pasarte el nivel,
+        ¡sino vuelve a intentarlo!
+      </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ════════════════════════════════════════════════════════════
+       SECCIÓN MECÁNICAS
+       Tarjetas con las mecánicas principales del juego
+  ════════════════════════════════════════════════════════════════ -->
+    <section id="Mecanicas" class="section">
+      <p class="section-tag">Mecánicas</p>
+      <h2 class="section-title">Mecánicas del juego</h2>
+
+      <!-- Reutilizamos controls-grid y control-card porque el diseño es el mismo -->
+      <div class="controls-grid">
+        <div class="control-card">
+          <div class="control-key">❤️</div>
+          <h3>Vidas</h3>
+          <p>Tienes tres vidas. ¡Pásate los niveles antes de perderlas!</p>
+        </div>
+
+        <div class="control-card">
+          <div class="control-key">🧱</div>
+          <h3>WallSlide</h3>
+          <p>
+            Pégarte a las paredes y deslízate por ellas para llegar al objetivo.
+          </p>
+        </div>
+
+        <div class="control-card">
+          <div class="control-key">⭐</div>
+          <h3>Coleccionables</h3>
+          <p>Las estrellas son opcionales. ¡Recógelas si las encuentras!</p>
+        </div>
+
+        <div class="control-card">
+          <div class="control-key">🚀</div>
+          <h3>Doble Salto</h3>
+          <p>Utiliza el doble salto para poder llegar más lejos.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
 
     <!-- ════════════════════════════════════════════════════════════
        PIE DE PÁGINA
        Créditos del proyecto
   ════════════════════════════════════════════════════════════════ -->
-  <footer>
-    <p>
-      Skyline Chase &mdash; Proyecto de Recerca &mdash;
-      Desarrollado por <span class="footer-name">Didac Rubio y Rubén Alcantarilla</span>
-    </p>
-  </footer>
-
-</body>
+    <footer>
+      <p>
+        Skyline Chase &mdash; Proyecto de Recerca &mdash; Desarrollado por
+        <span class="footer-name">Didac Rubio y Rubén Alcantarilla</span>
+      </p>
+    </footer>
+  </body>
+</html>

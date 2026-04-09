@@ -1,116 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="styles" href="styles.css">
-  <title>Skyline Chase</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="styles" href="styles.css" />
+    <title>Skyline Chase</title>
 
-  <!-- ─── Google Fonts ───────────────────────────────────────────
+    <!-- ─── Google Fonts ───────────────────────────────────────────
        Bebas Neue: fuente de título, impacto visual fuerte
        Barlow: fuente de cuerpo, limpia y moderna
   ──────────────────────────────────────────────────────────────── -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- ─── Hoja de estilos externa ────────────────────────────────-->
-  <link rel="stylesheet" href="../CSS/stylesProyecto.css" />
+    <!-- ─── Hoja de estilos externa ────────────────────────────────-->
+    <link rel="stylesheet" href="../CSS/stylesProyecto.css" />
+  </head>
 
-</head>
-
-<body>
-
-  <!-- ════════════════════════════════════════════════════════════
+  <body>
+    <!-- ════════════════════════════════════════════════════════════
        BARRA DE NAVEGACIÓN
        Menú fijo en la parte superior con enlaces a cada sección
   ════════════════════════════════════════════════════════════════ -->
-  <nav class="navbar">
-    <div class="nav-logo">SKYLINE<span>CHASE</span></div>
-    <ul class="nav-links">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="controles.html">Controles</a></li>
-      <li><a href="proyecto.html">Proyecto</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar">
+      <div class="nav-logo">SKYLINE<span>CHASE</span></div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="controles.html">Controles</a></li>
+          <li><a href="proyecto.html">Proyecto</a></li>
+        </ul>
+        <a
+          href="https://github.com/Ruben1305/JuegoRecerca/blob/main/release.zip"
+          download="SkylineChest.zip"
+          class="btn-download"
+        >
+          Descargalo aquí
+        </a>
+      </div>
+    </nav>
 
-  <!-- ════════════════════════════════════════════════════════════
+    <!-- ════════════════════════════════════════════════════════════
        SECCIÓN PROYECTO
        Información académica: objetivo, tecnología, mecánicas y conclusiones
   ════════════════════════════════════════════════════════════════ -->
-  <section id="proyecto" class="section">
+    <section id="proyecto" class="section">
+      <!-- Encabezado de la sección -->
+      <p class="section-tag">Sobre el proyecto</p>
+      <h2 class="section-title">El proyecto de recerca</h2>
 
-    <!-- Encabezado de la sección -->
-    <p class="section-tag">Sobre el proyecto</p>
-    <h2 class="section-title">El proyecto de recerca</h2>
-
-    <!-- Párrafo introductorio destacado -->
-    <div class="about-highlight">
-      Skyline Chase nace como proyecto de recerca con el objetivo de explorar
-      el desarrollo de videojuegos 3D desde cero, estudiando los retos del
-      diseño de niveles, la programación de enemigos con inteligencia
-      artificial y la creación de mecánicas de coleccionables.
-    </div>
-
-    <!-- Cuadrícula de 4 tarjetas informativas del proyecto -->
-    <div class="about-grid">
-
-      <div class="about-card">
-        <h3>🎯 Objetivo</h3>
-        <p>
-          Diseñar y programar un videojuego 3D de plataformas funcional,
-          aplicando conceptos de programación orientada a objetos, física
-          de juego y diseño de niveles.
-        </p>
+      <!-- Párrafo introductorio destacado -->
+      <div class="about-highlight">
+        Skyline Chase nace como proyecto de recerca con el objetivo de explorar
+        el desarrollo de videojuegos 3D desde cero, estudiando los retos del
+        diseño de niveles, la programación de enemigos con inteligencia
+        artificial y la creación de mecánicas de coleccionables.
       </div>
 
-      <div class="about-card">
-        <h3>🛠️ Tecnología</h3>
-        <p>
-          El juego está desarrollado con motores de juego 3D modernos,
-          aprovechando herramientas de modelado, scripts de comportamiento
-          y sistemas de colisión.
-        </p>
+      <!-- Cuadrícula de 4 tarjetas informativas del proyecto -->
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>🎯 Objetivo</h3>
+          <p>
+            Diseñar y programar un videojuego 3D de plataformas funcional,
+            aplicando conceptos de programación orientada a objetos, física de
+            juego y diseño de niveles.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>🛠️ Tecnología</h3>
+          <p>
+            El juego está desarrollado con motores de juego 3D modernos,
+            aprovechando herramientas de modelado, scripts de comportamiento y
+            sistemas de colisión.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>⚙️ Mecánicas estudiadas</h3>
+          <p>
+            Se han investigado y programado sistemas de movimiento, detección de
+            enemigos, lógica de coleccionables opcionales y gestión de cámara en
+            tercera persona.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>📋 Conclusiones</h3>
+          <p>
+            El desarrollo de un videojuego es un proceso multidisciplinar que
+            combina programación, diseño artístico, lógica matemática y
+            pensamiento creativo.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <div class="about-card">
-        <h3>⚙️ Mecánicas estudiadas</h3>
-        <p>
-          Se han investigado y programado sistemas de movimiento, detección
-          de enemigos, lógica de coleccionables opcionales y gestión de
-          cámara en tercera persona.
-        </p>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <a href="https://github.com/Ruben1305/JuegoRecerca" class="hero-btn"
+          >Descubre el codigo</a
+        >
       </div>
-
-      <div class="about-card">
-        <h3>📋 Conclusiones</h3>
-        <p>
-          El desarrollo de un videojuego es un proceso multidisciplinar
-          que combina programación, diseño artístico, lógica matemática
-          y pensamiento creativo.
-        </p>
-      </div>
-
-    </div>
-  
-  </section>
-  
-  <section id="inicio" class="hero">
-    <div class="hero-content">
-      <a href="https://github.com/Ruben1305/JuegoRecerca" class="hero-btn">Descubre el codigo</a>
-    </div>
-  </section>
-
+    </section>
 
     <!-- ════════════════════════════════════════════════════════════
        PIE DE PÁGINA
        Créditos del proyecto
   ════════════════════════════════════════════════════════════════ -->
-  <footer>
-    <p>
-      Skyline Chase &mdash; Proyecto de Recerca &mdash;
-      Desarrollado por <span class="footer-name">Didac Rubio y Rubén Alcantarilla</span>
-    </p>
-  </footer>
-
-</body>
+    <footer>
+      <p>
+        Skyline Chase &mdash; Proyecto de Recerca &mdash; Desarrollado por
+        <span class="footer-name">Didac Rubio y Rubén Alcantarilla</span>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -5,26 +5,27 @@
 [ext_resource type="PackedScene" uid="uid://dksuwmynb7vjf" path="res://autoload/kill_plane/kill_plane_3d.tscn" id="3_8jc51"]
 [ext_resource type="PackedScene" uid="uid://c6uew1wfpkt16" path="res://level/flag/flag_3d.tscn" id="4_a53v5"]
 [ext_resource type="Material" uid="uid://da188d7yrcfr8" path="res://level/platforms.tres" id="5_ff1k0"]
-[ext_resource type="Texture2D" uid="uid://me0fyx2fxbv" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/Textures/tiny_treats_grass_texture.png" id="6_q4pno"]
-[ext_resource type="Texture2D" uid="uid://chwmqesmvvwy0" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/gltf/tiny_treats_grass_texture.png" id="7_da604"]
-[ext_resource type="PackedScene" uid="uid://ccehm23exqvw8" path="res://Player_Skeletons/KayKit_Skeletons_1.1_FREE/characters/fbx/Skeleton_Mage.fbx" id="10_vpbbu"]
-[ext_resource type="PackedScene" uid="uid://de53awxkjv2pu" path="res://Player_Skeletons/KayKit_Skeletons_1.1_FREE/characters/fbx/Skeleton_Warrior.fbx" id="11_cjeyu"]
+[ext_resource type="Texture2D" uid="uid://me0fyx2fxbv" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/Textures/tiny_treats_grass_texture.png" id="6_q4pno"]
+[ext_resource type="Texture2D" uid="uid://chwmqesmvvwy0" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/gltf/tiny_treats_grass_texture.png" id="7_da604"]
 [ext_resource type="PackedScene" uid="uid://clobsg4eprwfe" path="res://Player_Skeletons/KayKit_Skeletons_1.1_FREE/characters/fbx/Skeleton_Rogue.fbx" id="12_8jc51"]
 [ext_resource type="PackedScene" uid="uid://3agu7gb3kjif" path="res://level/cactus/cactus_tall_3.tscn" id="12_255j1"]
 [ext_resource type="PackedScene" uid="uid://deuhp0xy5bxv7" path="res://Player_Skeletons/KayKit_Skeletons_1.1_FREE/characters/fbx/Skeleton_Minion.fbx" id="13_a53v5"]
 [ext_resource type="Script" uid="uid://bjf6euw2h3wi2" path="res://Scripts/Star/estrellica.gd" id="13_da604"]
 [ext_resource type="ArrayMesh" uid="uid://cxribqsh0k83c" path="res://level/estrella/estrellica.obj" id="14_cjt1v"]
-[ext_resource type="ArrayMesh" uid="uid://d2jvcj50mlc4m" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/hedge_straight_long.obj" id="14_ff1k0"]
-[ext_resource type="ArrayMesh" uid="uid://blxc0oo5xtpu4" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/bird.obj" id="18_2g8ve"]
-[ext_resource type="ArrayMesh" uid="uid://x7n62bt5rnha" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/bench.obj" id="19_2g8ve"]
-[ext_resource type="ArrayMesh" uid="uid://dy2j42jnrgwfr" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/fountain.obj" id="19_833p6"]
-[ext_resource type="Texture2D" uid="uid://c813linomiy3d" path="res://level/Texturas, Paisaje y Objetos /Otros objetos/gltf/bush_1_roads_UV.png" id="19_bhsha"]
-[ext_resource type="ArrayMesh" uid="uid://dyv578jll4xmj" path="res://level/Texturas, Paisaje y Objetos /Otros objetos/obj/bush_1.obj" id="20_833p6"]
-[ext_resource type="ArrayMesh" uid="uid://diuxcl47fvf61" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/fountain_water.obj" id="20_a1pmi"]
-[ext_resource type="ArrayMesh" uid="uid://dtsgpetf7fk53" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/fountain_leaves.obj" id="21_d6xko"]
-[ext_resource type="PackedScene" uid="uid://d66x53d5ir4i" path="res://Players/Characters/SkeletonCharacter.tscn" id="22_a1pmi"]
-[ext_resource type="ArrayMesh" uid="uid://dxn1edl0tab3t" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/trashcan.obj" id="24_da604"]
-[ext_resource type="ArrayMesh" uid="uid://8oo8eilk2dix" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/street_lantern.obj" id="25_cjt1v"]
+[ext_resource type="ArrayMesh" uid="uid://d2jvcj50mlc4m" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/hedge_straight_long.obj" id="14_ff1k0"]
+[ext_resource type="ArrayMesh" uid="uid://blxc0oo5xtpu4" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/bird.obj" id="18_2g8ve"]
+[ext_resource type="ArrayMesh" uid="uid://x7n62bt5rnha" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/bench.obj" id="19_2g8ve"]
+[ext_resource type="ArrayMesh" uid="uid://dy2j42jnrgwfr" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/fountain.obj" id="19_833p6"]
+[ext_resource type="Texture2D" uid="uid://c813linomiy3d" path="res://level/Texturas, Paisaje y Objetos/Otros objetos/gltf/bush_1_roads_UV.png" id="19_bhsha"]
+[ext_resource type="ArrayMesh" uid="uid://dyv578jll4xmj" path="res://level/Texturas, Paisaje y Objetos/Otros objetos/obj/bush_1.obj" id="20_833p6"]
+[ext_resource type="ArrayMesh" uid="uid://diuxcl47fvf61" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/fountain_water.obj" id="20_a1pmi"]
+[ext_resource type="ArrayMesh" uid="uid://dtsgpetf7fk53" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/fountain_leaves.obj" id="21_d6xko"]
+[ext_resource type="PackedScene" uid="uid://d66x53d5ir4i" path="res://Players/Characters/SkeletonMageCharacter.tscn" id="22_a1pmi"]
+[ext_resource type="ArrayMesh" uid="uid://dxn1edl0tab3t" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/trashcan.obj" id="24_da604"]
+[ext_resource type="PackedScene" uid="uid://dgf7xxfjkab28" path="res://Players/Characters/SkeletonWarriorCharacter.tscn" id="25_255j1"]
+[ext_resource type="ArrayMesh" uid="uid://8oo8eilk2dix" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/street_lantern.obj" id="25_cjt1v"]
+[ext_resource type="Script" uid="uid://jfodnxjq2prj" path="res://Scripts/Player/Skeleton_Mage.gd" id="26_cjt1v"]
+[ext_resource type="Script" uid="uid://jkink55u3xw7" path="res://Players/Characters/skeleton_movement_platform.gd" id="26_da604"]
 
 [sub_resource type="Curve" id="Curve_k4wis"]
 _data = [Vector2(0.331719, 0.0391753), 0.0, 0.0, 0, 0, Vector2(0.697336, 1), 0.51276, 0.0, 0, 0]
@@ -52,8 +53,8 @@ seamless = true
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_g8ud2"]
 shader = ExtResource("1_vpbbu")
-shader_parameter/top_color = Color(1, 0.17254902, 0.17254902, 1)
-shader_parameter/bottom_color = Color(1, 0.87058824, 0.12941177, 1)
+shader_parameter/top_color = Color(0, 0, 0, 1)
+shader_parameter/bottom_color = Color(0.07280066, 0.15527879, 0.30406284, 1)
 shader_parameter/gradient_curve = SubResource("CurveTexture_moxc7")
 shader_parameter/noise_texture = SubResource("NoiseTexture2D_83fre")
 shader_parameter/moon_texture = ExtResource("2_cjeyu")
@@ -185,6 +186,7 @@ transform = Transform3D(6.4198813, 0, 0, 0, 1, 0, 0, 0, 3.669007, -29.943743, 12
 layers = 8
 material_override = SubResource("StandardMaterial3D_q4pno")
 use_collision = true
+collision_layer = 9
 size = Vector3(5, 1, 7.0527954)
 
 [node name="CSGBox3D33" type="CSGBox3D" parent="." unique_id=1636329986]
@@ -201,6 +203,7 @@ transform = Transform3D(-0.0075223166, 0, 0.9999717, 0, 1, 0, -0.9999717, 0, -0.
 layers = 8
 material_override = SubResource("StandardMaterial3D_833p6")
 use_collision = true
+collision_layer = 9
 size = Vector3(5, 1, 7.0527954)
 
 [node name="CSGBox3D35" type="CSGBox3D" parent="." unique_id=1519501042]
@@ -208,6 +211,7 @@ transform = Transform3D(-0.014733898, 0, 1.0071833, 0, 1, 0, -1.9586362, 0, -0.0
 layers = 8
 material_override = SubResource("StandardMaterial3D_833p6")
 use_collision = true
+collision_layer = 9
 size = Vector3(5, 1, 7.0527954)
 
 [node name="CSGBox3D37" type="CSGBox3D" parent="." unique_id=439926528]
@@ -215,6 +219,7 @@ transform = Transform3D(-0.009893241, 0, 0.6028114, 0, 1, 0, -1.3151481, 0, -0.0
 layers = 8
 material_override = SubResource("StandardMaterial3D_833p6")
 use_collision = true
+collision_layer = 9
 size = Vector3(5, 1, 7.0527954)
 
 [node name="CSGBox3D41" type="CSGBox3D" parent="." unique_id=677671138]
@@ -222,6 +227,7 @@ transform = Transform3D(-0.009893241, 0, 0.6028114, 0, 1, 0, -1.3151481, 0, -0.0
 layers = 8
 material_override = SubResource("StandardMaterial3D_833p6")
 use_collision = true
+collision_layer = 9
 size = Vector3(5, 1, 7.0527954)
 
 [node name="CSGBox3D40" type="CSGBox3D" parent="." unique_id=922502931]
@@ -229,6 +235,7 @@ transform = Transform3D(-0.009893241, 0, 0.6028114, 0, 1, 0, -1.3151481, 0, -0.0
 layers = 8
 material_override = SubResource("StandardMaterial3D_833p6")
 use_collision = true
+collision_layer = 9
 size = Vector3(5, 1, 7.0527954)
 
 [node name="CSGBox3D42" type="CSGBox3D" parent="." unique_id=696667100]
@@ -236,6 +243,7 @@ transform = Transform3D(-0.009893241, 0, 0.6028114, 0, 1, 0, -1.3151481, 0, -0.0
 layers = 8
 material_override = SubResource("StandardMaterial3D_833p6")
 use_collision = true
+collision_layer = 9
 size = Vector3(5, 1, 7.0527954)
 
 [node name="CSGBox3D20" type="CSGBox3D" parent="." unique_id=1942396434]
@@ -310,12 +318,6 @@ shape = SubResource("SphereShape3D_wasuc")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Estrellica5" unique_id=1222739528]
 mesh = ExtResource("14_cjt1v")
 surface_material_override/0 = SubResource("StandardMaterial3D_2afyj")
-
-[node name="Skeleton_Mage" parent="." unique_id=1287038207 instance=ExtResource("10_vpbbu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.836, 13.595997, -78.195305)
-
-[node name="Skeleton_Warrior" parent="." unique_id=820033661 instance=ExtResource("11_cjeyu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.63644, 13.456356, -64.49788)
 
 [node name="Skeleton_Rogue" parent="." unique_id=445885136 instance=ExtResource("12_8jc51")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.340454, 13.485433, -60.622837)
@@ -1423,20 +1425,21 @@ skeleton = NodePath("../..")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.055382, 0.010741234, 0.80241966)
 shape = SubResource("ConcavePolygonShape3D_ximny")
 
-[node name="CharacterBody3D" parent="." unique_id=1533694577 instance=ExtResource("22_a1pmi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.092112, 13.477774, -49.645226)
+[node name="CharacterBody3D2" parent="." unique_id=1809422166 instance=ExtResource("22_a1pmi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.596893, 13.477774, -24.99332)
 collision_layer = 2
 collision_mask = 12
+script = ExtResource("26_da604")
+speed = 3.0
 
 [node name="CSGBox3D21" type="CSGBox3D" parent="." unique_id=911536395]
 transform = Transform3D(6.4198813, 0, 0, 0, 1, 0, 0, 0, 3.669007, 33.37903, 12.977758, -23.431078)
 layers = 8
 material_override = SubResource("StandardMaterial3D_q4pno")
 use_collision = true
+collision_layer = 13
+collision_mask = 3
 size = Vector3(5, 1, 7.0527954)
-
-[node name="CharacterBody3D2" parent="." unique_id=1535047007 instance=ExtResource("22_a1pmi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.48682, 13.477774, -18.24502)
 
 [node name="LimiteDer" type="StaticBody3D" parent="." unique_id=451669099]
 transform = Transform3D(-0.16735159, 0, -4.3694925e-07, 0, 3.987954, 0, 1.4630341e-08, 0, -4.998116, -27.107418, 15.460965, -49.035458)
@@ -1517,6 +1520,58 @@ collision_mask = 2
 shape = SubResource("BoxShape3D_255j1")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="LimiteBack2" unique_id=1032499311]
+
+[node name="LimiteDer3" type="StaticBody3D" parent="." unique_id=1277555297]
+transform = Transform3D(-0.7775639, 0, -2.2571412e-06, 0, 3.987954, 0, 6.79768e-08, 0, -25.81868, -45.606125, 15.460965, -69.676094)
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LimiteDer3" unique_id=314726902]
+shape = SubResource("BoxShape3D_255j1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LimiteDer3" unique_id=375728530]
+
+[node name="LimiteFront3" type="StaticBody3D" parent="." unique_id=1532579735]
+transform = Transform3D(-3.6327847e-08, 0, 31.987305, 0, 3.987954, 0, -0.83108425, 0, -1.3982097e-06, -29.906544, 15.460965, -82.234695)
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LimiteFront3" unique_id=187452577]
+shape = SubResource("BoxShape3D_255j1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LimiteFront3" unique_id=1660397418]
+
+[node name="LimiteIzq3" type="StaticBody3D" parent="." unique_id=1489741508]
+transform = Transform3D(-0.7775639, 0, -2.261066e-06, 0, 3.987954, 0, 6.79768e-08, 0, -25.863575, -14.274243, 15.460965, -69.71334)
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LimiteIzq3" unique_id=1726719701]
+shape = SubResource("BoxShape3D_255j1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LimiteIzq3" unique_id=1190223330]
+
+[node name="LimiteBack3" type="StaticBody3D" parent="." unique_id=1548356954]
+transform = Transform3D(-3.6327847e-08, 0, 31.647125, 0, 3.987954, 0, -0.83108425, 0, -1.3833401e-06, -29.990107, 15.460965, -57.201527)
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LimiteBack3" unique_id=1112005667]
+shape = SubResource("BoxShape3D_255j1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LimiteBack3" unique_id=1618446969]
+
+[node name="CharacterBody3D3" parent="." unique_id=511050408 instance=ExtResource("25_255j1")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -24.183363, 13.477779, -67.49642)
+collision_layer = 2
+collision_mask = 12
+script = ExtResource("26_cjt1v")
+
+[node name="CharacterBody3D" parent="." unique_id=1533694577 instance=ExtResource("22_a1pmi")]
+transform = Transform3D(-1.3, 0, -1.9629454e-07, 0, 1.3, 0, 1.9629454e-07, 0, -1.3, -23.196941, 13.477779, -49.54991)
+collision_layer = 2
+collision_mask = 12
+script = ExtResource("26_da604")
 
 [connection signal="body_entered" from="Estrellica3" to="KillPlane" method="_on_estrellica_body_entered"]
 [connection signal="body_shape_entered" from="Estrellica3" to="KillPlane" method="_on_estrellica_body_shape_entered"]

@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-@export var speed: float = 3.0
+@export var speed: float = 5.0
 @export var gravity: float = 9.8
 @export var attack_damage: int = 1
 @export var attack_cooldown: float = 2.0

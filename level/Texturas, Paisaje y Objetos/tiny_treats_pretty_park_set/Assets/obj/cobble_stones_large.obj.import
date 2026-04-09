@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://c8mmxwrgbtnxv"
-path="res://.godot/imported/cobble_stones_large.obj-1ec32c48bd7e97d2977b5cefd3e59da1.mesh"
+path="res://.godot/imported/cobble_stones_large.obj-522611ce5a2e5ed85079166fc0b19942.mesh"
 
 [deps]
 
-files=["res://.godot/imported/cobble_stones_large.obj-1ec32c48bd7e97d2977b5cefd3e59da1.mesh"]
+files=["res://.godot/imported/cobble_stones_large.obj-522611ce5a2e5ed85079166fc0b19942.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/cobble_stones_large.obj"
-dest_files=["res://.godot/imported/cobble_stones_large.obj-1ec32c48bd7e97d2977b5cefd3e59da1.mesh", "res://.godot/imported/cobble_stones_large.obj-1ec32c48bd7e97d2977b5cefd3e59da1.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/cobble_stones_large.obj"
+dest_files=["res://.godot/imported/cobble_stones_large.obj-522611ce5a2e5ed85079166fc0b19942.mesh", "res://.godot/imported/cobble_stones_large.obj-522611ce5a2e5ed85079166fc0b19942.mesh"]
 
 [params]
 

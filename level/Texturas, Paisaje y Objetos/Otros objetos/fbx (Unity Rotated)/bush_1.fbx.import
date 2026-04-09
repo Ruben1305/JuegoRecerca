@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d1qkon84xxp53"
-path="res://.godot/imported/bush_1.fbx-b11160fc386dd8c30a34c4802cf157f4.scn"
+path="res://.godot/imported/bush_1.fbx-e0f9ea1bdb317b1df08c6f312b4b0bec.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/fbx (Unity Rotated)/bush_1.fbx"
-dest_files=["res://.godot/imported/bush_1.fbx-b11160fc386dd8c30a34c4802cf157f4.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/fbx (Unity Rotated)/bush_1.fbx"
+dest_files=["res://.godot/imported/bush_1.fbx-e0f9ea1bdb317b1df08c6f312b4b0bec.scn"]
 
 [params]
 

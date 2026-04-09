@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://1lcnjpdc6eja"
-path="res://.godot/imported/Road6_End.dae-3143f942e9e9436129f256ea2299bdfb.scn"
+path="res://.godot/imported/Road6_End.dae-e7d2a310fba2d14b236f2c778ba3e537.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/dae/Road6_End.dae"
-dest_files=["res://.godot/imported/Road6_End.dae-3143f942e9e9436129f256ea2299bdfb.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/dae/Road6_End.dae"
+dest_files=["res://.godot/imported/Road6_End.dae-e7d2a310fba2d14b236f2c778ba3e537.scn"]
 
 [params]
 

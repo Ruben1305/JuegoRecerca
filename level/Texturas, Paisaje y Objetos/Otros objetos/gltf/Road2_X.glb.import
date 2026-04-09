@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c8sco2w15vuij"
-path="res://.godot/imported/Road2_X.glb-939c965067b0ea96d780e38e6cb84631.scn"
+path="res://.godot/imported/Road2_X.glb-98e1535280b4dc4b9558e69dcc7afd86.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/gltf/Road2_X.glb"
-dest_files=["res://.godot/imported/Road2_X.glb-939c965067b0ea96d780e38e6cb84631.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/gltf/Road2_X.glb"
+dest_files=["res://.godot/imported/Road2_X.glb-98e1535280b4dc4b9558e69dcc7afd86.scn"]
 
 [params]
 

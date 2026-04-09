@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://celnq68lymm45"
-path="res://.godot/imported/Road6_A.png-a0828feb4bc4cbe711a13c20f41c0a93.ctex"
+path="res://.godot/imported/Road6_A.png-92fc1b983fcd7eb2e3308effcf00e6f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/Road6_A.png"
-dest_files=["res://.godot/imported/Road6_A.png-a0828feb4bc4cbe711a13c20f41c0a93.ctex"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/Road6_A.png"
+dest_files=["res://.godot/imported/Road6_A.png-92fc1b983fcd7eb2e3308effcf00e6f5.ctex"]
 
 [params]
 

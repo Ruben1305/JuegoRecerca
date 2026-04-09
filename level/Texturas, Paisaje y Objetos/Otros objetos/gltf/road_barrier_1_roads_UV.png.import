@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwmpuj5hsdsmu"
-path.s3tc="res://.godot/imported/road_barrier_1_roads_UV.png-37ecf543c533fa5995f4a68aae6c5841.s3tc.ctex"
+path.s3tc="res://.godot/imported/road_barrier_1_roads_UV.png-0a2346da4b5b7f4d05c11ee5098ea321.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/gltf/road_barrier_1_roads_UV.png"
-dest_files=["res://.godot/imported/road_barrier_1_roads_UV.png-37ecf543c533fa5995f4a68aae6c5841.s3tc.ctex"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/gltf/road_barrier_1_roads_UV.png"
+dest_files=["res://.godot/imported/road_barrier_1_roads_UV.png-0a2346da4b5b7f4d05c11ee5098ea321.s3tc.ctex"]
 
 [params]
 

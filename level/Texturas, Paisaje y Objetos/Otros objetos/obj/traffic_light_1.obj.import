@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://c161i7tcpmujf"
-path="res://.godot/imported/traffic_light_1.obj-9fadb4b8df7024ced7c325929cf393a8.mesh"
+path="res://.godot/imported/traffic_light_1.obj-3832fe7aaf31bd7af77b396e086e16f2.mesh"
 
 [deps]
 
-files=["res://.godot/imported/traffic_light_1.obj-9fadb4b8df7024ced7c325929cf393a8.mesh"]
+files=["res://.godot/imported/traffic_light_1.obj-3832fe7aaf31bd7af77b396e086e16f2.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/obj/traffic_light_1.obj"
-dest_files=["res://.godot/imported/traffic_light_1.obj-9fadb4b8df7024ced7c325929cf393a8.mesh", "res://.godot/imported/traffic_light_1.obj-9fadb4b8df7024ced7c325929cf393a8.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/obj/traffic_light_1.obj"
+dest_files=["res://.godot/imported/traffic_light_1.obj-3832fe7aaf31bd7af77b396e086e16f2.mesh", "res://.godot/imported/traffic_light_1.obj-3832fe7aaf31bd7af77b396e086e16f2.mesh"]
 
 [params]
 

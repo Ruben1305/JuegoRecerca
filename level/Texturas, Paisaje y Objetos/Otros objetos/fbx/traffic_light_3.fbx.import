@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cvp4hu2oscyki"
-path="res://.godot/imported/traffic_light_3.fbx-6e49c3bb69ce2e036236400d0504d3b3.scn"
+path="res://.godot/imported/traffic_light_3.fbx-0d88ac9146395337473907683d13cc45.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/fbx/traffic_light_3.fbx"
-dest_files=["res://.godot/imported/traffic_light_3.fbx-6e49c3bb69ce2e036236400d0504d3b3.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/fbx/traffic_light_3.fbx"
+dest_files=["res://.godot/imported/traffic_light_3.fbx-0d88ac9146395337473907683d13cc45.scn"]
 
 [params]
 

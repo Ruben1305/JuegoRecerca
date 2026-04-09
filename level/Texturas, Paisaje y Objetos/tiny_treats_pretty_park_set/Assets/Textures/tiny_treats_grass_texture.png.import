@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://me0fyx2fxbv"
-path.s3tc="res://.godot/imported/tiny_treats_grass_texture.png-f14e976f432673bf6314e34892cfc26f.s3tc.ctex"
+path.s3tc="res://.godot/imported/tiny_treats_grass_texture.png-67d190ed89dea6de522325e564716b0a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/Textures/tiny_treats_grass_texture.png"
-dest_files=["res://.godot/imported/tiny_treats_grass_texture.png-f14e976f432673bf6314e34892cfc26f.s3tc.ctex"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/Textures/tiny_treats_grass_texture.png"
+dest_files=["res://.godot/imported/tiny_treats_grass_texture.png-67d190ed89dea6de522325e564716b0a.s3tc.ctex"]
 
 [params]
 

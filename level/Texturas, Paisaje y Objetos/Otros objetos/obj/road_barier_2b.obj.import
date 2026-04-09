@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://ujms6mw13f8v"
-path="res://.godot/imported/road_barier_2b.obj-d916eb365d5fd5794c95b14988735c0a.mesh"
+path="res://.godot/imported/road_barier_2b.obj-3e0e2640b78712529e0efd91b88a5bb0.mesh"
 
 [deps]
 
-files=["res://.godot/imported/road_barier_2b.obj-d916eb365d5fd5794c95b14988735c0a.mesh"]
+files=["res://.godot/imported/road_barier_2b.obj-3e0e2640b78712529e0efd91b88a5bb0.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/obj/road_barier_2b.obj"
-dest_files=["res://.godot/imported/road_barier_2b.obj-d916eb365d5fd5794c95b14988735c0a.mesh", "res://.godot/imported/road_barier_2b.obj-d916eb365d5fd5794c95b14988735c0a.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/obj/road_barier_2b.obj"
+dest_files=["res://.godot/imported/road_barier_2b.obj-3e0e2640b78712529e0efd91b88a5bb0.mesh", "res://.godot/imported/road_barier_2b.obj-3e0e2640b78712529e0efd91b88a5bb0.mesh"]
 
 [params]
 

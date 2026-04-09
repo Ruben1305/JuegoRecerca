@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cuj2vebd4gvs3"
-path="res://.godot/imported/hazzard_cone_1.obj-7db05ca8713b16748df744e9e2e0f431.mesh"
+path="res://.godot/imported/hazzard_cone_1.obj-4363aa0cf53037381af59207a265c794.mesh"
 
 [deps]
 
-files=["res://.godot/imported/hazzard_cone_1.obj-7db05ca8713b16748df744e9e2e0f431.mesh"]
+files=["res://.godot/imported/hazzard_cone_1.obj-4363aa0cf53037381af59207a265c794.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/obj/hazzard_cone_1.obj"
-dest_files=["res://.godot/imported/hazzard_cone_1.obj-7db05ca8713b16748df744e9e2e0f431.mesh", "res://.godot/imported/hazzard_cone_1.obj-7db05ca8713b16748df744e9e2e0f431.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/obj/hazzard_cone_1.obj"
+dest_files=["res://.godot/imported/hazzard_cone_1.obj-4363aa0cf53037381af59207a265c794.mesh", "res://.godot/imported/hazzard_cone_1.obj-4363aa0cf53037381af59207a265c794.mesh"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://nxhedto83osb"
-path="res://.godot/imported/bench.gltf-90f5d53e49f1ef9c4227c82e4377fa65.scn"
+path="res://.godot/imported/bench.gltf-61c96319a2619dceb937a67d4571d41c.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/gltf/bench.gltf"
-dest_files=["res://.godot/imported/bench.gltf-90f5d53e49f1ef9c4227c82e4377fa65.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/gltf/bench.gltf"
+dest_files=["res://.godot/imported/bench.gltf-61c96319a2619dceb937a67d4571d41c.scn"]
 
 [params]
 

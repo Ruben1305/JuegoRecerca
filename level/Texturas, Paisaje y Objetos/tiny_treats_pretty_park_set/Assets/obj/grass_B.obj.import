@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://b13pqwtkii48r"
-path="res://.godot/imported/grass_B.obj-705fadd25415ab8d37c4b102cdbd9260.mesh"
+path="res://.godot/imported/grass_B.obj-d0174b58a364b209fb58f6a4b8b1ebed.mesh"
 
 [deps]
 
-files=["res://.godot/imported/grass_B.obj-705fadd25415ab8d37c4b102cdbd9260.mesh"]
+files=["res://.godot/imported/grass_B.obj-d0174b58a364b209fb58f6a4b8b1ebed.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/grass_B.obj"
-dest_files=["res://.godot/imported/grass_B.obj-705fadd25415ab8d37c4b102cdbd9260.mesh", "res://.godot/imported/grass_B.obj-705fadd25415ab8d37c4b102cdbd9260.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/grass_B.obj"
+dest_files=["res://.godot/imported/grass_B.obj-d0174b58a364b209fb58f6a4b8b1ebed.mesh", "res://.godot/imported/grass_B.obj-d0174b58a364b209fb58f6a4b8b1ebed.mesh"]
 
 [params]
 

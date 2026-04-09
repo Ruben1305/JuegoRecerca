@@ -63,6 +63,7 @@ text = "1"
 script = ExtResource("3_w824h")
 
 [node name="Lvl2" parent="MarginContainer/HBoxContainer" unique_id=1868976346 instance=ExtResource("1_ypn5h")]
+process_mode = 3
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 theme_override_font_sizes/font_size = 70
@@ -70,6 +71,7 @@ text = "2"
 script = null
 
 [node name="Lvl3" parent="MarginContainer/HBoxContainer" unique_id=388324042 instance=ExtResource("1_ypn5h")]
+process_mode = 3
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 theme_override_font_sizes/font_size = 70
@@ -77,6 +79,7 @@ text = "3"
 script = null
 
 [node name="Lvl4" parent="MarginContainer/HBoxContainer" unique_id=1223015745 instance=ExtResource("1_ypn5h")]
+process_mode = 3
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 theme_override_font_sizes/font_size = 70
@@ -84,6 +87,7 @@ text = "4"
 script = null
 
 [node name="Lvl5" parent="MarginContainer/HBoxContainer" unique_id=477874118 instance=ExtResource("1_ypn5h")]
+process_mode = 3
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 theme_override_font_sizes/font_size = 70

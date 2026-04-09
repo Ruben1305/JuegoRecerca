@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cuedaksfs66sa"
-path="res://.godot/imported/lamp_1.obj-c583d15434b1cc2aa90fac377aba8e13.mesh"
+path="res://.godot/imported/lamp_1.obj-cc58b020a2ef89d7772fcccb68176050.mesh"
 
 [deps]
 
-files=["res://.godot/imported/lamp_1.obj-c583d15434b1cc2aa90fac377aba8e13.mesh"]
+files=["res://.godot/imported/lamp_1.obj-cc58b020a2ef89d7772fcccb68176050.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/obj/lamp_1.obj"
-dest_files=["res://.godot/imported/lamp_1.obj-c583d15434b1cc2aa90fac377aba8e13.mesh", "res://.godot/imported/lamp_1.obj-c583d15434b1cc2aa90fac377aba8e13.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/obj/lamp_1.obj"
+dest_files=["res://.godot/imported/lamp_1.obj-cc58b020a2ef89d7772fcccb68176050.mesh", "res://.godot/imported/lamp_1.obj-cc58b020a2ef89d7772fcccb68176050.mesh"]
 
 [params]
 

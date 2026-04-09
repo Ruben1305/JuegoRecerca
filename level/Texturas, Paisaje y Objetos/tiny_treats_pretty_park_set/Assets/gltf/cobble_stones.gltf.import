@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ciretcuhcffhj"
-path="res://.godot/imported/cobble_stones.gltf-52b1ef5ae155a9aae8f71a4751bc45f4.scn"
+path="res://.godot/imported/cobble_stones.gltf-62f1a161c4b63597d13936efa000ccb5.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/gltf/cobble_stones.gltf"
-dest_files=["res://.godot/imported/cobble_stones.gltf-52b1ef5ae155a9aae8f71a4751bc45f4.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/gltf/cobble_stones.gltf"
+dest_files=["res://.godot/imported/cobble_stones.gltf-62f1a161c4b63597d13936efa000ccb5.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://0ftxs6kky5ys"
-path="res://.godot/imported/hedge_corner.gltf-3acdac91bee2a23ff259952a071441d8.scn"
+path="res://.godot/imported/hedge_corner.gltf-57d210af643aae01fdbaaa58d3afadf6.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/gltf/hedge_corner.gltf"
-dest_files=["res://.godot/imported/hedge_corner.gltf-3acdac91bee2a23ff259952a071441d8.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/gltf/hedge_corner.gltf"
+dest_files=["res://.godot/imported/hedge_corner.gltf-57d210af643aae01fdbaaa58d3afadf6.scn"]
 
 [params]
 

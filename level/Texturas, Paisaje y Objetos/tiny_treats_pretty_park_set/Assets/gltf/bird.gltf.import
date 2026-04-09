@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cei3d2ainn2oy"
-path="res://.godot/imported/bird.gltf-fe04ac4693f5de4255fb59843fdf04f0.scn"
+path="res://.godot/imported/bird.gltf-3387c737b101fa6c9f9d7c1ca416becd.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/gltf/bird.gltf"
-dest_files=["res://.godot/imported/bird.gltf-fe04ac4693f5de4255fb59843fdf04f0.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/gltf/bird.gltf"
+dest_files=["res://.godot/imported/bird.gltf-3387c737b101fa6c9f9d7c1ca416becd.scn"]
 
 [params]
 

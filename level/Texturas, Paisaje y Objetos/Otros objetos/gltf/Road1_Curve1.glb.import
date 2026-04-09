@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ddqfis0rd317b"
-path="res://.godot/imported/Road1_Curve1.glb-8201021e565513d947ab2206e9c3657b.scn"
+path="res://.godot/imported/Road1_Curve1.glb-a69fedce28683e3fe7b86f2179861b99.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/gltf/Road1_Curve1.glb"
-dest_files=["res://.godot/imported/Road1_Curve1.glb-8201021e565513d947ab2206e9c3657b.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/gltf/Road1_Curve1.glb"
+dest_files=["res://.godot/imported/Road1_Curve1.glb-a69fedce28683e3fe7b86f2179861b99.scn"]
 
 [params]
 

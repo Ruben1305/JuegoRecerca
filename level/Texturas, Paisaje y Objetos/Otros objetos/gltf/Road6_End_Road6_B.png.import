@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7unjq8a2wnc4"
-path.s3tc="res://.godot/imported/Road6_End_Road6_B.png-a22398a8a82bad3391aa6067149bcc0e.s3tc.ctex"
+path.s3tc="res://.godot/imported/Road6_End_Road6_B.png-7f5c38d14ec02610eee0ab8662207bad.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/gltf/Road6_End_Road6_B.png"
-dest_files=["res://.godot/imported/Road6_End_Road6_B.png-a22398a8a82bad3391aa6067149bcc0e.s3tc.ctex"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/gltf/Road6_End_Road6_B.png"
+dest_files=["res://.godot/imported/Road6_End_Road6_B.png-7f5c38d14ec02610eee0ab8662207bad.s3tc.ctex"]
 
 [params]
 

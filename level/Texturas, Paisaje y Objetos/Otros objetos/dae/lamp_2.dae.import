@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://qri80dvvypv3"
-path="res://.godot/imported/lamp_2.dae-7ee8af3e9626193c9ff78a2118081a7d.scn"
+path="res://.godot/imported/lamp_2.dae-4e5bfe66f1164d7a5e0dcf3adcc6bcd5.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/dae/lamp_2.dae"
-dest_files=["res://.godot/imported/lamp_2.dae-7ee8af3e9626193c9ff78a2118081a7d.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/dae/lamp_2.dae"
+dest_files=["res://.godot/imported/lamp_2.dae-4e5bfe66f1164d7a5e0dcf3adcc6bcd5.scn"]
 
 [params]
 

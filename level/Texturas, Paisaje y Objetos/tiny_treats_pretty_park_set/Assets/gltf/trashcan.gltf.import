@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cf41vv50p3uax"
-path="res://.godot/imported/trashcan.gltf-eab9490908816ae45e7e43f89447dbf9.scn"
+path="res://.godot/imported/trashcan.gltf-717837a57a1a3951160a56b81696802b.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/gltf/trashcan.gltf"
-dest_files=["res://.godot/imported/trashcan.gltf-eab9490908816ae45e7e43f89447dbf9.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/gltf/trashcan.gltf"
+dest_files=["res://.godot/imported/trashcan.gltf-717837a57a1a3951160a56b81696802b.scn"]
 
 [params]
 

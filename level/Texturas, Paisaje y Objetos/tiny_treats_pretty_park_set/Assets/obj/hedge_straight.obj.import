@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dmeeb8nu67ji4"
-path="res://.godot/imported/hedge_straight.obj-18d5b290b7ddbe4667d30a7ed34b3ba9.mesh"
+path="res://.godot/imported/hedge_straight.obj-1aada79a514553640537b09868078b9c.mesh"
 
 [deps]
 
-files=["res://.godot/imported/hedge_straight.obj-18d5b290b7ddbe4667d30a7ed34b3ba9.mesh"]
+files=["res://.godot/imported/hedge_straight.obj-1aada79a514553640537b09868078b9c.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/hedge_straight.obj"
-dest_files=["res://.godot/imported/hedge_straight.obj-18d5b290b7ddbe4667d30a7ed34b3ba9.mesh", "res://.godot/imported/hedge_straight.obj-18d5b290b7ddbe4667d30a7ed34b3ba9.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/hedge_straight.obj"
+dest_files=["res://.godot/imported/hedge_straight.obj-1aada79a514553640537b09868078b9c.mesh", "res://.godot/imported/hedge_straight.obj-1aada79a514553640537b09868078b9c.mesh"]
 
 [params]
 

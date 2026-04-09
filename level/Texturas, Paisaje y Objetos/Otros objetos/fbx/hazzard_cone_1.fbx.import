@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bdaesob12wkph"
-path="res://.godot/imported/hazzard_cone_1.fbx-b9d88b8866f6664324c466dc65a551e1.scn"
+path="res://.godot/imported/hazzard_cone_1.fbx-fbcda3f6b0d807a391e3d8d12f694df1.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/fbx/hazzard_cone_1.fbx"
-dest_files=["res://.godot/imported/hazzard_cone_1.fbx-b9d88b8866f6664324c466dc65a551e1.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/fbx/hazzard_cone_1.fbx"
+dest_files=["res://.godot/imported/hazzard_cone_1.fbx-fbcda3f6b0d807a391e3d8d12f694df1.scn"]
 
 [params]
 

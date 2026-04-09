@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dohk2hoo7kwkk"
-path="res://.godot/imported/Road6_End.obj-61ea4564c1abbbed67458323c02c21f5.mesh"
+path="res://.godot/imported/Road6_End.obj-22b2bc74ff3430dbf1271645dff46439.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Road6_End.obj-61ea4564c1abbbed67458323c02c21f5.mesh"]
+files=["res://.godot/imported/Road6_End.obj-22b2bc74ff3430dbf1271645dff46439.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/obj/Road6_End.obj"
-dest_files=["res://.godot/imported/Road6_End.obj-61ea4564c1abbbed67458323c02c21f5.mesh", "res://.godot/imported/Road6_End.obj-61ea4564c1abbbed67458323c02c21f5.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/obj/Road6_End.obj"
+dest_files=["res://.godot/imported/Road6_End.obj-22b2bc74ff3430dbf1271645dff46439.mesh", "res://.godot/imported/Road6_End.obj-22b2bc74ff3430dbf1271645dff46439.mesh"]
 
 [params]
 

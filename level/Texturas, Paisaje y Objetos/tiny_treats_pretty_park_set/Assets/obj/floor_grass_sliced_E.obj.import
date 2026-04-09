@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://botg1q6nc0aam"
-path="res://.godot/imported/floor_grass_sliced_E.obj-71a887635380d523f58c7a39016c2da6.mesh"
+path="res://.godot/imported/floor_grass_sliced_E.obj-554dc86f402f1d61f7e0188a8d1be9b5.mesh"
 
 [deps]
 
-files=["res://.godot/imported/floor_grass_sliced_E.obj-71a887635380d523f58c7a39016c2da6.mesh"]
+files=["res://.godot/imported/floor_grass_sliced_E.obj-554dc86f402f1d61f7e0188a8d1be9b5.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/floor_grass_sliced_E.obj"
-dest_files=["res://.godot/imported/floor_grass_sliced_E.obj-71a887635380d523f58c7a39016c2da6.mesh", "res://.godot/imported/floor_grass_sliced_E.obj-71a887635380d523f58c7a39016c2da6.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/floor_grass_sliced_E.obj"
+dest_files=["res://.godot/imported/floor_grass_sliced_E.obj-554dc86f402f1d61f7e0188a8d1be9b5.mesh", "res://.godot/imported/floor_grass_sliced_E.obj-554dc86f402f1d61f7e0188a8d1be9b5.mesh"]
 
 [params]
 

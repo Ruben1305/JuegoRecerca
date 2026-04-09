@@ -9,345 +9,414 @@
      Blanco          → #FFFFFF / #F0F0F0
 ================================================================ */
 
-
 /* ────────────────────────────────────────────────────────────────
    VARIABLES GLOBALES
    Define los colores una sola vez aquí. Si quieres cambiar un
    color, solo edita esta sección y se aplica en toda la página.
 ──────────────────────────────────────────────────────────────── */
 :root {
-    --rojo:         #C0392B;   /* rojo principal del logo */
-    --rojo-vivo:    #E74C3C;   /* rojo más brillante para hover */
-    --rojo-oscuro:  #7B1818;   /* rojo apagado para fondos */
-    --negro:        #0A0A0A;   /* negro puro del fondo */
-    --gris-oscuro:  #1A1A1A;   /* fondo de tarjetas */
-    --gris-medio:   #2A2A2A;   /* bordes y superficies secundarias */
-    --gris-texto:   #888888;   /* texto secundario (descripciones) */
-    --blanco:       #FFFFFF;   /* texto principal */
-    --blanco-suave: #CCCCCC;   /* texto intermedio */
-  
-    --fuente-titulo: 'Bebas Neue', sans-serif;   /* fuente de impacto */
-    --fuente-cuerpo: 'Barlow', sans-serif;        /* fuente de texto */
-  }
-  
-  
-  /* ────────────────────────────────────────────────────────────────
+  --rojo: #c0392b; /* rojo principal del logo */
+  --rojo-vivo: #e74c3c; /* rojo más brillante para hover */
+  --rojo-oscuro: #7b1818; /* rojo apagado para fondos */
+  --negro: #0a0a0a; /* negro puro del fondo */
+  --gris-oscuro: #1a1a1a; /* fondo de tarjetas */
+  --gris-medio: #2a2a2a; /* bordes y superficies secundarias */
+  --gris-texto: #888888; /* texto secundario (descripciones) */
+  --blanco: #ffffff; /* texto principal */
+  --blanco-suave: #cccccc; /* texto intermedio */
+
+  --fuente-titulo: "Bebas Neue", sans-serif; /* fuente de impacto */
+  --fuente-cuerpo: "Barlow", sans-serif; /* fuente de texto */
+}
+
+/* ────────────────────────────────────────────────────────────────
      RESET Y BASE
      Elimina márgenes por defecto del navegador y aplica la fuente
      y el color de fondo a toda la página.
   ──────────────────────────────────────────────────────────────── */
-  *, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth; /* scroll suave al pulsar enlaces de nav */
-  }
-  
-  body {
-    font-family: var(--fuente-cuerpo);
-    background-color: var(--negro);
-    color: var(--blanco);
-    line-height: 1.7;
-  }
-  
-  
-  /* ────────────────────────────────────────────────────────────────
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* scroll suave al pulsar enlaces de nav */
+}
+
+body {
+  font-family: var(--fuente-cuerpo);
+  background-color: var(--negro);
+  color: var(--blanco);
+  line-height: 1.7;
+}
+
+/* ────────────────────────────────────────────────────────────────
      BARRA DE NAVEGACIÓN
      Fija en la parte superior. Se vuelve semitransparente usando
      backdrop-filter para crear efecto de cristal ahumado.
   ──────────────────────────────────────────────────────────────── */
-  .navbar {
-    position: sticky;          /* se queda pegada al hacer scroll */
-    top: 0;
-    z-index: 100;              /* encima de todo el contenido */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2.5rem;
-    height: 64px;
-    background: rgba(10, 10, 10, 0.88);   /* negro semitransparente */
-    backdrop-filter: blur(14px);           /* efecto cristal */
-    border-bottom: 1px solid var(--rojo-oscuro);
-  }
-  
-  /* Logo de la barra: texto en mayúsculas con acento rojo */
-  .nav-logo {
-    font-family: var(--fuente-titulo);
-    font-size: 1.4rem;
-    letter-spacing: 3px;
-    color: var(--blanco);
-  }
-  
-  .nav-logo span {
-    color: var(--rojo);   /* la palabra "CHASE" en rojo */
-  }
-  
-  /* Lista de enlaces de navegación */
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2.5rem;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: var(--blanco-suave);
-    font-size: 0.88rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: color 0.2s;   /* transición suave al pasar el ratón */
-  }
-  
-  .nav-links a:hover {
-    color: var(--rojo-vivo);   /* rojo brillante al hacer hover */
-  }
-  
-  
-  /* ────────────────────────────────────────────────────────────────
+.navbar {
+  position: sticky; /* se queda pegada al hacer scroll */
+  top: 0;
+  z-index: 100; /* encima de todo el contenido */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  height: 64px;
+  background: rgba(10, 10, 10, 0.88); /* negro semitransparente */
+  backdrop-filter: blur(14px); /* efecto cristal */
+  border-bottom: 1px solid var(--rojo-oscuro);
+}
+
+/* Logo de la barra: texto en mayúsculas con acento rojo */
+.nav-logo {
+  font-family: var(--fuente-titulo);
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  color: var(--blanco);
+}
+
+.nav-logo span {
+  color: var(--rojo); /* la palabra "CHASE" en rojo */
+}
+
+/* Lista de enlaces de navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--blanco-suave);
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.2s; /* transición suave al pasar el ratón */
+}
+
+.nav-links a:hover {
+  color: var(--rojo-vivo); /* rojo brillante al hacer hover */
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem; /* mismo gap que entre los links */
+}
+/* ================================= 
+      Boton Descargar
+   ================================= */
+.btn-download {
+  display: inline-block;
+  background: var(--rojo);
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.btn-download:hover {
+  background: var(--rojo-vivo); /* rojo más brillante al hacer hover */
+  transform: translateY(-3px); /* sube ligeramente */
+}
+
+/* ────────────────────────────────────────────────────────────────
      SECCIÓN HERO (INICIO)
      Ocupa toda la pantalla. Tiene varias capas de fondo apiladas:
      1. hero-bg    → degradados de color
      2. hero-particles → puntos blancos que simulan estrellas
      3. hero-content → el contenido visible
   ──────────────────────────────────────────────────────────────── */
-  .hero {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    padding: 6rem 2rem;
-  }
-  
-  /* Capa de degradados de fondo del hero */
-  .hero-bg {
-    position: absolute;
-    inset: 0;   /* ocupa todo el contenedor */
-    background:
-      radial-gradient(ellipse 70% 55% at 50% 0%,
-        rgba(192, 57, 43, 0.4) 0%, transparent 70%),   /* brillo rojo arriba */
-      radial-gradient(ellipse 50% 40% at 80% 90%,
-        rgba(123, 24, 24, 0.25) 0%, transparent 60%),  /* esquina inferior */
-      var(--negro);
-    z-index: 0;
-  }
-  
-  /* Capa de estrellas/partículas: puntos estáticos usando radial-gradient */
-  .hero-particles {
-    position: absolute;
-    inset: 0;
-    background-image:
-      radial-gradient(1.5px 1.5px at 12% 18%, rgba(255,255,255,0.55) 0%, transparent 100%),
-      radial-gradient(1px   1px   at 28% 42%, rgba(255,255,255,0.35) 0%, transparent 100%),
-      radial-gradient(2px   2px   at 62% 12%, rgba(255,255,255,0.45) 0%, transparent 100%),
-      radial-gradient(1px   1px   at 78% 33%, rgba(255,255,255,0.3)  0%, transparent 100%),
-      radial-gradient(1.5px 1.5px at 92% 58%, rgba(255,255,255,0.5)  0%, transparent 100%),
-      radial-gradient(1px   1px   at 44% 72%, rgba(255,255,255,0.3)  0%, transparent 100%),
-      radial-gradient(2px   2px   at 18% 85%, rgba(255,255,255,0.4)  0%, transparent 100%),
-      radial-gradient(1px   1px   at 55% 55%, rgba(255,255,255,0.35) 0%, transparent 100%),
-      radial-gradient(1.5px 1.5px at 35% 25%, rgba(255,255,255,0.45) 0%, transparent 100%),
-      radial-gradient(1px   1px   at 88% 80%, rgba(255,255,255,0.3)  0%, transparent 100%);
-    z-index: 0;
-  }
-  
-  /* Contenido del hero: encima de las capas de fondo */
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 760px;
-  }
-  
-  /* Etiqueta pequeña encima del título */
-  .hero-tag {
-    display: inline-block;
-    background: rgba(192, 57, 43, 0.15);   /* fondo rojo muy suave */
-    border: 1px solid rgba(192, 57, 43, 0.5);
-    color: var(--rojo-vivo);
-    font-size: 0.78rem;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    padding: 6px 18px;
-    border-radius: 100px;
-    margin-bottom: 1.75rem;
-  }
-  
-  /* Título principal con la fuente de impacto */
-  .hero-title {
-    font-family: var(--fuente-titulo);
-    font-size: clamp(4rem, 10vw, 7.5rem);   /* tamaño adaptable a la pantalla */
-    letter-spacing: 6px;
-    line-height: 0.95;
-    color: var(--blanco);
-    margin-bottom: 1.75rem;
-  }
-  
-  /* La segunda línea "CHASE" va en rojo */
-  .title-accent {
-    color: var(--rojo);
-    /* borde blanco detrás del texto para darle profundidad */
-    -webkit-text-stroke: 1px rgba(255,255,255,0.08);
-  }
-  
-  /* Párrafo descriptivo debajo del título */
-  .hero-desc {
-    font-size: 1.1rem;
-    color: var(--blanco-suave);
-    max-width: 540px;
-    margin: 0 auto 2.5rem;
-  }
-  
-  /* Botón principal de llamada a la acción */
-  .hero-btn {
-    display: inline-block;
-    background: var(--rojo);
-    color: var(--blanco);
-    text-decoration: none;
-    padding: 14px 40px;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: background 0.2s, transform 0.2s;
-  }
-  
-  .hero-btn:hover {
-    background: var(--rojo-vivo);    /* rojo más brillante al hacer hover */
-    transform: translateY(-3px);     /* sube ligeramente */
-  }
-  
-  /* Contenedor de los badges con las características del juego */
-  .hero-badges {
-    display: flex;
-    gap: 0.75rem;
-    justify-content: center;
-    flex-wrap: wrap;         /* si no caben, pasan a la siguiente línea */
-    margin-top: 3rem;
-  }
-  
-  /* Cada badge individual */
-  .badge {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 8px;
-    padding: 10px 18px;
-    font-size: 0.85rem;
-    color: var(--blanco-suave);
-  }
-  
-  
-  /* ────────────────────────────────────────────────────────────────
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 6rem 2rem;
+}
+
+/* Capa de degradados de fondo del hero */
+.hero-bg {
+  position: absolute;
+  inset: 0; /* ocupa todo el contenedor */
+  background:
+    radial-gradient(
+      ellipse 70% 55% at 50% 0%,
+      rgba(192, 57, 43, 0.4) 0%,
+      transparent 70%
+    ),
+    /* brillo rojo arriba */
+    radial-gradient(
+        ellipse 50% 40% at 80% 90%,
+        rgba(123, 24, 24, 0.25) 0%,
+        transparent 60%
+      ),
+    /* esquina inferior */ var(--negro);
+  z-index: 0;
+}
+
+/* Capa de estrellas/partículas: puntos estáticos usando radial-gradient */
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(
+      1.5px 1.5px at 12% 18%,
+      rgba(255, 255, 255, 0.55) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 28% 42%,
+      rgba(255, 255, 255, 0.35) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      2px 2px at 62% 12%,
+      rgba(255, 255, 255, 0.45) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 78% 33%,
+      rgba(255, 255, 255, 0.3) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1.5px 1.5px at 92% 58%,
+      rgba(255, 255, 255, 0.5) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 44% 72%,
+      rgba(255, 255, 255, 0.3) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      2px 2px at 18% 85%,
+      rgba(255, 255, 255, 0.4) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 55% 55%,
+      rgba(255, 255, 255, 0.35) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1.5px 1.5px at 35% 25%,
+      rgba(255, 255, 255, 0.45) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 88% 80%,
+      rgba(255, 255, 255, 0.3) 0%,
+      transparent 100%
+    );
+  z-index: 0;
+}
+
+/* Contenido del hero: encima de las capas de fondo */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+
+/* Etiqueta pequeña encima del título */
+.hero-tag {
+  display: inline-block;
+  background: rgba(192, 57, 43, 0.15); /* fondo rojo muy suave */
+  border: 1px solid rgba(192, 57, 43, 0.5);
+  color: var(--rojo-vivo);
+  font-size: 0.78rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 100px;
+  margin-bottom: 1.75rem;
+}
+
+/* Título principal con la fuente de impacto */
+.hero-title {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(4rem, 10vw, 7.5rem); /* tamaño adaptable a la pantalla */
+  letter-spacing: 6px;
+  line-height: 0.95;
+  color: var(--blanco);
+  margin-bottom: 1.75rem;
+}
+
+/* La segunda línea "CHASE" va en rojo */
+.title-accent {
+  color: var(--rojo);
+  /* borde blanco detrás del texto para darle profundidad */
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.08);
+}
+
+/* Párrafo descriptivo debajo del título */
+.hero-desc {
+  font-size: 1.1rem;
+  color: var(--blanco-suave);
+  max-width: 540px;
+  margin: 0 auto 2.5rem;
+}
+
+/* Botón principal de llamada a la acción */
+.hero-btn {
+  display: inline-block;
+  background: var(--rojo);
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 14px 40px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.hero-btn:hover {
+  background: var(--rojo-vivo); /* rojo más brillante al hacer hover */
+  transform: translateY(-3px); /* sube ligeramente */
+}
+
+/* Contenedor de los badges con las características del juego */
+.hero-badges {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap; /* si no caben, pasan a la siguiente línea */
+  margin-top: 3rem;
+}
+
+/* Cada badge individual */
+.badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.85rem;
+  color: var(--blanco-suave);
+}
+
+/* ────────────────────────────────────────────────────────────────
      LÍNEA DIVISORIA
      Línea horizontal entre secciones con degradado rojo centrado
   ──────────────────────────────────────────────────────────────── */
-  .divider {
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      var(--rojo-oscuro) 40%,
-      var(--rojo) 50%,
-      var(--rojo-oscuro) 60%,
-      transparent 100%
-    );
-  }
-  
-  
-  /* ────────────────────────────────────────────────────────────────
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--rojo-oscuro) 40%,
+    var(--rojo) 50%,
+    var(--rojo-oscuro) 60%,
+    transparent 100%
+  );
+}
+
+/* ────────────────────────────────────────────────────────────────
      SECCIONES DE CONTENIDO (CONTROLES Y PROYECTO)
      Bloque reutilizable para ambas secciones. Limita el ancho
      y añade espacio vertical generoso.
   ──────────────────────────────────────────────────────────────── */
-  .section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 6rem 2rem;
-  }
-  
-  /* Etiqueta de categoría encima del título de sección */
-  .section-tag {
-    font-size: 0.75rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--rojo);
-    margin-bottom: 0.6rem;
-  }
-  
-  /* Título de cada sección */
-  .section-title {
-    font-family: var(--fuente-titulo);
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    letter-spacing: 2px;
-    color: var(--blanco);
-    margin-bottom: 1rem;
-  }
-  
-  /* Párrafo introductorio de cada sección */
-  .section-lead {
-    font-size: 1.05rem;
-    color: var(--blanco-suave);
-    max-width: 620px;
-    margin-bottom: 3rem;
-  }
-  
-  .control-card h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--blanco);
-    margin-bottom: 0.4rem;
-  }
-  
-  .control-card p {
-    font-size: 0.87rem;
-    color: var(--gris-texto);
-  }
-  
-  
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
 
-  
-  
-  /* ────────────────────────────────────────────────────────────────
+/* Etiqueta de categoría encima del título de sección */
+.section-tag {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--rojo);
+  margin-bottom: 0.6rem;
+}
+
+/* Título de cada sección */
+.section-title {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  letter-spacing: 2px;
+  color: var(--blanco);
+  margin-bottom: 1rem;
+}
+
+/* Párrafo introductorio de cada sección */
+.section-lead {
+  font-size: 1.05rem;
+  color: var(--blanco-suave);
+  max-width: 620px;
+  margin-bottom: 3rem;
+}
+
+.control-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--blanco);
+  margin-bottom: 0.4rem;
+}
+
+.control-card p {
+  font-size: 0.87rem;
+  color: var(--gris-texto);
+}
+
+/* ────────────────────────────────────────────────────────────────
      PIE DE PÁGINA
      Franja final con créditos del proyecto
   ──────────────────────────────────────────────────────────────── */
-  footer {
-    text-align: center;
-    padding: 2.5rem;
-    border-top: 1px solid var(--gris-medio);
-    color: var(--gris-texto);
-    font-size: 0.85rem;
-  }
-  
-  /* Tu nombre en rojo dentro del footer */
-  .footer-name {
-    color: var(--rojo-vivo);
-    font-weight: 600;
-  }
-  
-  
-  /* ────────────────────────────────────────────────────────────────
+footer {
+  text-align: center;
+  padding: 2.5rem;
+  border-top: 1px solid var(--gris-medio);
+  color: var(--gris-texto);
+  font-size: 0.85rem;
+}
+
+/* Tu nombre en rojo dentro del footer */
+.footer-name {
+  color: var(--rojo-vivo);
+  font-weight: 600;
+}
+
+/* ────────────────────────────────────────────────────────────────
      RESPONSIVE — MÓVIL
      Cuando la pantalla es pequeña (menos de 640px):
      - El menú reduce el espacio entre enlaces
      - La cuadrícula del proyecto pasa a 1 columna
   ──────────────────────────────────────────────────────────────── */
-  @media (max-width: 640px) {
-    .nav-links {
-      gap: 1.2rem;
-    }
-  
-    .about-grid {
-      grid-template-columns: 1fr;   /* 1 columna en móvil */
-    }
-  
-    .hero-title {
-      letter-spacing: 3px;          /* menos separación en pantallas pequeñas */
-    }
+@media (max-width: 640px) {
+  .nav-links {
+    gap: 1.2rem;
   }
+
+  .about-grid {
+    grid-template-columns: 1fr; /* 1 columna en móvil */
+  }
+
+  .hero-title {
+    letter-spacing: 3px; /* menos separación en pantallas pequeñas */
+  }
+}

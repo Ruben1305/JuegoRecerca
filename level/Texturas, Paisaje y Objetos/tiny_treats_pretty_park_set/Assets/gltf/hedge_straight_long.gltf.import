@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://drujw7bl21sho"
-path="res://.godot/imported/hedge_straight_long.gltf-d88e1bb52fdb63e3ff1bdcef42615008.scn"
+path="res://.godot/imported/hedge_straight_long.gltf-5f3d4bf58c1f81d95a1e9d0e41de531b.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/gltf/hedge_straight_long.gltf"
-dest_files=["res://.godot/imported/hedge_straight_long.gltf-d88e1bb52fdb63e3ff1bdcef42615008.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/gltf/hedge_straight_long.gltf"
+dest_files=["res://.godot/imported/hedge_straight_long.gltf-5f3d4bf58c1f81d95a1e9d0e41de531b.scn"]
 
 [params]
 

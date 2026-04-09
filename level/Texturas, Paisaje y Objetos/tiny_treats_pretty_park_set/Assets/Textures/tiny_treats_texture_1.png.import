@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cule61rygnr1q"
-path="res://.godot/imported/tiny_treats_texture_1.png-c3e50088de57da11cfb3ad5dec10b2b0.ctex"
+path="res://.godot/imported/tiny_treats_texture_1.png-3890fa970f7de6f1574fd00c07da9020.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/Textures/tiny_treats_texture_1.png"
-dest_files=["res://.godot/imported/tiny_treats_texture_1.png-c3e50088de57da11cfb3ad5dec10b2b0.ctex"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/Textures/tiny_treats_texture_1.png"
+dest_files=["res://.godot/imported/tiny_treats_texture_1.png-3890fa970f7de6f1574fd00c07da9020.ctex"]
 
 [params]
 

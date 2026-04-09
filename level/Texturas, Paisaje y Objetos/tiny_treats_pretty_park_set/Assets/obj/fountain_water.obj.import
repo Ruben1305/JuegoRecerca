@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://diuxcl47fvf61"
-path="res://.godot/imported/fountain_water.obj-331c31c2e0bb407b086122f736bb0e38.mesh"
+path="res://.godot/imported/fountain_water.obj-985f591cb0ef98c8cc299bea70e5faa7.mesh"
 
 [deps]
 
-files=["res://.godot/imported/fountain_water.obj-331c31c2e0bb407b086122f736bb0e38.mesh"]
+files=["res://.godot/imported/fountain_water.obj-985f591cb0ef98c8cc299bea70e5faa7.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/fountain_water.obj"
-dest_files=["res://.godot/imported/fountain_water.obj-331c31c2e0bb407b086122f736bb0e38.mesh", "res://.godot/imported/fountain_water.obj-331c31c2e0bb407b086122f736bb0e38.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/fountain_water.obj"
+dest_files=["res://.godot/imported/fountain_water.obj-985f591cb0ef98c8cc299bea70e5faa7.mesh", "res://.godot/imported/fountain_water.obj-985f591cb0ef98c8cc299bea70e5faa7.mesh"]
 
 [params]
 

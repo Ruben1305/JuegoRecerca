@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gl23be2im55s"
-path="res://.godot/imported/Road1_B_dotted_full_yellow.png-a5a924300fe72f7d78620ddbefc24b28.ctex"
+path="res://.godot/imported/Road1_B_dotted_full_yellow.png-792443faaee8989616f998d77229f76c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/Road1_B_dotted_full_yellow.png"
-dest_files=["res://.godot/imported/Road1_B_dotted_full_yellow.png-a5a924300fe72f7d78620ddbefc24b28.ctex"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/Road1_B_dotted_full_yellow.png"
+dest_files=["res://.godot/imported/Road1_B_dotted_full_yellow.png-792443faaee8989616f998d77229f76c.ctex"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c06af2nnshcrs"
-path="res://.godot/imported/bush_1.dae-018d7f8e426b35e511c24b0f9fd3dc9a.scn"
+path="res://.godot/imported/bush_1.dae-2c3f91cb7165b371cbc7a60a3e37679f.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/dae/bush_1.dae"
-dest_files=["res://.godot/imported/bush_1.dae-018d7f8e426b35e511c24b0f9fd3dc9a.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/dae/bush_1.dae"
+dest_files=["res://.godot/imported/bush_1.dae-2c3f91cb7165b371cbc7a60a3e37679f.scn"]
 
 [params]
 

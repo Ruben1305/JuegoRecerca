@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://7qip6vjlfuco"
-path="res://.godot/imported/Road10_90angle_Corner.obj-50dae33018ce57889918b372a20386b2.mesh"
+path="res://.godot/imported/Road10_90angle_Corner.obj-a36b4bf930f53e0fc6a54e33efd3556c.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Road10_90angle_Corner.obj-50dae33018ce57889918b372a20386b2.mesh"]
+files=["res://.godot/imported/Road10_90angle_Corner.obj-a36b4bf930f53e0fc6a54e33efd3556c.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/obj/Road10_90angle_Corner.obj"
-dest_files=["res://.godot/imported/Road10_90angle_Corner.obj-50dae33018ce57889918b372a20386b2.mesh", "res://.godot/imported/Road10_90angle_Corner.obj-50dae33018ce57889918b372a20386b2.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/obj/Road10_90angle_Corner.obj"
+dest_files=["res://.godot/imported/Road10_90angle_Corner.obj-a36b4bf930f53e0fc6a54e33efd3556c.mesh", "res://.godot/imported/Road10_90angle_Corner.obj-a36b4bf930f53e0fc6a54e33efd3556c.mesh"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cpjlbs22hsi1d"
-path="res://.godot/imported/bush_1.fbx-7df2da3cb4827480f17ea51cec554c16.scn"
+path="res://.godot/imported/bush_1.fbx-bc0441ba3c3398503a4c8f291c40e970.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/fbx/bush_1.fbx"
-dest_files=["res://.godot/imported/bush_1.fbx-7df2da3cb4827480f17ea51cec554c16.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/fbx/bush_1.fbx"
+dest_files=["res://.godot/imported/bush_1.fbx-bc0441ba3c3398503a4c8f291c40e970.scn"]
 
 [params]
 

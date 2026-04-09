@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dyv578jll4xmj"
-path="res://.godot/imported/bush_1.obj-f09ef748ef67fda0bb775b4ba1cc563f.mesh"
+path="res://.godot/imported/bush_1.obj-d88753d16cfcfaed6b1d4973a3e585e4.mesh"
 
 [deps]
 
-files=["res://.godot/imported/bush_1.obj-f09ef748ef67fda0bb775b4ba1cc563f.mesh"]
+files=["res://.godot/imported/bush_1.obj-d88753d16cfcfaed6b1d4973a3e585e4.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/obj/bush_1.obj"
-dest_files=["res://.godot/imported/bush_1.obj-f09ef748ef67fda0bb775b4ba1cc563f.mesh", "res://.godot/imported/bush_1.obj-f09ef748ef67fda0bb775b4ba1cc563f.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/obj/bush_1.obj"
+dest_files=["res://.godot/imported/bush_1.obj-d88753d16cfcfaed6b1d4973a3e585e4.mesh", "res://.godot/imported/bush_1.obj-d88753d16cfcfaed6b1d4973a3e585e4.mesh"]
 
 [params]
 

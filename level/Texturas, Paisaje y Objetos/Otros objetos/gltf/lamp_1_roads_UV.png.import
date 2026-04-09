@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3vltchtqnmda"
-path.s3tc="res://.godot/imported/lamp_1_roads_UV.png-77cb7ddaee0fe2858bc118bd83db6176.s3tc.ctex"
+path.s3tc="res://.godot/imported/lamp_1_roads_UV.png-80bc9371db7b781e29e8cf2638fdf397.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/gltf/lamp_1_roads_UV.png"
-dest_files=["res://.godot/imported/lamp_1_roads_UV.png-77cb7ddaee0fe2858bc118bd83db6176.s3tc.ctex"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/gltf/lamp_1_roads_UV.png"
+dest_files=["res://.godot/imported/lamp_1_roads_UV.png-80bc9371db7b781e29e8cf2638fdf397.s3tc.ctex"]
 
 [params]
 

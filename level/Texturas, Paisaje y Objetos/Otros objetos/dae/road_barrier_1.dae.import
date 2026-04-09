@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://mljoktwqwbul"
-path="res://.godot/imported/road_barrier_1.dae-7d0f1fd3d640d557c595d39f83ddda5d.scn"
+path="res://.godot/imported/road_barrier_1.dae-578f1f87cd45ac257cd8813f62fe3a5e.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/dae/road_barrier_1.dae"
-dest_files=["res://.godot/imported/road_barrier_1.dae-7d0f1fd3d640d557c595d39f83ddda5d.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/dae/road_barrier_1.dae"
+dest_files=["res://.godot/imported/road_barrier_1.dae-578f1f87cd45ac257cd8813f62fe3a5e.scn"]
 
 [params]
 

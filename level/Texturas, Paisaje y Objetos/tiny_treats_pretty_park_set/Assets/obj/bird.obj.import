@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://blxc0oo5xtpu4"
-path="res://.godot/imported/bird.obj-355c3d39e857064ec026b8904d7846ad.mesh"
+path="res://.godot/imported/bird.obj-4c57f0dc9aff10b68dc59cb9b337ada2.mesh"
 
 [deps]
 
-files=["res://.godot/imported/bird.obj-355c3d39e857064ec026b8904d7846ad.mesh"]
+files=["res://.godot/imported/bird.obj-4c57f0dc9aff10b68dc59cb9b337ada2.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/bird.obj"
-dest_files=["res://.godot/imported/bird.obj-355c3d39e857064ec026b8904d7846ad.mesh", "res://.godot/imported/bird.obj-355c3d39e857064ec026b8904d7846ad.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/bird.obj"
+dest_files=["res://.godot/imported/bird.obj-4c57f0dc9aff10b68dc59cb9b337ada2.mesh", "res://.godot/imported/bird.obj-4c57f0dc9aff10b68dc59cb9b337ada2.mesh"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dxctsqb7s1yay"
-path="res://.godot/imported/Tree4.dae-ec0e76b467509bb3085106905edf0d46.scn"
+path="res://.godot/imported/Tree4.dae-d60dc19887f4b50f10df67e602d0a596.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/dae/Tree4.dae"
-dest_files=["res://.godot/imported/Tree4.dae-ec0e76b467509bb3085106905edf0d46.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/dae/Tree4.dae"
+dest_files=["res://.godot/imported/Tree4.dae-d60dc19887f4b50f10df67e602d0a596.scn"]
 
 [params]
 

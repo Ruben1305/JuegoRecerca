@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ip8ba270t6tx"
-path="res://.godot/imported/floor_grass_sliced_E.gltf-6fef7a63d65c57419d8f101d8eaee748.scn"
+path="res://.godot/imported/floor_grass_sliced_E.gltf-1146c16c9556c8e94dfbde0e4b24da10.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/gltf/floor_grass_sliced_E.gltf"
-dest_files=["res://.godot/imported/floor_grass_sliced_E.gltf-6fef7a63d65c57419d8f101d8eaee748.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/gltf/floor_grass_sliced_E.gltf"
+dest_files=["res://.godot/imported/floor_grass_sliced_E.gltf-1146c16c9556c8e94dfbde0e4b24da10.scn"]
 
 [params]
 

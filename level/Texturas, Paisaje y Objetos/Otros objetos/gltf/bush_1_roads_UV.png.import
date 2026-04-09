@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c813linomiy3d"
-path.s3tc="res://.godot/imported/bush_1_roads_UV.png-2f006223cbf6f8eb7199a7e7bef698aa.s3tc.ctex"
+path.s3tc="res://.godot/imported/bush_1_roads_UV.png-03374ccee98e1aed8735596bcc481d64.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/gltf/bush_1_roads_UV.png"
-dest_files=["res://.godot/imported/bush_1_roads_UV.png-2f006223cbf6f8eb7199a7e7bef698aa.s3tc.ctex"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/gltf/bush_1_roads_UV.png"
+dest_files=["res://.godot/imported/bush_1_roads_UV.png-03374ccee98e1aed8735596bcc481d64.s3tc.ctex"]
 
 [params]
 

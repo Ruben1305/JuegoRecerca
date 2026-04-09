@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://mrinsyfttk8i"
-path="res://.godot/imported/flower_A.obj-0ef81c2128e4805c25e36a0ee39d642d.mesh"
+path="res://.godot/imported/flower_A.obj-47521dcb9f123bf89b67c2b82d0dd922.mesh"
 
 [deps]
 
-files=["res://.godot/imported/flower_A.obj-0ef81c2128e4805c25e36a0ee39d642d.mesh"]
+files=["res://.godot/imported/flower_A.obj-47521dcb9f123bf89b67c2b82d0dd922.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/flower_A.obj"
-dest_files=["res://.godot/imported/flower_A.obj-0ef81c2128e4805c25e36a0ee39d642d.mesh", "res://.godot/imported/flower_A.obj-0ef81c2128e4805c25e36a0ee39d642d.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/flower_A.obj"
+dest_files=["res://.godot/imported/flower_A.obj-47521dcb9f123bf89b67c2b82d0dd922.mesh", "res://.godot/imported/flower_A.obj-47521dcb9f123bf89b67c2b82d0dd922.mesh"]
 
 [params]
 

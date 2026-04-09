@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://blu7kie0hr5kd"
-path="res://.godot/imported/Road1.fbx-4f2d826e5d0485281fd49aa8f55bb435.scn"
+path="res://.godot/imported/Road1.fbx-a5f0bb78126aeb8d5308a4fdc39cff53.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/fbx (Unity Rotated)/Road1.fbx"
-dest_files=["res://.godot/imported/Road1.fbx-4f2d826e5d0485281fd49aa8f55bb435.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/fbx (Unity Rotated)/Road1.fbx"
+dest_files=["res://.godot/imported/Road1.fbx-a5f0bb78126aeb8d5308a4fdc39cff53.scn"]
 
 [params]
 

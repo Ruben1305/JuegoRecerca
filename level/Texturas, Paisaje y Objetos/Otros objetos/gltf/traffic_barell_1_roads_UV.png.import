@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgd5u23owu7ty"
-path.s3tc="res://.godot/imported/traffic_barell_1_roads_UV.png-27cb43d84d5693596499460319e736ed.s3tc.ctex"
+path.s3tc="res://.godot/imported/traffic_barell_1_roads_UV.png-7e833511fa234512414c4821d5a2de33.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/gltf/traffic_barell_1_roads_UV.png"
-dest_files=["res://.godot/imported/traffic_barell_1_roads_UV.png-27cb43d84d5693596499460319e736ed.s3tc.ctex"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/gltf/traffic_barell_1_roads_UV.png"
+dest_files=["res://.godot/imported/traffic_barell_1_roads_UV.png-7e833511fa234512414c4821d5a2de33.s3tc.ctex"]
 
 [params]
 

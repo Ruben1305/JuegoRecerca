@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccaplt1408xtu"
-path.s3tc="res://.godot/imported/traffic_light_3_roads_UV.png-af4d7629a40c652b06dc1c2bf5d74ed9.s3tc.ctex"
+path.s3tc="res://.godot/imported/traffic_light_3_roads_UV.png-752eb9d9d195bda99caaa1521510336f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/gltf/traffic_light_3_roads_UV.png"
-dest_files=["res://.godot/imported/traffic_light_3_roads_UV.png-af4d7629a40c652b06dc1c2bf5d74ed9.s3tc.ctex"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/gltf/traffic_light_3_roads_UV.png"
+dest_files=["res://.godot/imported/traffic_light_3_roads_UV.png-752eb9d9d195bda99caaa1521510336f.s3tc.ctex"]
 
 [params]
 

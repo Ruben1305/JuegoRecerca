@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://qsbw0ouhx6tb"
-path="res://.godot/imported/Road2_X.obj-6ce92ed192b378d22f97b74f28b67804.mesh"
+path="res://.godot/imported/Road2_X.obj-ac31a6339007da772fa9ba43282977a1.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Road2_X.obj-6ce92ed192b378d22f97b74f28b67804.mesh"]
+files=["res://.godot/imported/Road2_X.obj-ac31a6339007da772fa9ba43282977a1.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/obj/Road2_X.obj"
-dest_files=["res://.godot/imported/Road2_X.obj-6ce92ed192b378d22f97b74f28b67804.mesh", "res://.godot/imported/Road2_X.obj-6ce92ed192b378d22f97b74f28b67804.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/obj/Road2_X.obj"
+dest_files=["res://.godot/imported/Road2_X.obj-ac31a6339007da772fa9ba43282977a1.mesh", "res://.godot/imported/Road2_X.obj-ac31a6339007da772fa9ba43282977a1.mesh"]
 
 [params]
 

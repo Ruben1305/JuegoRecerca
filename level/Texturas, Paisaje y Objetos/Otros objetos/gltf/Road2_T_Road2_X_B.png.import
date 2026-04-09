@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs0m0mwlflajj"
-path.s3tc="res://.godot/imported/Road2_T_Road2_X_B.png-8e29b1e66012fe119e59467ad2e12265.s3tc.ctex"
+path.s3tc="res://.godot/imported/Road2_T_Road2_X_B.png-83e487afc1768d747c23bb10fe0921a3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/gltf/Road2_T_Road2_X_B.png"
-dest_files=["res://.godot/imported/Road2_T_Road2_X_B.png-8e29b1e66012fe119e59467ad2e12265.s3tc.ctex"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/gltf/Road2_T_Road2_X_B.png"
+dest_files=["res://.godot/imported/Road2_T_Road2_X_B.png-83e487afc1768d747c23bb10fe0921a3.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1bxgr48t18gx"
-path.s3tc="res://.godot/imported/Tree4_roads_UV.png-15ae8471654957765f5e570be043a949.s3tc.ctex"
+path.s3tc="res://.godot/imported/Tree4_roads_UV.png-447296a899c8703cdc03fbd847823288.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/gltf/Tree4_roads_UV.png"
-dest_files=["res://.godot/imported/Tree4_roads_UV.png-15ae8471654957765f5e570be043a949.s3tc.ctex"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/gltf/Tree4_roads_UV.png"
+dest_files=["res://.godot/imported/Tree4_roads_UV.png-447296a899c8703cdc03fbd847823288.s3tc.ctex"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cgko8th6pm5v7"
-path="res://.godot/imported/tree.gltf-9f1098af3591ceaeac6f5308f82b83e2.scn"
+path="res://.godot/imported/tree.gltf-a4564aa1645e79f3d4f8686b7989115b.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/gltf/tree.gltf"
-dest_files=["res://.godot/imported/tree.gltf-9f1098af3591ceaeac6f5308f82b83e2.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/gltf/tree.gltf"
+dest_files=["res://.godot/imported/tree.gltf-a4564aa1645e79f3d4f8686b7989115b.scn"]
 
 [params]
 

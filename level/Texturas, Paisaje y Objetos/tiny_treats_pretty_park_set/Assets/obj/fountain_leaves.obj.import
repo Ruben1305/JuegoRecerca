@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dtsgpetf7fk53"
-path="res://.godot/imported/fountain_leaves.obj-25a17f7f934e615d793a8fec92094f20.mesh"
+path="res://.godot/imported/fountain_leaves.obj-099dddf27984e15bad7480f1d444be3c.mesh"
 
 [deps]
 
-files=["res://.godot/imported/fountain_leaves.obj-25a17f7f934e615d793a8fec92094f20.mesh"]
+files=["res://.godot/imported/fountain_leaves.obj-099dddf27984e15bad7480f1d444be3c.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/fountain_leaves.obj"
-dest_files=["res://.godot/imported/fountain_leaves.obj-25a17f7f934e615d793a8fec92094f20.mesh", "res://.godot/imported/fountain_leaves.obj-25a17f7f934e615d793a8fec92094f20.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/fountain_leaves.obj"
+dest_files=["res://.godot/imported/fountain_leaves.obj-099dddf27984e15bad7480f1d444be3c.mesh", "res://.godot/imported/fountain_leaves.obj-099dddf27984e15bad7480f1d444be3c.mesh"]
 
 [params]
 

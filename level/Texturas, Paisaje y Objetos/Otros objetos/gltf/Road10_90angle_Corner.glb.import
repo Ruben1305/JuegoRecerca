@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://86bme6grruk5"
-path="res://.godot/imported/Road10_90angle_Corner.glb-97b6b31f5a3e419873d4c6c096a12718.scn"
+path="res://.godot/imported/Road10_90angle_Corner.glb-478909076b0579d753efbab2e6e83856.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/gltf/Road10_90angle_Corner.glb"
-dest_files=["res://.godot/imported/Road10_90angle_Corner.glb-97b6b31f5a3e419873d4c6c096a12718.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/gltf/Road10_90angle_Corner.glb"
+dest_files=["res://.godot/imported/Road10_90angle_Corner.glb-478909076b0579d753efbab2e6e83856.scn"]
 
 [params]
 

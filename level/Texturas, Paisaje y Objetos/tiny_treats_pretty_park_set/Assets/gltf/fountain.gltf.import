@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cl3no0jiuow83"
-path="res://.godot/imported/fountain.gltf-10dec5cae5a5d48548746ec0fb97038b.scn"
+path="res://.godot/imported/fountain.gltf-136b165aceee1d1f0cb1bcf416daab43.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/gltf/fountain.gltf"
-dest_files=["res://.godot/imported/fountain.gltf-10dec5cae5a5d48548746ec0fb97038b.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/gltf/fountain.gltf"
+dest_files=["res://.godot/imported/fountain.gltf-136b165aceee1d1f0cb1bcf416daab43.scn"]
 
 [params]
 

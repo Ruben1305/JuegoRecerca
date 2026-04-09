@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dxn1edl0tab3t"
-path="res://.godot/imported/trashcan.obj-693225cf93637e839a5a137e4534215c.mesh"
+path="res://.godot/imported/trashcan.obj-56561ec134af7568d21edf824822bdb6.mesh"
 
 [deps]
 
-files=["res://.godot/imported/trashcan.obj-693225cf93637e839a5a137e4534215c.mesh"]
+files=["res://.godot/imported/trashcan.obj-56561ec134af7568d21edf824822bdb6.mesh"]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/trashcan.obj"
-dest_files=["res://.godot/imported/trashcan.obj-693225cf93637e839a5a137e4534215c.mesh", "res://.godot/imported/trashcan.obj-693225cf93637e839a5a137e4534215c.mesh"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/trashcan.obj"
+dest_files=["res://.godot/imported/trashcan.obj-56561ec134af7568d21edf824822bdb6.mesh", "res://.godot/imported/trashcan.obj-56561ec134af7568d21edf824822bdb6.mesh"]
 
 [params]
 

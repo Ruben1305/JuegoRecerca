@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cpsajf6q8ntep"
-path="res://.godot/imported/street_lantern.gltf-ea932321d08bbabec15da791a8a1c60c.scn"
+path="res://.godot/imported/street_lantern.gltf-01c50629dfe64c4facb2b4017eebffaf.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/gltf/street_lantern.gltf"
-dest_files=["res://.godot/imported/street_lantern.gltf-ea932321d08bbabec15da791a8a1c60c.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/gltf/street_lantern.gltf"
+dest_files=["res://.godot/imported/street_lantern.gltf-01c50629dfe64c4facb2b4017eebffaf.scn"]
 
 [params]
 

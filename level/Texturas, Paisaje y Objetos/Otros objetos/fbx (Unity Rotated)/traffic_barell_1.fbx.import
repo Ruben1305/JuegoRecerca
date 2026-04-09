@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bebixy1inkuxl"
-path="res://.godot/imported/traffic_barell_1.fbx-7305a4ce11b041c385abe4b515973739.scn"
+path="res://.godot/imported/traffic_barell_1.fbx-5c2ec783ceac5644f421ba38a5a40894.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /Otros objetos/fbx (Unity Rotated)/traffic_barell_1.fbx"
-dest_files=["res://.godot/imported/traffic_barell_1.fbx-7305a4ce11b041c385abe4b515973739.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/Otros objetos/fbx (Unity Rotated)/traffic_barell_1.fbx"
+dest_files=["res://.godot/imported/traffic_barell_1.fbx-5c2ec783ceac5644f421ba38a5a40894.scn"]
 
 [params]
 

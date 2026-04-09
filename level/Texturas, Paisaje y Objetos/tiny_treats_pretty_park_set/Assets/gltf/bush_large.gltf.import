@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dfjilgmjyk8x7"
-path="res://.godot/imported/bush_large.gltf-8c6b33290cbb6fb00e0c1b998204e5ca.scn"
+path="res://.godot/imported/bush_large.gltf-ed53da47f9c28ca52d6d7ff32fe75025.scn"
 
 [deps]
 
-source_file="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/gltf/bush_large.gltf"
-dest_files=["res://.godot/imported/bush_large.gltf-8c6b33290cbb6fb00e0c1b998204e5ca.scn"]
+source_file="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/gltf/bush_large.gltf"
+dest_files=["res://.godot/imported/bush_large.gltf-ed53da47f9c28ca52d6d7ff32fe75025.scn"]
 
 [params]
 

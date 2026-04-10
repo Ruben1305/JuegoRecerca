@@ -3,16 +3,16 @@
 [ext_resource type="Shader" uid="uid://cdlt3ujrpad32" path="res://level/sky_with_stars.tres" id="1_ioc7i"]
 [ext_resource type="Texture2D" uid="uid://ca3jtautvrj1u" path="res://level/moon.png" id="2_l3vqv"]
 [ext_resource type="PackedScene" uid="uid://dksuwmynb7vjf" path="res://autoload/kill_plane/kill_plane_3d.tscn" id="3_r1e6t"]
-[ext_resource type="Texture2D" uid="uid://cb2w8rg6h2vsn" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/tiny_treats_grass_texture.png" id="5_3qh5i"]
+[ext_resource type="Texture2D" uid="uid://cb2w8rg6h2vsn" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/tiny_treats_grass_texture.png" id="5_3qh5i"]
 [ext_resource type="PackedScene" uid="uid://c6uew1wfpkt16" path="res://level/flag/flag_3d.tscn" id="5_k3p2u"]
 [ext_resource type="PackedScene" uid="uid://3agu7gb3kjif" path="res://level/cactus/cactus_tall_3.tscn" id="6_ij3b7"]
 [ext_resource type="Script" uid="uid://w4arqfmhmemc" path="res://Scripts/Platform/PlatformUP.gd" id="6_k3p2u"]
 [ext_resource type="Script" uid="uid://1g1tg0hbxobi" path="res://Scripts/Platform/PlatformLeft.gd" id="7_cle4c"]
 [ext_resource type="Script" uid="uid://bjf6euw2h3wi2" path="res://Scripts/Star/estrellica.gd" id="13_uwuds"]
 [ext_resource type="ArrayMesh" uid="uid://cxribqsh0k83c" path="res://level/estrella/estrellica.obj" id="14_pcogq"]
-[ext_resource type="ArrayMesh" uid="uid://d2jvcj50mlc4m" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/hedge_straight_long.obj" id="15_ku3ub"]
-[ext_resource type="ArrayMesh" uid="uid://bcn4h3akxgycq" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/hedge_corner.obj" id="16_rep6o"]
-[ext_resource type="ArrayMesh" uid="uid://8oo8eilk2dix" path="res://level/Texturas, Paisaje y Objetos /tiny_treats_pretty_park_set/Assets/obj/street_lantern.obj" id="17_ku3ub"]
+[ext_resource type="ArrayMesh" uid="uid://d2jvcj50mlc4m" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/hedge_straight_long.obj" id="15_ku3ub"]
+[ext_resource type="ArrayMesh" uid="uid://bcn4h3akxgycq" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/hedge_corner.obj" id="16_rep6o"]
+[ext_resource type="ArrayMesh" uid="uid://8oo8eilk2dix" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/street_lantern.obj" id="17_ku3ub"]
 
 [sub_resource type="Curve" id="Curve_k4wis"]
 _data = [Vector2(0.331719, 0.0391753), 0.0, 0.0, 0, 0, Vector2(0.697336, 1), 0.51276, 0.0, 0, 0]
@@ -40,8 +40,8 @@ seamless = true
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_g8ud2"]
 shader = ExtResource("1_ioc7i")
-shader_parameter/top_color = Color(1, 0.17254902, 0.17254902, 1)
-shader_parameter/bottom_color = Color(1, 0.87058824, 0.12941177, 1)
+shader_parameter/top_color = Color(0, 0, 0, 1)
+shader_parameter/bottom_color = Color(0.07450981, 0.15686275, 0.30588236, 1)
 shader_parameter/gradient_curve = SubResource("CurveTexture_moxc7")
 shader_parameter/noise_texture = SubResource("NoiseTexture2D_83fre")
 shader_parameter/moon_texture = ExtResource("2_l3vqv")

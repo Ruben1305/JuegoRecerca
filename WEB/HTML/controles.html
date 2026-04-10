@@ -6,8 +6,8 @@
     <title>Skyline Chase</title>
 
     <!-- ─── Google Fonts ───────────────────────────────────────────
-       Bebas Neue: fuente de título, impacto visual fuerte
-       Barlow: fuente de cuerpo, limpia y moderna
+      Bebas Neue: fuente de título, impacto visual fuerte
+      Barlow: fuente de cuerpo, limpia y moderna
   ──────────────────────────────────────────────────────────────── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,23 +17,28 @@
     />
 
     <!-- ─── Hoja de estilos externa ────────────────────────────────
-       IMPORTANTE: rel="stylesheet" (no "styles") para que funcione
+      IMPORTANTE: rel="stylesheet" (no "styles") para que funcione
   ──────────────────────────────────────────────────────────────── -->
     <link rel="stylesheet" href="../CSS/stylesConfig.css" />
   </head>
 
   <body>
     <!-- ════════════════════════════════════════════════════════════
-       BARRA DE NAVEGACIÓN
-       Menú fijo en la parte superior con enlaces a cada sección
+      BARRA DE NAVEGACIÓN
   ════════════════════════════════════════════════════════════════ -->
     <nav class="navbar">
       <div class="nav-logo">SKYLINE<span>CHASE</span></div>
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="controles.html">Controles</a></li>
-          <li><a href="proyecto.html">Proyecto</a></li>
+          <li><a href="controles.html">Sobre el juego</a></li>
+          <li class="tiene-submenu">
+            <a href="HTML/proyecto.html">Proyecto ▼</a>
+            <ul class="submenu">
+              <li><a href="HTML/Diario-Desarollo.html">DevBlog</a></li>
+              <li><a href="HTML/Proyecto.html">Galeria</a></li>
+            </ul>
+          </li>
         </ul>
         <a
           href="https://github.com/Ruben1305/JuegoRecerca/blob/main/release.zip"
@@ -48,8 +53,8 @@
     <div class="divider"></div>
 
     <!-- ════════════════════════════════════════════════════════════
-       SECCIÓN CONTROLES
-       Tarjetas con cada tecla / acción del juego
+      SECCIÓN CONTROLES
+      Tarjetas con cada tecla / acción del juego
   ════════════════════════════════════════════════════════════════ -->
     <section id="controles" class="section">
       <p class="section-tag">Controles</p>
@@ -60,7 +65,7 @@
         encuentres por el camino.
       </p>
 
-      <!-- Cuadrícula de tarjetas de controles -->
+      <!-- Cuadrícula de tarjetas de controles (sin modal, sin cambios) -->
       <div class="controls-grid">
         <div class="control-card">
           <div class="control-key">W A S D</div>
@@ -91,14 +96,20 @@
           <h3>Pausa</h3>
           <p>Pausa la partida y accede al menú de opciones.</p>
         </div>
+
+        <div class="control-card">
+          <div class="control-key">F11</div>
+          <h3>Pantalla completa</h3>
+          <p>Pon la pantalla en modo pantalla completa.</p>
+        </div>
       </div>
     </section>
 
     <div class="divider"></div>
 
     <!-- ════════════════════════════════════════════════════════════
-       SECCIÓN JUGABILIDAD
-       Explicación general de cómo funciona el juego
+      SECCIÓN JUGABILIDAD
+      Explicación general de cómo funciona el juego
   ════════════════════════════════════════════════════════════════ -->
     <section id="Jugabilidad" class="section">
       <p class="section-tag">Jugabilidad</p>
@@ -106,58 +117,117 @@
       <p class="section-lead">
         El objetivo principal es llegar a la meta. A lo largo de los diferentes
         niveles se implementarán nuevas mecánicas. Hay coleccionables ⭐ que
-        puedes recoger, no olvides que las caídas de las plataformas no son lo
-        único que pueden acabar contigo: evita o acaba con los enemigos de los
-        diferentes niveles. Tienes tres oportunidades para pasarte el nivel,
-        ¡sino vuelve a intentarlo!
+        puedes recoger te lo aconsejo, no olvides que las caídas de las
+        plataformas no son lo único que pueden acabar contigo: evita o acaba con
+        los enemigos de los diferentes niveles. Tienes tres oportunidades para
+        pasarte el nivel, ¡sino vuelve a intentarlo!
       </p>
     </section>
 
     <div class="divider"></div>
 
     <!-- ════════════════════════════════════════════════════════════
-       SECCIÓN MECÁNICAS
-       Tarjetas con las mecánicas principales del juego
+      SECCIÓN MECÁNICAS
+      Tarjetas con las mecánicas principales del juego.
+      AQUÍ está el modal: cada tarjeta tiene onclick con su vídeo.
+      Cambia la ruta 'videos/XXX.mp4' por tu archivo real.
   ════════════════════════════════════════════════════════════════ -->
     <section id="Mecanicas" class="section">
       <p class="section-tag">Mecánicas</p>
       <h2 class="section-title">Mecánicas del juego</h2>
+      <p class="section-lead">
+        Haz click en cualquier tarjeta para ver un vídeo de la mecánica y
+        entender cómo funciona.
+      </p>
 
-      <!-- Reutilizamos controls-grid y control-card porque el diseño es el mismo -->
       <div class="controls-grid">
-        <div class="control-card">
+        <!-- onclick="abrirModal('ruta/video.mp4')" — cambia la ruta por tu vídeo real -->
+
+        <div
+          class="control-card mecanica-clickable"
+          onclick="abrirModal('../MP4/Mecanica-Vida.mp4')"
+        >
           <div class="control-key">❤️</div>
           <h3>Vidas</h3>
           <p>Tienes tres vidas. ¡Pásate los niveles antes de perderlas!</p>
+          <span class="card-hint">▶ Ver vídeo</span>
         </div>
 
-        <div class="control-card">
+        <div
+          class="control-card mecanica-clickable"
+          onclick="abrirModal('../MP4/Mecanica-WallSlide.mp4')"
+        >
           <div class="control-key">🧱</div>
           <h3>WallSlide</h3>
           <p>
-            Pégarte a las paredes y deslízate por ellas para llegar al objetivo.
+            Pegate a las paredes y deslízate por ellas para llegar al objetivo.
           </p>
+          <span class="card-hint">▶ Ver vídeo</span>
         </div>
 
-        <div class="control-card">
+        <div
+          class="control-card mecanica-clickable"
+          onclick="abrirModal('../MP4/Mecanica-Coleccionables.mp4')"
+        >
           <div class="control-key">⭐</div>
           <h3>Coleccionables</h3>
-          <p>Las estrellas son opcionales. ¡Recógelas si las encuentras!</p>
+          <p>
+            Las estrellas son opcionales. ¡Recógelas si las encuentras! Ocultan
+            un secreto.
+          </p>
+          <span class="card-hint">▶ Ver vídeo</span>
         </div>
 
-        <div class="control-card">
+        <div
+          class="control-card mecanica-clickable"
+          onclick="abrirModal('../MP4/Mecanica-Doble-Salto.mp4')"
+        >
           <div class="control-key">🚀</div>
           <h3>Doble Salto</h3>
           <p>Utiliza el doble salto para poder llegar más lejos.</p>
+          <span class="card-hint">▶ Ver vídeo</span>
+        </div>
+
+        <div
+          class="control-card mecanica-clickable"
+          onclick="abrirModal('../MP4/Mecanica-Ataque.mp4')"
+        >
+          <div class="control-key">🗡️</div>
+          <h3>Ataque</h3>
+          <p>Utiliza el ataque para acabar con los enemigos.</p>
+          <span class="card-hint">▶ Ver vídeo</span>
+        </div>
+
+        <div
+          class="control-card mecanica-clickable"
+          onclick="abrirModal('videos/reinicio.mp4')"
+        >
+          <div class="control-key">🗘❤️</div>
+          <h3>Reinicio de vidas</h3>
+          <p>Al recoger una estrella se regeneran las vidas.</p>
+          <span class="card-hint">▶ Ver vídeo</span>
         </div>
       </div>
     </section>
 
+    <!-- ════════════════════════════════════════════════════════════
+      MODAL DE VÍDEO
+      Está oculto por defecto. Se muestra al hacer click en una
+      tarjeta de mecánica. Hacer click fuera o en ✕ lo cierra.
+  ════════════════════════════════════════════════════════════════ -->
+    <div class="modal" id="modal" onclick="cerrarModal()">
+      <div class="modal-contenido" onclick="event.stopPropagation()">
+        <!-- Botón de cerrar en la esquina superior derecha -->
+        <button class="modal-cerrar" onclick="cerrarModal()">✕</button>
+        <!-- El src del vídeo se asigna dinámicamente con JS -->
+        <video id="modal-video" controls></video>
+      </div>
+    </div>
+
     <div class="divider"></div>
 
     <!-- ════════════════════════════════════════════════════════════
-       PIE DE PÁGINA
-       Créditos del proyecto
+      PIE DE PÁGINA
   ════════════════════════════════════════════════════════════════ -->
     <footer>
       <p>
@@ -165,5 +235,35 @@
         <span class="footer-name">Didac Rubio y Rubén Alcantarilla</span>
       </p>
     </footer>
+
+    <!-- ════════════════════════════════════════════════════════════
+      JAVASCRIPT DEL MODAL
+      Estas funciones abren y cierran el modal con el vídeo.
+      Se pone al final del body para que cargue después del HTML.
+  ════════════════════════════════════════════════════════════════ -->
+    <script>
+      // Abre el modal y carga el vídeo de la mecánica clicada
+      function abrirModal(rutaVideo) {
+        const modal = document.getElementById("modal");
+        const video = document.getElementById("modal-video");
+        video.src = rutaVideo; // asigna el vídeo correcto
+        video.play(); // lo reproduce automáticamente
+        modal.classList.add("activo"); // hace visible el modal
+      }
+
+      // Cierra el modal y para el vídeo para no malgastar datos
+      function cerrarModal() {
+        const modal = document.getElementById("modal");
+        const video = document.getElementById("modal-video");
+        video.pause();
+        video.src = ""; // descarga el vídeo de memoria
+        modal.classList.remove("activo"); // oculta el modal
+      }
+
+      // Permite cerrar el modal pulsando la tecla Escape
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") cerrarModal();
+      });
+    </script>
   </body>
 </html>

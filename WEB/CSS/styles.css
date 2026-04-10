@@ -110,6 +110,38 @@ body {
   align-items: center;
   gap: 2.5rem; /* mismo gap que entre los links */
 }
+
+/*==================================
+      SUBMENU
+   ================================== */
+
+/* 1. EL ANCLA: Esto le dice al submenú que no se mueva al borde de la pantalla */
+.tiene-submenu {
+  position: relative;
+}
+
+/* 2. EL SUBMENÚ: Ahora "left: 0" significa "la izquierda de Proyecto", no de la web */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Justo debajo del texto */
+  left: 0; /* Alineado a la izquierda del texto "Proyecto" */
+
+  /* Tus colores y estilos */
+  background-color: var(--gris-oscuro);
+  border-top: 3px solid var(--rojo);
+  width: 100px; /* Un ancho fijo para que no se vea comprimido */
+  z-index: 0; /* Para que pase por encima de imágenes o texto */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* 3. PARA QUE SE MUESTRE */
+.tiene-submenu:hover .submenu {
+  display: block;
+}
+
 /* ================================= 
       Boton Descargar
    ================================= */

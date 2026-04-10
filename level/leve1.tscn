@@ -24,7 +24,7 @@
 [ext_resource type="ArrayMesh" uid="uid://dxn1edl0tab3t" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/trashcan.obj" id="24_da604"]
 [ext_resource type="PackedScene" uid="uid://dgf7xxfjkab28" path="res://Players/Characters/SkeletonWarriorCharacter.tscn" id="25_255j1"]
 [ext_resource type="ArrayMesh" uid="uid://8oo8eilk2dix" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/street_lantern.obj" id="25_cjt1v"]
-[ext_resource type="Script" uid="uid://jfodnxjq2prj" path="res://Scripts/Player/Skeleton_Mage.gd" id="26_cjt1v"]
+[ext_resource type="Script" uid="uid://x4acyl8lqsrg" path="res://Players/Characters/skeleton_warrior.gd" id="26_cjt1v"]
 [ext_resource type="Script" uid="uid://jkink55u3xw7" path="res://Players/Characters/skeleton_movement_platform.gd" id="26_da604"]
 
 [sub_resource type="Curve" id="Curve_k4wis"]

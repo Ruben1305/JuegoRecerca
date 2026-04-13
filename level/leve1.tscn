@@ -20,12 +20,12 @@
 [ext_resource type="ArrayMesh" uid="uid://dyv578jll4xmj" path="res://level/Texturas, Paisaje y Objetos/Otros objetos/obj/bush_1.obj" id="20_833p6"]
 [ext_resource type="ArrayMesh" uid="uid://diuxcl47fvf61" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/fountain_water.obj" id="20_a1pmi"]
 [ext_resource type="ArrayMesh" uid="uid://dtsgpetf7fk53" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/fountain_leaves.obj" id="21_d6xko"]
-[ext_resource type="PackedScene" uid="uid://d66x53d5ir4i" path="res://Players/Characters/SkeletonMageCharacter.tscn" id="22_a1pmi"]
 [ext_resource type="ArrayMesh" uid="uid://dxn1edl0tab3t" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/trashcan.obj" id="24_da604"]
-[ext_resource type="PackedScene" uid="uid://dgf7xxfjkab28" path="res://Players/Characters/SkeletonWarriorCharacter.tscn" id="25_255j1"]
+[ext_resource type="PackedScene" uid="uid://ddn42334oe48i" path="res://Players/Characters/SkeletonWarriorCharacter.tscn" id="25_255j1"]
 [ext_resource type="ArrayMesh" uid="uid://8oo8eilk2dix" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/street_lantern.obj" id="25_cjt1v"]
-[ext_resource type="Script" uid="uid://jfodnxjq2prj" path="res://Scripts/Player/Skeleton_Mage.gd" id="26_cjt1v"]
-[ext_resource type="Script" uid="uid://jkink55u3xw7" path="res://Players/Characters/skeleton_movement_platform.gd" id="26_da604"]
+[ext_resource type="Script" uid="uid://x4acyl8lqsrg" path="res://Players/Characters/skeleton_warrior.gd" id="26_cjt1v"]
+[ext_resource type="Script" path="res://Players/Characters/skeleton_movement_platform.gd" id="26_da604"]
+[ext_resource type="PackedScene" uid="uid://c6x0sa0atynwa" path="res://Players/Characters/SkeletonMageCharacter.tscn" id="27_cjt1v"]
 
 [sub_resource type="Curve" id="Curve_k4wis"]
 _data = [Vector2(0.331719, 0.0391753), 0.0, 0.0, 0, 0, Vector2(0.697336, 1), 0.51276, 0.0, 0, 0]
@@ -1425,12 +1425,11 @@ skeleton = NodePath("../..")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.055382, 0.010741234, 0.80241966)
 shape = SubResource("ConcavePolygonShape3D_ximny")
 
-[node name="CharacterBody3D2" parent="." unique_id=1809422166 instance=ExtResource("22_a1pmi")]
+[node name="CharacterBody3D2" parent="." unique_id=1809422166]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.596893, 13.477774, -24.99332)
 collision_layer = 2
 collision_mask = 12
 script = ExtResource("26_da604")
-speed = 3.0
 
 [node name="CSGBox3D21" type="CSGBox3D" parent="." unique_id=911536395]
 transform = Transform3D(6.4198813, 0, 0, 0, 1, 0, 0, 0, 3.669007, 33.37903, 12.977758, -23.431078)
@@ -1567,11 +1566,15 @@ collision_layer = 2
 collision_mask = 12
 script = ExtResource("26_cjt1v")
 
-[node name="CharacterBody3D" parent="." unique_id=1533694577 instance=ExtResource("22_a1pmi")]
-transform = Transform3D(-1.3, 0, -1.9629454e-07, 0, 1.3, 0, 1.9629454e-07, 0, -1.3, -23.196941, 13.477779, -49.54991)
-collision_layer = 2
+[node name="CharacterBody3D" parent="." unique_id=1533694577 instance=ExtResource("27_cjt1v")]
+transform = Transform3D(-1.3, 0, -1.9629454e-07, 0, 1.3, 0, 1.9629454e-07, 0, -1.3, -23.574173, 13.477781, -49.183727)
 collision_mask = 12
 script = ExtResource("26_da604")
+
+[node name="CharacterBody3D4" parent="." unique_id=21040524 instance=ExtResource("27_cjt1v")]
+transform = Transform3D(-1.3, 0, -1.9629454e-07, 0, 1.3, 0, 1.9629454e-07, 0, -1.3, 33.55951, 13.477781, -24.057436)
+collision_layer = 2
+collision_mask = 12
 
 [connection signal="body_entered" from="Estrellica3" to="KillPlane" method="_on_estrellica_body_entered"]
 [connection signal="body_shape_entered" from="Estrellica3" to="KillPlane" method="_on_estrellica_body_shape_entered"]

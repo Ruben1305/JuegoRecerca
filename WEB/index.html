@@ -7,8 +7,8 @@
     <title>Skyline Chase</title>
 
     <!-- ─── Google Fonts ───────────────────────────────────────────
-       Bebas Neue: fuente de título, impacto visual fuerte
-       Barlow: fuente de cuerpo, limpia y moderna
+      Bebas Neue: fuente de título, impacto visual fuerte
+      Barlow: fuente de cuerpo, limpia y moderna
   ──────────────────────────────────────────────────────────────── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,16 +22,20 @@
   </head>
   <body>
     <!-- ════════════════════════════════════════════════════════════
-       BARRA DE NAVEGACIÓN
-       Menú fijo en la parte superior con enlaces a cada sección
-  ════════════════════════════════════════════════════════════════ -->
+      BARRA DE NAVEGACIÓN
+    ════════════════════════════════════════════════════════════════ -->
     <nav class="navbar">
       <div class="nav-logo">SKYLINE<span>CHASE</span></div>
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="HTML/controles.html">Controles</a></li>
-          <li><a href="HTML/proyecto.html">Proyecto</a></li>
+          <li><a href="HTML/controles.html">Sobre el Juego</a></li>
+          <li class="tiene-submenu">
+            <a href="HTML/proyecto.html">Proyecto ▼</a>
+            <ul class="submenu">
+              <li><a href="HTML/Diario-Desarollo.html">DevBlog</a></li>
+            </ul>
+          </li>
         </ul>
         <a
           href="https://github.com/Ruben1305/JuegoRecerca/blob/main/release.zip"
@@ -44,8 +48,8 @@
     </nav>
 
     <!-- ════════════════════════════════════════════════════════════
-       SECCIÓN HERO (INICIO)
-       Pantalla de bienvenida con título, descripción y badges
+      SECCIÓN HERO (INICIO)
+      Pantalla de bienvenida con título, descripción y badges
   ════════════════════════════════════════════════════════════════ -->
     <section id="inicio" class="hero">
       <!-- Fondo decorativo: capas de color y partículas de estrellas -->
@@ -81,19 +85,21 @@
           <div class="badge">⭐ Coleccionables</div>
           <div class="badge">👾 Enemigos</div>
           <div class="badge">🏔️ Plataformas</div>
+          <div class="badge">🤖 Godot</div>
+          <div class="badge">🏔️ Plataformas</div>
         </div>
       </div>
     </section>
 
     <!-- ════════════════════════════════════════════════════════════
-       LÍNEA DIVISORIA DECORATIVA
-       Separa visualmente las secciones con un degradado rojo
+      LÍNEA DIVISORIA DECORATIVA
+      Separa visualmente las secciones con un degradado rojo
   ════════════════════════════════════════════════════════════════ -->
     <div class="divider"></div>
 
     <!-- ════════════════════════════════════════════════════════════
-       PIE DE PÁGINA
-       Créditos del proyecto
+      PIE DE PÁGINA
+      Créditos del proyecto
   ════════════════════════════════════════════════════════════════ -->
     <footer>
       <p>

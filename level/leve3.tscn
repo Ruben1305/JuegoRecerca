@@ -51,8 +51,8 @@ seamless = true
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_g8ud2"]
 shader = ExtResource("1_bm7oe")
-shader_parameter/top_color = Color(1, 0.17254902, 0.17254902, 1)
-shader_parameter/bottom_color = Color(1, 0.87058824, 0.12941177, 1)
+shader_parameter/top_color = Color(0, 0, 0, 1)
+shader_parameter/bottom_color = Color(0.07450981, 0.15686275, 0.30588236, 1)
 shader_parameter/gradient_curve = SubResource("CurveTexture_moxc7")
 shader_parameter/noise_texture = SubResource("NoiseTexture2D_83fre")
 shader_parameter/moon_texture = ExtResource("2_pasun")

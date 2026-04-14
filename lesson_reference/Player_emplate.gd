@@ -91,21 +91,27 @@ func _do_spawn_animation() -> void:
 # Ataque
 # --------------------
 func _do_attack() -> void:
-	can_attack = false
 	is_attacking = true
 
-	_anim_tree.active = false
+	# Reproducimos la animación de ataque
 	_anim_player.play(ANIM_ATTACK)
+	
+	# Activamos el área de ataque para detectar enemigos
+	attack_area.monitoring = true
+
+	# Comprobamos qué enemigos están dentro del área
+	await get_tree().create_timer(0.2).timeout  # Pequeña espera para que el área detecte
+	var bodies = attack_area.get_overlapping_bodies()
+	for body in bodies:
+		if body.is_in_group("enemigo") and body.has_method("take_damage"):
+			body.take_damage(attack_damage)
+
+	# Desactivamos el área hasta el próximo ataque
+	attack_area.monitoring = false
+
+	# Esperamos a que termine la animación
 	await _anim_player.animation_finished
-	_anim_tree.active = true
-
 	is_attacking = false
-
-	# Daño al enemigo si hay alguno cerca
-	Events.player_attack.emit(attack_damage)
-
-	await get_tree().create_timer(attack_cooldown).timeout
-	can_attack = true
 
 # --------------------
 # Input
@@ -115,6 +121,8 @@ func _input(event: InputEvent) -> void:
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	elif event.is_action_pressed("ClicIzq"):
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	if event.is_action_pressed("attack") and not is_attacking:
+		_do_attack()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:

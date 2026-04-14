@@ -4,6 +4,53 @@
 [ext_resource type="PackedScene" uid="uid://bx1a7btr3gn48" path="res://escenas/GUI/button.tscn" id="1_ypn5h"]
 [ext_resource type="Texture2D" uid="uid://ccnqadffupj6r" path="res://escenas/GUI/Fondo Selector.png" id="2_oyen7"]
 [ext_resource type="Script" uid="uid://dpyhdcfgmbuja" path="res://escenas/GUI/buttonLvl1.gd" id="3_w824h"]
+[ext_resource type="Texture2D" uid="uid://bmxhdp1ynbopk" path="res://LightGreen_Panel.png" id="4_dw05i"]
+[ext_resource type="FontFile" uid="uid://c60mk86dx6721" path="res://Fuentes/Pixel Lofi.otf" id="4_huh3l"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x3qdc"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2eim8"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t4sn4"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yfh8i"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1j72r"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_grbhl"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1og72"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4q4au"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x0nak"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oeoyj"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x2qam"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8iuna"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_huh3l"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_53ias"]
+texture = ExtResource("4_dw05i")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rgxvo"]
+texture = ExtResource("4_dw05i")
 
 [sub_resource type="LabelSettings" id="LabelSettings_cpxs3"]
 font_size = 100
@@ -17,6 +64,10 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_nagik")
 
+[node name="Line2D" type="Line2D" parent="." unique_id=1977818418]
+position = Vector2(-2, 394)
+points = PackedVector2Array(4, -1, 941.1554, -1.9767456, 1661.4185, -2.727417, 1923, -3)
+
 [node name="FondoSelector" type="Sprite2D" parent="." unique_id=1479613621]
 position = Vector2(959.99994, 539)
 scale = Vector2(1.3821838, 1.8006645)
@@ -26,13 +77,17 @@ texture = ExtResource("2_oyen7")
 process_mode = 3
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
-offset_left = 1470.0
-offset_top = 415.0
-offset_right = 1570.0
-offset_bottom = 519.0
+offset_left = 1554.0
+offset_top = 348.0
+offset_right = 1654.0
+offset_bottom = 452.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_huh3l")
 theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_x3qdc")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_2eim8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_t4sn4")
 text = "5"
 script = null
 
@@ -46,7 +101,11 @@ offset_right = 1308.0
 offset_bottom = 950.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_huh3l")
 theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_yfh8i")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1j72r")
+theme_override_styles/hover = SubResource("StyleBoxTexture_grbhl")
 text = "4"
 script = null
 
@@ -54,13 +113,17 @@ script = null
 process_mode = 3
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
-offset_left = 892.0
-offset_top = 356.0
-offset_right = 992.0
-offset_bottom = 460.0
+offset_left = 901.0
+offset_top = 345.0
+offset_right = 1001.0
+offset_bottom = 449.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_huh3l")
 theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_1og72")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_4q4au")
+theme_override_styles/hover = SubResource("StyleBoxTexture_x0nak")
 text = "3"
 script = null
 
@@ -74,7 +137,11 @@ offset_right = 662.0
 offset_bottom = 838.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_huh3l")
 theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_oeoyj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_x2qam")
+theme_override_styles/hover = SubResource("StyleBoxTexture_8iuna")
 text = "2"
 script = null
 
@@ -82,13 +149,17 @@ script = null
 process_mode = 3
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
-offset_left = 302.0
-offset_top = 361.0
-offset_right = 402.0
-offset_bottom = 465.0
+offset_left = 261.0
+offset_top = 348.0
+offset_right = 361.0
+offset_bottom = 452.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_huh3l")
 theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_huh3l")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_53ias")
+theme_override_styles/hover = SubResource("StyleBoxTexture_rgxvo")
 text = "1"
 script = ExtResource("3_w824h")
 

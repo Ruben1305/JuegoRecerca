@@ -34,7 +34,7 @@ length = 0.5
 slide_on_slope = true
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_5a1gh"]
-radius = 1.4803547
+radius = 1.418608
 
 [node name="KnightPlayer" type="CharacterBody3D" unique_id=1866791503 groups=["player"]]
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
@@ -103,9 +103,10 @@ bones/22/rotation = Quaternion(6.553277e-06, 0.92024654, -0.39133924, -1.4180921
 transform = Transform3D(-0.55670786, -0.3392319, -0.7582855, -0.12985562, -0.86605775, 0.4827824, -0.8204959, 0.36723664, 0.43809053, -0.36421275, 0.92006725, -0.053092476)
 
 [node name="AttackArea" type="Area3D" parent="." unique_id=907899670]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.57868)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AttackArea" unique_id=711950125]
-transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0.61753446, 0)
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0.61753434, -0.55480707)
 shape = SubResource("SphereShape3D_5a1gh")
 
 [editable path="Knight"]

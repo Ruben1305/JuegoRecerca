@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dluh6kp13vsqx" path="res://escenas/ContadorEstrellas.tscn" id="5_j5x7o"]
 [ext_resource type="PackedScene" uid="uid://dpyts00g4ljql" path="res://escenas/BarraVida.tscn" id="6_rvgv0"]
 
-[node name="Gamelv3" type="Node" unique_id=2132981713]
+[node name="Gamelv3" type="Node" unique_id=2132981713 groups=["enemigo", "player"]]
 script = ExtResource("1_2cjaw")
 
 [node name="FlagReachedScreen" parent="." unique_id=1250105717 instance=ExtResource("3_rvgv0")]

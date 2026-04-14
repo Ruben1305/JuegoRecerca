@@ -125,11 +125,13 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func take_damage(cantidad: int) -> void:
+	add_to_group("enemigo")
 	current_health -= cantidad
 	current_health = clamp(current_health, 0, max_health)
 	_update_health_bar()
 	if current_health <= 0:
 		_die()
+
 
 func _die() -> void:
 	queue_free()

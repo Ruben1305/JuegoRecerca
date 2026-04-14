@@ -8,7 +8,7 @@
 [ext_resource type="Script" uid="uid://bv3rdd67lv1a2" path="res://PlataformLeftVertical2.gd" id="6_1ia0t"]
 [ext_resource type="Script" uid="uid://dkfb86v4fw3s7" path="res://Scripts/Platform/PlatformLeftVertical.gd" id="7_oo46f"]
 [ext_resource type="Script" uid="uid://dhdafpadjpai8" path="res://Scripts/Platform/PlatformDown.gd" id="8_0p0bp"]
-[ext_resource type="Script" uid="uid://c5blui4pk2kwy" path="res://Scripts/Platform/PlatformRight.gd" id="9_efj83"]
+[ext_resource type="Script" uid="uid://d0g7nenwx5pvf" path="res://level/Rigth2.gd" id="9_efj83"]
 [ext_resource type="PackedScene" uid="uid://3agu7gb3kjif" path="res://level/cactus/cactus_tall_3.tscn" id="12_y2iua"]
 [ext_resource type="ArrayMesh" uid="uid://x7n62bt5rnha" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/bench.obj" id="13_tc1ub"]
 [ext_resource type="ArrayMesh" uid="uid://dn2ipg4seubkj" path="res://level/Texturas, Paisaje y Objetos/tiny_treats_pretty_park_set/Assets/obj/tree_large.obj" id="14_777m0"]
@@ -357,6 +357,64 @@ material_override = SubResource("StandardMaterial3D_tkvxb")
 use_collision = true
 size = Vector3(5, 1, 7.0527954)
 
+[node name="CSGBox3D72" type="CSGBox3D" parent="." unique_id=607747023]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -116.51721, 12.978, -3.7116098)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(5, 1, 7.0527954)
+
+[node name="CSGBox3D73" type="CSGBox3D" parent="." unique_id=2081766408]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -129.14484, 12.978, 11.130439)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(5, 1, 7.0527954)
+
+[node name="CSGBox3D75" type="CSGBox3D" parent="." unique_id=1264187198]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -143.74112, 12.978, 23.680645)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+collision_layer = 0
+collision_mask = 0
+size = Vector3(5, 1, 7.0527954)
+
+[node name="CSGBox3D76" type="CSGBox3D" parent="." unique_id=233275119]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -143.74112, 12.978, 38.608814)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(5, 1, 7.0527954)
+
+[node name="CSGBox3D77" type="CSGBox3D" parent="." unique_id=1903982417]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -159.17883, 12.978, 38.608814)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(5, 1, 7.0527954)
+
+[node name="CSGBox3D78" type="CSGBox3D" parent="." unique_id=1742191408]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -159.17883, 12.978, 23.885075)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(5, 1, 7.0527954)
+
+[node name="CSGBox3D79" type="CSGBox3D" parent="." unique_id=1116079348]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -173.26831, 12.978, 31.108747)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(7.1259766, 1, 7.0527954)
+
+[node name="CSGBox3D74" type="CSGBox3D" parent="." unique_id=1429169850]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -129.14484, 12.978, 31.249603)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(7.923828, 1, 7.0527954)
+
 [node name="CSGBox3D55" type="CSGBox3D" parent="." unique_id=1174625883]
 transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -135.79874, 12.978, -63.819576)
 layers = 8
@@ -413,11 +471,53 @@ use_collision = true
 size = Vector3(5, 1, 7.0527954)
 
 [node name="CSGBox3D63" type="CSGBox3D" parent="." unique_id=1126476727]
-transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -196.55296, 3.0122695, 8.197849)
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -196.55296, 3.0122695, -0.8566904)
 layers = 8
 material_override = SubResource("StandardMaterial3D_tkvxb")
 use_collision = true
 size = Vector3(5, 1, 7.0527954)
+
+[node name="CSGBox3D71" type="CSGBox3D" parent="." unique_id=1364360532]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -196.55296, 3.0122695, 17.397705)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(5, 1, 7.0527954)
+
+[node name="CSGBox3D66" type="CSGBox3D" parent="." unique_id=751097748]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -224.64888, 3.0122695, 48.430794)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(5, 1, 7.0527954)
+
+[node name="CSGBox3D67" type="CSGBox3D" parent="." unique_id=1437772681]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -231.74701, 7.7880287, 48.430794)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(5, 1, 7.0527954)
+
+[node name="CSGBox3D68" type="CSGBox3D" parent="." unique_id=2115812064]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -250.12582, 7.7880287, 48.430794)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(8.252441, 1, 7.0527954)
+
+[node name="CSGBox3D70" type="CSGBox3D" parent="." unique_id=726269840]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -250.39572, 7.7880287, 34.96493)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(6.644287, 1, 4.122101)
+
+[node name="CSGBox3D69" type="CSGBox3D" parent="." unique_id=572812994]
+transform = Transform3D(10.731994, 0, 0, 0, 1.0818948, 0, 0, 0, 7.348655, -253.03612, 7.7880287, -2.900795)
+layers = 8
+material_override = SubResource("StandardMaterial3D_tkvxb")
+use_collision = true
+size = Vector3(3.8769531, 1, 7.0527954)
 
 [node name="CSGBox3D64" type="CSGBox3D" parent="." unique_id=1172624092]
 transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -195.78233, 3.0122695, 37.249672)

@@ -3,16 +3,12 @@
 [ext_resource type="Script" uid="uid://b1p1lnectvs25" path="res://Scripts/game.gd" id="1_2cjaw"]
 [ext_resource type="PackedScene" uid="uid://b1ot6gn6tms6h" path="res://Players/Characters/KnightCharacter.tscn" id="2_j5x7o"]
 [ext_resource type="PackedScene" uid="uid://bxg6oejpaitdt" path="res://level/flag/flag_reached_screen.tscn" id="3_rvgv0"]
-[ext_resource type="PackedScene" uid="uid://o1gpxugkyabv" path="res://level/leve1.tscn" id="4_2cjaw"]
+[ext_resource type="PackedScene" uid="uid://cimrrj4jbd05l" path="res://level/leve1.tscn" id="4_2cjaw"]
 [ext_resource type="PackedScene" uid="uid://dluh6kp13vsqx" path="res://escenas/ContadorEstrellas.tscn" id="5_j5x7o"]
 [ext_resource type="PackedScene" uid="uid://dpyts00g4ljql" path="res://escenas/BarraVida.tscn" id="6_rvgv0"]
 
 [node name="Gamelv3" type="Node" unique_id=2132981713]
 script = ExtResource("1_2cjaw")
-
-[node name="Player3DTemplate" parent="." unique_id=1866791503 instance=ExtResource("2_j5x7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.829273, 13.655779, -69.491035)
-collision_layer = 13
 
 [node name="FlagReachedScreen" parent="." unique_id=1250105717 instance=ExtResource("3_rvgv0")]
 
@@ -21,3 +17,6 @@ collision_layer = 13
 [node name="Contador Estrellas" parent="." unique_id=1347886127 instance=ExtResource("5_j5x7o")]
 
 [node name="Barra Vida" parent="." unique_id=406063415 instance=ExtResource("6_rvgv0")]
+
+[node name="KnightPlayer" parent="." unique_id=1866791503 instance=ExtResource("2_j5x7o")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -58.152283, 13.608939, -69.53425)

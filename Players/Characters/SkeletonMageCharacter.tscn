@@ -30,3 +30,5 @@ transform = Transform3D(0.7, 0, -2.1316282e-14, 0, 0.7, 0, 2.1316282e-14, 0, 0.7
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DetectionArea" unique_id=1985086753]
 transform = Transform3D(12.764857, 0, 0, 0, 3.0073547, 0, 0, 0, 12.838219, 0, 0, 0)
 shape = SubResource("SphereShape3D_064yq")
+
+[node name="BarraVida" type="Node3D" parent="." unique_id=2106332349]

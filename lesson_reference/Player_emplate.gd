@@ -34,6 +34,7 @@ var was_on_floor := false
 var is_attacking := false
 var can_attack := true
 
+
 # --------------------
 # EDGE GRAB
 # --------------------
@@ -49,6 +50,7 @@ var ledge_point := Vector3.ZERO
 @onready var _skin: Knight = %Knight
 @onready var _anim_player: AnimationPlayer = %Knight/AnimationPlayer
 @onready var _anim_tree: AnimationTree = %Knight/AnimationTree
+@onready var attack_area: Area3D = $AttackArea
 @export var ledge_snap_distance := 0.35
 @export var ledge_jump_vertical := 6.0
 
@@ -72,6 +74,7 @@ func _ready() -> void:
 		can_attack = true
 		_do_spawn_animation()
 	)
+	attack_area.monitoring = false
 
 # --------------------
 # Spawn

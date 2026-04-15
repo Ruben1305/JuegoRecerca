@@ -4,40 +4,21 @@
 [ext_resource type="FontFile" uid="uid://rfhcjmiaxtx4" path="res://Fuentes/RetroMario-Regular.otf" id="2_78lt2"]
 [ext_resource type="Script" uid="uid://xxcfygc1blod" path="res://Scripts/GUI/inicio.gd" id="2_a2m0w"]
 [ext_resource type="Texture2D" uid="uid://cnlr3tgs1mbfm" path="res://escenas/GUI/Fondo Inicio.png" id="2_udi3k"]
-[ext_resource type="Texture2D" uid="uid://d0df4qrb3hgqv" path="res://escenas/GUI/Fondo_Start.png" id="5_8neef"]
-[ext_resource type="Texture2D" uid="uid://dkgaxddlym40i" path="res://escenas/GUI/Fondo_Exit.png" id="6_i2p0x"]
+[ext_resource type="FontFile" uid="uid://c60mk86dx6721" path="res://Fuentes/Pixel Lofi.otf" id="5_8neef"]
+[ext_resource type="Texture2D" uid="uid://bmxhdp1ynbopk" path="res://LightGreen_Panel.png" id="6_i2p0x"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_g7cfe"]
 font = ExtResource("2_78lt2")
 font_size = 130
 
-[sub_resource type="Theme" id="Theme_aup5q"]
-default_base_scale = 1.1
-
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4o01v"]
-texture = ExtResource("5_8neef")
+texture = ExtResource("6_i2p0x")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8neef"]
-texture = ExtResource("5_8neef")
+texture = ExtResource("6_i2p0x")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i2p0x"]
-texture = ExtResource("5_8neef")
-
-[sub_resource type="FontFile" id="FontFile_apdpf"]
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
+texture = ExtResource("6_i2p0x")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ahurr"]
 texture = ExtResource("6_i2p0x")
@@ -65,47 +46,48 @@ texture = ExtResource("2_udi3k")
 
 [node name="Label" type="Label" parent="." unique_id=1559774321]
 layout_mode = 0
-offset_left = 549.0
-offset_top = 223.0
-offset_right = 2474.0
-offset_bottom = 353.0
+offset_left = 535.0
+offset_top = 212.0
+offset_right = 1386.0
+offset_bottom = 342.0
+theme_override_font_sizes/font_size = 20
 text = "Skyline Chest"
 label_settings = SubResource("LabelSettings_g7cfe")
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=485997509]
-layout_mode = 0
-offset_left = 2.0
-offset_top = 5.0
-offset_right = 1927.0
-offset_bottom = 1079.0
-theme = SubResource("Theme_aup5q")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=228202002]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="StartGame" parent="MarginContainer/VBoxContainer" unique_id=454933203 instance=ExtResource("1_aup5q")]
+[node name="StartGame" parent="." unique_id=454933203 instance=ExtResource("1_aup5q")]
 process_mode = 3
 custom_minimum_size = Vector2(180, 100)
-layout_mode = 2
+layout_mode = 0
+offset_left = 763.0
+offset_top = 478.0
+offset_right = 1113.0
+offset_bottom = 644.0
 size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 25
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("5_8neef")
+theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxTexture_4o01v")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_8neef")
 theme_override_styles/hover = SubResource("StyleBoxTexture_i2p0x")
+text = "Start"
 script = null
 
-[node name="Salir" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1748059436]
+[node name="Salir" type="Button" parent="." unique_id=1748059436]
 process_mode = 3
 custom_minimum_size = Vector2(180, 100)
-layout_mode = 2
+layout_mode = 0
+offset_left = 765.0
+offset_top = 678.0
+offset_right = 1108.0
+offset_bottom = 844.0
 size_flags_horizontal = 4
-theme_override_fonts/font = SubResource("FontFile_apdpf")
-theme_override_font_sizes/font_size = 20
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("5_8neef")
+theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxTexture_ahurr")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_apdpf")
 theme_override_styles/hover = SubResource("StyleBoxTexture_otuv3")
+text = "Salir"
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/StartGame" to="." method="_on_start_game_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]

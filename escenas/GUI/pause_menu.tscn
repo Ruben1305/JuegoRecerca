@@ -1,54 +1,67 @@
 [gd_scene format=3 uid="uid://bnkfs1uw2wx2x"]
 
-[ext_resource type="Script" uid="uid://dehpqy4qdoqqg" path="res://Scripts/GUI/pause_menu.gd" id="2_r6t5e"]
-[ext_resource type="PackedScene" uid="uid://bx1a7btr3gn48" path="res://escenas/GUI/button.tscn" id="3_fi5m8"]
+[ext_resource type="Script" uid="uid://dpe0svulpt8ig" path="res://escenas/GUI/pause_menu.gd" id="1_s0ryu"]
+[ext_resource type="FontFile" uid="uid://c60mk86dx6721" path="res://Fuentes/Pixel Lofi.otf" id="2_av0co"]
+[ext_resource type="Texture2D" uid="uid://bmxhdp1ynbopk" path="res://LightGreen_Panel.png" id="3_ng371"]
+[ext_resource type="FontFile" uid="uid://rfhcjmiaxtx4" path="res://Fuentes/RetroMario-Regular.otf" id="4_ng371"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_pjyxd"]
-font_size = 31
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1selo"]
+texture = ExtResource("3_ng371")
 
-[node name="PauseMenu" type="Control"]
-process_mode = 2
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("2_r6t5e")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u5mje"]
+texture = ExtResource("3_ng371")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-process_mode = 2
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.99607843, 0, 0, 1)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hxrp4"]
+texture = ExtResource("3_ng371")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 0
-offset_right = 1920.0
-offset_bottom = 1077.0
+[sub_resource type="LabelSettings" id="LabelSettings_1selo"]
+font = ExtResource("4_ng371")
+font_size = 180
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
+[node name="Menu Pausa" type="CanvasLayer" unique_id=489775383]
+process_mode = 3
+script = ExtResource("1_s0ryu")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=974841020]
+offset_right = 1927.0
+offset_bottom = 1088.0
+color = Color(0.30755964, 0.3045844, 0.28093684, 0.27450982)
+
+[node name="Continuar" type="Button" parent="." unique_id=265643774]
+offset_left = 733.0
+offset_top = 438.0
+offset_right = 1152.0
+offset_bottom = 596.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 0
-text = "Juego Pausado"
-label_settings = SubResource("LabelSettings_pjyxd")
-
-[node name="continuar" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_fi5m8")]
-layout_mode = 2
+theme_override_fonts/font = ExtResource("2_av0co")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_1selo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_u5mje")
+theme_override_styles/hover = SubResource("StyleBoxTexture_hxrp4")
 text = "Continuar"
 
-[node name="salir" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_fi5m8")]
-layout_mode = 2
+[node name="Salir" type="Button" parent="." unique_id=1960875347]
+offset_left = 738.0
+offset_top = 627.0
+offset_right = 1157.0
+offset_bottom = 785.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("2_av0co")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_1selo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_u5mje")
+theme_override_styles/hover = SubResource("StyleBoxTexture_hxrp4")
 text = "Salir"
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/continuar" to="." method="_on_continuar_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/salir" to="." method="_on_salir_pressed"]
+[node name="Pausa" type="Label" parent="." unique_id=1575810248]
+offset_left = 403.0
+offset_top = 120.0
+offset_right = 1460.0
+offset_bottom = 300.0
+text = "Has pausado"
+label_settings = SubResource("LabelSettings_1selo")
+
+[connection signal="pressed" from="Continuar" to="." method="_on_continuar_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]

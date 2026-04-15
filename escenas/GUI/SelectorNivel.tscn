@@ -1,19 +1,18 @@
 [gd_scene format=3 uid="uid://bapi61hhmu27a"]
 
 [ext_resource type="Script" uid="uid://dhagyiyo55qe7" path="res://Scripts/GUI/selector_nivel.gd" id="1_nagik"]
-[ext_resource type="PackedScene" uid="uid://bx1a7btr3gn48" path="res://escenas/GUI/button.tscn" id="1_ypn5h"]
 [ext_resource type="Texture2D" uid="uid://ccnqadffupj6r" path="res://escenas/GUI/Fondo Selector.png" id="2_oyen7"]
 [ext_resource type="Texture2D" uid="uid://bmxhdp1ynbopk" path="res://LightGreen_Panel.png" id="4_dw05i"]
 [ext_resource type="FontFile" uid="uid://c60mk86dx6721" path="res://Fuentes/Pixel Lofi.otf" id="4_huh3l"]
 [ext_resource type="FontFile" uid="uid://rfhcjmiaxtx4" path="res://Fuentes/RetroMario-Regular.otf" id="6_huh3l"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dw05i"]
+texture = ExtResource("4_dw05i")
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1og72"]
 texture = ExtResource("4_dw05i")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4q4au"]
-texture = ExtResource("4_dw05i")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x0nak"]
 texture = ExtResource("4_dw05i")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oeoyj"]
@@ -70,23 +69,18 @@ position = Vector2(959.99994, 539)
 scale = Vector2(1.3821838, 1.8006645)
 texture = ExtResource("2_oyen7")
 
-[node name="Lvl1" parent="." unique_id=752590789 instance=ExtResource("1_ypn5h")]
-process_mode = 3
-custom_minimum_size = Vector2(100, 100)
+[node name="Lvl1" type="Button" parent="." unique_id=384059932]
 layout_mode = 0
-offset_left = 174.0
-offset_top = 337.0
-offset_right = 337.0
-offset_bottom = 493.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
+offset_left = 251.0
+offset_top = 360.0
+offset_right = 416.0
+offset_bottom = 509.0
 theme_override_fonts/font = ExtResource("4_huh3l")
 theme_override_font_sizes/font_size = 70
-theme_override_styles/normal = SubResource("StyleBoxTexture_1og72")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_4q4au")
-theme_override_styles/hover = SubResource("StyleBoxTexture_x0nak")
+theme_override_styles/normal = SubResource("StyleBoxTexture_dw05i")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1og72")
+theme_override_styles/hover = SubResource("StyleBoxTexture_4q4au")
 text = "1"
-script = null
 
 [node name="Lvl2" type="Button" parent="." unique_id=658319235]
 layout_mode = 0
@@ -158,7 +152,6 @@ text = "Selector de nivel"
 label_settings = SubResource("LabelSettings_cpxs3")
 
 [connection signal="pressed" from="Lvl1" to="." method="_on_lvl_1_pressed"]
-[connection signal="pressed" from="Lvl1" to="." method="_on_lvl_3_pressed"]
 [connection signal="pressed" from="Lvl2" to="." method="_on_lvl_2_pressed"]
 [connection signal="pressed" from="Lvl3" to="." method="_on_lvl_3_pressed"]
 [connection signal="pressed" from="Lvl4" to="." method="_on_lvl_4_pressed"]

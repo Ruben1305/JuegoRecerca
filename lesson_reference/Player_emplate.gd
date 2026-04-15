@@ -21,9 +21,6 @@ extends CharacterBody3D
 @export var attack_damage := 1
 @export var attack_cooldown := 0.8
 
-# --------------------
-# Internas
-# --------------------
 var jumps_left := max_jumps
 var can_jump := true
 var _camera_input_direction := Vector2.ZERO
@@ -34,36 +31,26 @@ var was_on_floor := false
 var is_attacking := false
 var can_attack := true
 
-
-# --------------------
-# EDGE GRAB
-# --------------------
 var is_ledge_grabbing := false
 var ledge_normal := Vector3.ZERO
 var ledge_point := Vector3.ZERO
 
-# --------------------
-# Referencias
-# --------------------
 @onready var _camera_pivot: Node3D = %CameraPivot
 @onready var _camera: Camera3D = %Camera3D
 @onready var _skin: Knight = %Knight
 @onready var _anim_player: AnimationPlayer = %Knight/AnimationPlayer
 @onready var _anim_tree: AnimationTree = %Knight/AnimationTree
 @onready var attack_area: Area3D = $AttackArea
+
 @export var ledge_snap_distance := 0.35
 @export var ledge_jump_vertical := 6.0
 
 const ANIM_SPAWN  = "Animation_Items/Spawn_Ground"
 const ANIM_ATTACK = "Animation_Items/Throw"
 
-# --------------------
-# Ready
-# --------------------
 func _ready() -> void:
 	_start_position = global_position
 	add_to_group("player")
-
 	_do_spawn_animation()
 
 	Events.kill_plane_touched.connect(func():
@@ -76,9 +63,6 @@ func _ready() -> void:
 	)
 	attack_area.monitoring = false
 
-# --------------------
-# Spawn
-# --------------------
 func _do_spawn_animation() -> void:
 	set_physics_process(false)
 	_anim_tree.active = false
@@ -87,56 +71,47 @@ func _do_spawn_animation() -> void:
 	_anim_tree.active = true
 	set_physics_process(true)
 
-# --------------------
-# Ataque
-# --------------------
 func _do_attack() -> void:
 	is_attacking = true
+	can_attack = false
 
-	# Reproducimos la animación de ataque
+	_anim_tree.active = false
 	_anim_player.play(ANIM_ATTACK)
-	
-	# Activamos el área de ataque para detectar enemigos
 	attack_area.monitoring = true
 
-	# Comprobamos qué enemigos están dentro del área
-	await get_tree().create_timer(0.2).timeout  # Pequeña espera para que el área detecte
+	await get_tree().create_timer(0.3).timeout
+	
+	print("Atacando, cuerpos en área: ", attack_area.get_overlapping_bodies().size())
+	print("Collision mask del área: ", attack_area.collision_mask)
+	
 	var bodies = attack_area.get_overlapping_bodies()
 	for body in bodies:
+		print("Detectado: ", body.name, " grupos: ", body.get_groups())
 		if body.is_in_group("enemigo") and body.has_method("take_damage"):
 			body.take_damage(attack_damage)
 
-	# Desactivamos el área hasta el próximo ataque
 	attack_area.monitoring = false
-
-	# Esperamos a que termine la animación
 	await _anim_player.animation_finished
+	_anim_tree.active = true
 	is_attacking = false
-
-# --------------------
-# Input
-# --------------------
-func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("Pausar"):
-		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-	elif event.is_action_pressed("ClicIzq"):
-		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	if event.is_action_pressed("attack") and not is_attacking:
-		_do_attack()
+	await get_tree().create_timer(attack_cooldown).timeout
+	can_attack = true
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		_camera_input_direction = event.relative * mouse_sensitivity
 
-	# --- Ataque ---
+	# Ataque solo con "Atacar", eliminamos el duplicado de "attack"
 	if event.is_action_pressed("Atacar") and can_attack and not is_attacking and is_on_floor():
 		_do_attack()
 
-# --------------------
-# Physics
-# --------------------
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("Pausar"):
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	elif event.is_action_pressed("ClicIzq"):
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
 func _physics_process(delta: float) -> void:
-	# --- Cámara ---
 	_camera_pivot.rotation.x = clamp(
 		_camera_pivot.rotation.x + _camera_input_direction.y * delta,
 		tilt_lower_limit,
@@ -145,11 +120,7 @@ func _physics_process(delta: float) -> void:
 	_camera_pivot.rotation.y -= _camera_input_direction.x * delta
 	_camera_input_direction = Vector2.ZERO
 
-	# ==================================================
-	# === MOVER AL JUGADOR CON PLATAFORMA MÓVIL ===
-	# ==================================================
 	var platform: Node3D = null
-
 	if is_on_floor():
 		var collision = get_last_slide_collision()
 		if collision:
@@ -161,7 +132,6 @@ func _physics_process(delta: float) -> void:
 		global_position.x += platform.velocity.x * delta
 		global_position.z += platform.velocity.z * delta
 
-	# --- Input Movimiento (bloqueado si está atacando) ---
 	var raw_input := Vector2.ZERO
 	if not is_attacking:
 		raw_input = Input.get_vector("Izquierda", "Derecha", "Atras", "Alante")
@@ -178,11 +148,9 @@ func _physics_process(delta: float) -> void:
 	var target_angle := Vector3.BACK.signed_angle_to(_last_movement_direction, Vector3.UP)
 	_skin.global_rotation.y = lerp_angle(_skin.rotation.y, target_angle, rotation_speed * delta)
 
-	# --- Movimiento horizontal ---
 	velocity.x = lerp(velocity.x, move_direction.x * move_speed, acceleration * delta)
 	velocity.z = lerp(velocity.z, move_direction.z * move_speed, acceleration * delta)
 
-	# --- Wall slide detection ---
 	is_wall_sliding = false
 	if not is_on_floor() and velocity.y < 0:
 		for i in range(get_slide_collision_count()):
@@ -192,28 +160,23 @@ func _physics_process(delta: float) -> void:
 				is_wall_sliding = true
 				break
 
-	# --- Gravedad ---
 	if is_wall_sliding:
 		velocity.y += wall_slide_gravity * delta
 		velocity.y = max(velocity.y, max_wall_slide_speed)
 	else:
 		velocity.y += gravity * delta
 
-	# --- Reset saltos en suelo o wall slide ---
 	if (is_on_floor() or is_wall_sliding) and not was_on_floor:
 		jumps_left = max_jumps
 
-	# --- Salto normal (bloqueado si está atacando) ---
 	if Input.is_action_just_pressed("Saltar") and jumps_left > 0 and not is_attacking:
 		velocity.y = jump_impulse
 		jumps_left -= 1
 		_skin.jump_start()
 
 	was_on_floor = is_on_floor()
-
 	move_and_slide()
 
-	# --- Animaciones (solo si no está atacando, el AnimationTree se encarga) ---
 	if not is_attacking:
 		if is_wall_sliding:
 			_skin.wall_slide()

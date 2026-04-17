@@ -4,14 +4,17 @@
 [ext_resource type="PackedScene" uid="uid://b1ot6gn6tms6h" path="res://Players/Characters/KnightCharacter.tscn" id="2_x4ggo"]
 [ext_resource type="PackedScene" uid="uid://bxg6oejpaitdt" path="res://level/flag/flag_reached_screen.tscn" id="3_siop2"]
 [ext_resource type="PackedScene" uid="uid://cnedxfn2pxh2t" path="res://level/leve2.tscn" id="4_uiav5"]
+[ext_resource type="PackedScene" uid="uid://bnkfs1uw2wx2x" path="res://escenas/GUI/pause_menu.tscn" id="5_ir7kv"]
 
 [node name="Game" type="Node" unique_id=1626328840]
 script = ExtResource("1_fnd25")
 
 [node name="Player3DTemplate" parent="." unique_id=1534335442 instance=ExtResource("2_x4ggo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.319263, 15.22656, -40.133236)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.319263, 14.759904, -40.133236)
 
 [node name="FlagReachedScreen" parent="." unique_id=1473725318 instance=ExtResource("3_siop2")]
 
 [node name="Level" parent="." unique_id=1979066886 instance=ExtResource("4_uiav5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07929993, 1.1591825, 33.418945)
+
+[node name="Menu Pausa" parent="." unique_id=489775383 instance=ExtResource("5_ir7kv")]

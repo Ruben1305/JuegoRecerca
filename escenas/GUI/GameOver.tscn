@@ -1,5 +1,22 @@
 [gd_scene format=3 uid="uid://dk2dvtjwrynil"]
 
+[ext_resource type="Script" uid="uid://h2q42hd0kd8h" path="res://escenas/GUI/game_over.gd" id="1_6i7iq"]
+[ext_resource type="FontFile" uid="uid://c60mk86dx6721" path="res://Fuentes/Pixel Lofi.otf" id="1_or7j6"]
+[ext_resource type="Texture2D" uid="uid://bmxhdp1ynbopk" path="res://LightGreen_Panel.png" id="2_ih8e1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ih8e1"]
+font = ExtResource("1_or7j6")
+font_size = 120
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6i7iq"]
+texture = ExtResource("2_ih8e1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0kjlr"]
+texture = ExtResource("2_ih8e1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6740m"]
+texture = ExtResource("2_ih8e1")
+
 [node name="Control" type="Control" unique_id=566615706]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +24,48 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_6i7iq")
+
+[node name="Fondo" type="ColorRect" parent="." unique_id=448339974]
+layout_mode = 0
+offset_right = 1924.0
+offset_bottom = 1081.0
+color = Color(0.23921569, 0.627451, 0.8117647, 1)
+
+[node name="Titulo" type="Label" parent="." unique_id=760973789]
+layout_mode = 0
+offset_left = 667.0
+offset_top = 179.0
+offset_right = 1299.0
+offset_bottom = 299.0
+text = "HAS MUERTO"
+label_settings = SubResource("LabelSettings_ih8e1")
+
+[node name="Reintentar" type="Button" parent="." unique_id=1597392654]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 533.0
+offset_right = 812.0
+offset_bottom = 748.0
+theme_override_fonts/font = ExtResource("1_or7j6")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_6i7iq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0kjlr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6740m")
+text = "Reintentar"
+
+[node name="Salir" type="Button" parent="." unique_id=1042165411]
+layout_mode = 0
+offset_left = 1101.0
+offset_top = 533.0
+offset_right = 1583.0
+offset_bottom = 748.0
+theme_override_fonts/font = ExtResource("1_or7j6")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_6i7iq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0kjlr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6740m")
+text = "Salir"
+
+[connection signal="pressed" from="Reintentar" to="." method="_on_reintentar_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]

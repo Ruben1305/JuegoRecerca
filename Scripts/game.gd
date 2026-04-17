@@ -14,3 +14,7 @@ func _input(event: InputEvent) -> void:
 
 func  incrementa_un_punto():
 	puntuacion += 1
+
+func morir():
+	ScenesManager.escena_actual_ruta = get_tree().current_scene.filename
+	get_tree().change_scene("res://Escenas/GameOver.tscn")
